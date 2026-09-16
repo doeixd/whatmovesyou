@@ -1,0 +1,818 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-09-16T00:00:00Z",
+  "locale": "en-US",
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Spectra",
+      "question": "Who you are",
+      "order": 0,
+      "standalone": true
+    }
+  ],
+  "responseScales": [
+    {
+      "id": "agree5",
+      "type": "likert",
+      "allowNotApplicable": false,
+      "options": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "id": "a6_unusual",
+      "block": "A",
+      "name": "Unusual cognition",
+      "poles": {
+        "low": "Conventional",
+        "high": "Unusual"
+      },
+      "definition": "Tendency toward unusual perceptions, associations and beliefs, and to act on them. Scored on form and consequence, never on the content of a belief.",
+      "facets": [
+        {
+          "id": "a6_unusual.perceptual",
+          "name": "Perceptual",
+          "definition": "Sensing what others do not sense."
+        },
+        {
+          "id": "a6_unusual.associative",
+          "name": "Associative",
+          "definition": "Making links others do not see."
+        },
+        {
+          "id": "a6_unusual.referential",
+          "name": "Referential",
+          "definition": "The sense that events pertain to oneself."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 6
+      },
+      "bodyLinks": [
+        {
+          "system": "dopamine (D2)",
+          "grade": "strong",
+          "mechanism": "Antipsychotics act by D2 blockade and amphetamine can induce psychosis — the strongest dopamine-to-trait link anywhere in this research, and on a dimension the original Braverman model never mentions.",
+          "verification": "No individual-level test; the inference is pharmacological and group-level.",
+          "citations": [
+            "hitop2021",
+            "schizotypy2025"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": false,
+        "stigmaRisk": "high",
+        "stateSensitivity": "medium",
+        "copy": {
+          "costId": "copy_a6_cost",
+          "upsideId": "copy_a6_upside"
+        },
+        "internalOnly": true
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "a6_unu_p01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "I sometimes hear my name when no one has said it.",
+      "informantText": "They sometimes hear their name when no one has said it.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 3.9,
+        "notes": "Common in the general population and deliberately placed at the mild end. Sleep deprivation and bereavement both raise endorsement without indicating trait; context intake must capture both."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "confound:state"
+      ]
+    },
+    {
+      "id": "a6_unu_p02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "What I see and hear is plain and unremarkable.",
+      "informantText": "What they see and hear seems plain and unremarkable.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.1
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a6_unu_p03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "Movement at the edge of my vision sometimes turns out to be imaginary.",
+      "informantText": "Movement at the edge of their vision sometimes turns out to be imaginary.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.6,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a6_unu_p04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "I don't experience anything other people can't perceive.",
+      "informantText": "They don't seem to experience anything other people can't perceive.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4,
+        "notes": "In communities where shared spiritual perception is normative, endorsement of the reverse pole may reflect belonging rather than perception. Per the construct sheet, content within a shared framework is not scored — but a self-report item cannot distinguish that, which is the standing limitation of this facet."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "confound:religiosity"
+      ]
+    },
+    {
+      "id": "a6_unu_p05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "Ordinary sounds or shapes sometimes seem to carry more meaning than they should.",
+      "informantText": "Ordinary sounds or shapes sometimes seem to carry more meaning to them than they should.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a6_unu_p06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "I've sensed someone present when I was alone.",
+      "informantText": "They've sensed someone present when they were alone.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "high",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.8,
+        "notes": "Presence experiences are common and normal in bereavement, and are religiously normative in many communities. Kept because the facet needs mid-range coverage, but it is the strongest candidate for removal if DIF appears — and the report must never treat it as evidence on its own."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "confound:religiosity",
+        "confound:bereavement"
+      ]
+    },
+    {
+      "id": "a6_unu_p07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "As far as I can tell, I perceive the world the same way everyone else does.",
+      "informantText": "As far as they can tell, they perceive the world the same way everyone else does.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a6_unu_p08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "I've heard someone speaking when there was no one there.",
+      "informantText": "They've heard someone speaking when there was no one there.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.5,
+        "notes": "Also elevated by bereavement, sleep deprivation and substance use. High-information item, but must be interpreted alongside context, never alone."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "confound:state"
+      ]
+    },
+    {
+      "id": "a6_unu_p09",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "Nothing I've perceived has ever turned out to be something others couldn't perceive.",
+      "informantText": "Nothing they've perceived has ever turned out to be something others couldn't perceive.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.8
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a6_unu_p10",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "What I've perceived has never led me to do anything others found alarming.",
+      "informantText": "What they've perceived has never led them to do anything others found alarming.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 7.2,
+        "notes": "Consequence-anchored rather than content-anchored: it asks what followed, not what was believed. This is the design pattern that keeps the facet out of religious content."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "technique:consequence-anchored"
+      ]
+    },
+    {
+      "id": "a6_unu_a01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "I make connections between things other people don't see as related.",
+      "informantText": "They make connections between things other people don't see as related.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.8,
+        "notes": "Desirability runs upward here — this reads as creativity. That asymmetry is the opposite of the perceptual facet and may split the scale; watch the facet correlation."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a6_unu_a02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "My thinking is conventional and I'm fine with that.",
+      "informantText": "Their thinking is conventional and they're fine with that.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a6_unu_a03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "I notice patterns in events that other people call coincidence.",
+      "informantText": "They notice patterns in events that other people call coincidence.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a6_unu_a04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "I keep my explanations simple and ordinary.",
+      "informantText": "They keep their explanations simple and ordinary.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a6_unu_a05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "I've worked out how things fit together in a way others couldn't follow.",
+      "informantText": "They've worked out how things fit together in a way others couldn't follow.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a6_unu_a06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "People find my reasoning easy to follow.",
+      "informantText": "People find their reasoning easy to follow.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 4.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a6_unu_a07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "I've spent a long time developing my own framework for how things really work.",
+      "informantText": "They've spent a long time developing their own framework for how things really work.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.7,
+        "notes": "Boundary with A7 rule-seeking: building frameworks is also systemizing. The discriminating feature is whether others can follow it (a05, a06), not whether it exists. If this loads on A7 it belongs there."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "boundary:a7"
+      ]
+    },
+    {
+      "id": "a6_unu_a08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "I've never held an idea that the people around me found strange.",
+      "informantText": "They've never held an idea that the people around them found strange.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.7
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a6_unu_a09",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "Even my most unusual ideas turn out to be ones plenty of other people share.",
+      "informantText": "Even their most unusual ideas turn out to be ones plenty of other people share.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.9,
+        "notes": "Written specifically to give the shared-community case a low-pole answer: someone whose unusual beliefs are held within a tradition should be able to endorse this and score low, which is the construct-sheet rule made answerable."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "technique:community-check"
+      ]
+    },
+    {
+      "id": "a6_unu_f01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "I notice things that seem aimed at me specifically.",
+      "informantText": "They notice things that seem aimed at them specifically.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a6_unu_f02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "I take what happens around me as coincidence.",
+      "informantText": "They take what happens around them as coincidence.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.9,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a6_unu_f03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "People have told me I read meaning into things that isn't there.",
+      "informantText": "They read meaning into things that isn't there.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "high",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.0,
+        "notes": "Rewritten from an earlier draft ('I've had the sense that something was communicating with me personally — a song, a sign, a coincidence'), which indexed religiosity rather than the construct. This version anchors on other people's reactions to the behaviour instead of on the content of the belief. Still the facet's top DIF candidate."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "other-observed",
+        "technique:consequence-anchored"
+      ]
+    },
+    {
+      "id": "a6_unu_f04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "I don't look for personal significance in what happens around me.",
+      "informantText": "They don't look for personal significance in what happens around them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a6_unu_f05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "A stranger's passing comment has felt like it was aimed at me.",
+      "informantText": "A stranger's passing comment has felt to them like it was aimed at them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4,
+        "notes": "Reworded from \"I've felt that a stranger's remark was really about me\", where \"really about me\" could be read as the remark legitimately concerning the respondent. The facet is referential thinking, so \"aimed at me\" names the sense of being personally targeted, and \"passing\" marks the remark as incidental."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a6_unu_f06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "It wouldn't occur to me that something was arranged for my benefit or harm.",
+      "informantText": "It wouldn't occur to them that something was arranged for their benefit or harm.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.1,
+        "notes": "Boundary with A5 suspicion: assuming arrangement against oneself overlaps distrust. The distinction is whether the belief is about people's motives (A5) or about events being organised around oneself (A6)."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "boundary:a5"
+      ]
+    },
+    {
+      "id": "a6_unu_f07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "I've changed my plans because events seemed to be pointing at me.",
+      "informantText": "They've changed their plans because events seemed to be pointing at them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.6,
+        "notes": "Reworded from \"I've acted on the sense that events were directed at me\", which was stilted and abstract. Two constraints shaped the replacement. It must stay consequence-anchored — naming what the person DID, not what they believed — because that is what keeps this facet out of religious content. And it avoids \"aimed at me\", which now belongs to f05 on the same scale, so the two items don't read as the same question twice."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence",
+        "technique:consequence-anchored"
+      ]
+    },
+    {
+      "id": "a6_unu_f08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "I've felt that I was being watched or singled out in particular.",
+      "informantText": "They've felt they were being watched or singled out in particular.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.5,
+        "notes": "Being watched or singled out is a documented reality for some groups — surveillance, harassment, discrimination. Endorsement may be accurate rather than referential. This item must never be interpreted without the A5 environment caveats."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "confound:environment"
+      ]
+    },
+    {
+      "id": "a6_unu_f09",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "Nothing has ever made me feel singled out in a way other people couldn't see.",
+      "informantText": "Nothing has ever made them feel singled out in a way other people couldn't see.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "hitop2021",
+      "title": "The Hierarchical Taxonomy of Psychopathology (HiTOP): a quantitative nosology based on consensus of evidence",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33577350/",
+      "year": 2021,
+      "claim": "Psychopathology including the thought-disorder spectrum is distributed dimensionally rather than categorically."
+    },
+    {
+      "id": "schizotypy2025",
+      "title": "Predictive validity of psychometrically assessed schizotypy for psychopathology dimensions and functioning in an 8-year multiwave study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11879525/",
+      "year": 2025,
+      "claim": "Positive and negative schizotypy measured in non-clinical samples predict later symptoms and functioning along distinct paths."
+    }
+  ]
+}

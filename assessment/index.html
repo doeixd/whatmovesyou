@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The questions</title>
+    <meta name="description" content="Sixty-five questions. Nothing is sent anywhere — answers stay on your device." />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+  <body>
+    <!-- Deliberately no site header or footer here: the test is a single task and
+         the chrome around it competes with the question on screen. A saved draft
+         means coming back to /assessment/ resumes where you stopped. -->
+    <div id="app">
+      <noscript>
+        <p class="noscript-note">
+          This part needs JavaScript, because the questions are scored on your device rather than
+          on a server. Everything else on the site works without it.
+        </p>
+      </noscript>
+    </div>
+    <script type="module" src="/src/entry-assessment.tsx"></script>
+  </body>
+</html>

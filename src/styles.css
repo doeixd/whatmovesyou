@@ -1,0 +1,509 @@
+/* The assessment island. Shares the site's design system so a callout or a
+ * grade chip looks identical here and on the static pages. */
+
+@import "./design/tokens.css";
+@import "./design/base.css";
+@import "./design/components.css";
+
+.app {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: var(--s12) var(--s4) var(--s24);
+}
+
+/* The only thing a JavaScript-less visitor to the test ever sees. A class rather
+ * than a style attribute, because the CSP in public/_headers allows no inline
+ * styles — the attribute this replaced was being dropped in production. */
+.noscript-note {
+  max-width: var(--measure);
+  margin: var(--s16) auto;
+  padding: 0 var(--s4);
+  font-family: var(--sans);
+  line-height: 1.6;
+}
+
+.screen {
+  animation: rise 0.22s ease-out;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+/* ── intro ─────────────────────────────────────────────────────────── */
+
+.intro p {
+  color: var(--ink-soft);
+}
+
+.intro .count {
+  border-left: 2px solid var(--rule);
+  padding-left: var(--s4);
+  color: var(--ink-faint);
+  font-size: var(--size-small);
+}
+
+.resumed {
+  background: var(--accent-soft);
+  padding: var(--s3) var(--s4);
+  border-radius: var(--radius);
+  font-size: var(--size-small);
+}
+
+.intro-actions {
+  display: flex;
+  gap: var(--s3);
+  flex-wrap: wrap;
+  margin: var(--s8) 0;
+}
+
+.what-isnt-fold {
+  border-top: 1px solid var(--rule);
+  padding-top: var(--s4);
+  margin-top: var(--s8);
+}
+
+.what-isnt-fold summary {
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: var(--size-small);
+  padding: var(--s2) 0;
+}
+
+.what-isnt-fold p {
+  font-size: var(--size-small);
+}
+
+/* ── progress ──────────────────────────────────────────────────────── */
+
+.page-head {
+  margin-bottom: var(--s8);
+}
+
+.progress {
+  display: flex;
+  gap: var(--s2);
+  font-family: var(--sans);
+  font-size: var(--size-label);
+  color: var(--ink-faint);
+  letter-spacing: 0.02em;
+  margin: 0 0 var(--s2);
+}
+
+.progress-track {
+  height: 2px;
+  background: var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.timeframe-note {
+  margin: var(--s6) 0 0;
+  font-size: var(--size-small);
+  background: var(--accent-soft);
+  padding: var(--s3) var(--s4);
+  border-radius: var(--radius);
+}
+
+/* ── items ─────────────────────────────────────────────────────────── */
+
+.items {
+  display: flex;
+  flex-direction: column;
+  /* A step above --s8: the divider already separates the questions, so this is
+     only a nudge of breathing room, not a break between them. */
+  gap: calc(var(--s8) + var(--s1));
+}
+
+.item {
+  /* The divider is a pseudo-element, not a border, because a <legend> cuts the
+     fieldset's own border and leaves a stub of it hanging to the right of the
+     question — the length of which varies with how long the question is. */
+  position: relative;
+  border: 0;
+  margin: 0;
+  padding: var(--s6) 0 0;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 1px;
+  background: var(--rule);
+}
+
+.item-text {
+  /* A touch above the lede size: the question is the thing being read on this
+     screen, so it should outweigh everything around it. */
+  font-size: calc(var(--size-lede) * 1.08);
+  line-height: 1.4;
+  padding: 0;
+  display: block;
+  margin-bottom: var(--s4);
+  text-wrap: pretty;
+}
+
+.item-number {
+  display: inline-block;
+  min-width: 1.7rem;
+  color: var(--ink-faint);
+  font-family: var(--sans);
+  font-size: var(--size-label);
+  font-variant-numeric: tabular-nums;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  min-height: var(--tap);
+  padding: var(--s1) var(--s3);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--card);
+  cursor: pointer;
+  font-size: var(--size-small);
+  transition:
+    border-color 0.12s ease,
+    background 0.12s ease;
+}
+
+.option:hover {
+  border-color: var(--rule-strong);
+}
+
+.option:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.option.selected {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.option input {
+  accent-color: var(--accent);
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.option-na {
+  margin-top: var(--s2);
+  color: var(--ink-soft);
+}
+
+.item-foot {
+  margin-top: var(--s3);
+  min-height: 1.4rem;
+}
+
+.flag:hover {
+  color: var(--ink-faint);
+}
+
+.flag,
+.flagged {
+  font-family: var(--sans);
+  /* Deliberately quiet: available when a question doesn't make sense, but not
+     competing with the question itself. */
+  font-size: calc(var(--size-label) * 0.92);
+  color: color-mix(in oklab, var(--ink-faint) 72%, var(--paper));
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  min-height: 0;
+}
+
+.flagged {
+  cursor: default;
+  text-decoration: none;
+}
+
+/* ── navigation ────────────────────────────────────────────────────── */
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s4);
+  margin-top: var(--s12);
+}
+
+.nav-hint {
+  font-family: var(--sans);
+  font-size: var(--size-small);
+  color: var(--ink-faint);
+  text-align: right;
+  margin: var(--s2) 0 0;
+}
+
+/* ── safety ────────────────────────────────────────────────────────── */
+
+.safety-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 60%);
+  display: grid;
+  place-items: center;
+  padding: var(--s4);
+  z-index: 50;
+  overflow-y: auto;
+}
+
+.safety {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: var(--s8);
+  max-width: 32rem;
+  border-top: 4px solid var(--warn);
+}
+
+.safety h2 {
+  margin-bottom: var(--s3);
+}
+
+.safety-body {
+  color: var(--ink-soft);
+}
+
+.resources {
+  list-style: none;
+  padding: 0;
+  margin: var(--s6) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+}
+
+.resources li {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+  border-left: 2px solid var(--warn);
+  padding-left: var(--s4);
+  margin: 0;
+}
+
+.resource-contact {
+  font-size: var(--size-small);
+}
+
+.resource-region {
+  font-family: var(--sans);
+  font-size: var(--size-label);
+  color: var(--ink-faint);
+}
+
+.safety-footer {
+  font-size: var(--size-small);
+  color: var(--ink-faint);
+}
+
+.safety-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s3);
+  margin-top: var(--s6);
+}
+
+/* ── results ───────────────────────────────────────────────────────── */
+
+.results-head .lede {
+  font-size: var(--size-small);
+  margin-bottom: var(--s6);
+}
+
+.severe {
+  background: var(--warn-soft);
+  border-left: 3px solid var(--warn);
+  padding: var(--s4);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: var(--s6) 0;
+}
+
+.grid-cell {
+  background: var(--accent-soft);
+  padding: var(--s6);
+  border-radius: var(--radius);
+  margin: var(--s8) 0;
+}
+
+.profile > h2 {
+  font-family: var(--sans);
+  font-size: var(--size-label);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--ink-faint);
+  margin: var(--s12) 0 var(--s4);
+}
+
+.scale-card {
+  /* No dividing rule: the spacing below does the separating, and a line under
+     every scale made the page read as a table of results rather than prose. */
+  padding: var(--s6) 0 var(--s8);
+}
+
+/* Breathing room before every heading except the first — the first already has
+   the section label above it. With no rule between scales, this gap is the only
+   thing marking the boundary, so it is deliberately generous. */
+.scale-card + .scale-card {
+  padding-top: var(--s12);
+}
+
+.scale-card h3 {
+  font-size: calc(var(--size-section) * 1.15);
+  line-height: var(--leading-title);
+  letter-spacing: var(--tracking-title);
+}
+
+.scale-card header {
+  margin-bottom: var(--s3);
+}
+
+.poles {
+  font-family: var(--sans);
+  font-size: var(--size-label);
+  color: var(--ink-faint);
+  margin: var(--s1) 0 0;
+}
+
+.band {
+  font-family: var(--sans);
+  font-size: var(--size-small);
+  margin: 0;
+}
+
+.caveat {
+  font-size: var(--size-small);
+  color: var(--warn);
+  background: var(--warn-soft);
+  padding: var(--s3) var(--s4);
+  border-radius: var(--radius);
+}
+
+.cost-upside {
+  display: grid;
+  gap: var(--s4);
+  margin: var(--s4) 0;
+}
+
+.cost-upside p {
+  margin: 0;
+  font-size: var(--size-small);
+  color: var(--ink-soft);
+}
+
+@media (min-width: 40rem) {
+  .cost-upside {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s6);
+  }
+}
+
+.evidence-toggle {
+  font-family: var(--sans);
+  font-size: var(--size-label);
+  /* Reads as a quiet control, not a button competing with the content: no
+     border, no horizontal padding, so it aligns with the text above it. */
+  padding: var(--s2) 0;
+  min-height: 0;
+  color: var(--ink-soft);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--rule-strong);
+}
+
+.evidence-toggle:hover {
+  color: var(--ink);
+  text-decoration-color: currentcolor;
+}
+
+.evidence-body {
+  margin-top: var(--s4);
+  font-size: var(--size-small);
+}
+
+.body-link {
+  border-left: 2px solid var(--rule);
+  padding-left: var(--s4);
+  margin-bottom: var(--s4);
+}
+
+.link-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  align-items: baseline;
+  margin: 0 0 var(--s1);
+}
+
+.system {
+  font-weight: 650;
+}
+
+.mechanism,
+.verification {
+  margin: 0 0 var(--s2);
+  color: var(--ink-soft);
+}
+
+.verification {
+  font-size: var(--size-label);
+  font-family: var(--sans);
+  color: var(--ink-faint);
+}
+
+.citations {
+  list-style: none;
+  padding: 0;
+  margin: var(--s2) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  font-size: var(--size-label);
+}
+
+.claim {
+  display: block;
+  color: var(--ink-faint);
+}
+
+.what-this-isnt {
+  margin-top: var(--s12);
+  border-top: 1px solid var(--rule);
+  padding-top: var(--s6);
+}
+
+.what-this-isnt p {
+  font-size: var(--size-small);
+  color: var(--ink-soft);
+}
+
+.results-nav {
+  display: flex;
+  gap: var(--s3);
+  flex-wrap: wrap;
+  margin-top: var(--s12);
+}

@@ -1,0 +1,741 @@
+/* Design tokens. Single source of truth for the static pages and the app.
+ *
+ * Type scale: minor third (1.2) on mobile, major third (1.25) from 40rem,
+ * anchored at 17px body. Spacing is a 4px base in named steps so the vertical
+ * rhythm survives a font change.
+ */
+
+:root {
+  /* ── ink and ground ───────────────────────────────────────────────── */
+  --ink: #17181b;
+  --ink-soft: #4d5058;
+  --ink-faint: #767981;
+  --paper: #fbfaf8;
+  --card: #ffffff;
+  --rule: #e4e2dd;
+  --rule-strong: #cfccc5;
+
+  --accent: #2d5b4e;
+  --accent-ink: #ffffff;
+  --accent-soft: #e7efeb;
+
+  --warn: #7f4526;
+  --warn-soft: #f9efe8;
+
+  /* ── type ─────────────────────────────────────────────────────────── */
+  --serif: "Source Serif 4 Variable", ui-serif, Georgia, Charter, "Times New Roman", serif;
+  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --size-display: 1.95rem;
+  --size-title: 1.6rem;
+  --size-section: 1.25rem;
+  --size-sub: 1.05rem;
+  --size-lede: 1.15rem;
+  --size-body: 1rem;
+  --size-small: 0.875rem;
+  --size-label: 0.75rem;
+
+  --leading-display: 1.12;
+  --leading-title: 1.2;
+  --leading-heading: 1.28;
+  --leading-lede: 1.5;
+  --leading-body: 1.65;
+
+  --tracking-display: -0.02em;
+  --tracking-title: -0.015em;
+  --tracking-label: 0.08em;
+
+  /* ── spacing (4px base) ───────────────────────────────────────────── */
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s6: 1.5rem;
+  --s8: 2rem;
+  --s12: 3rem;
+  --s16: 4rem;
+  --s24: 6rem;
+
+  /* ── other ────────────────────────────────────────────────────────── */
+  --measure: 34rem; /* ~62ch at body size */
+  --measure-wide: 46rem;
+  --radius: 10px;
+  --radius-sm: 5px;
+  --tap: 44px;
+
+  color-scheme: light;
+}
+
+@media (min-width: 40rem) {
+  :root {
+    --size-display: 2.6rem;
+    --size-title: 1.9rem;
+    --size-section: 1.4rem;
+    --size-sub: 1.1rem;
+    --size-lede: 1.25rem;
+    --size-body: 1.0625rem;
+    --size-small: 0.9rem;
+    --size-label: 0.78rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #eeece8;
+    --ink-soft: #b3b6bd;
+    --ink-faint: #85888f;
+    --paper: #131419;
+    --card: #1a1c22;
+    --rule: #2b2e36;
+    --rule-strong: #3c404a;
+
+    --accent: #8cc0ae;
+    --accent-ink: #10201b;
+    --accent-soft: #1d2b26;
+
+    --warn: #e6a878;
+    --warn-soft: #2b2119;
+
+    color-scheme: dark;
+  }
+}
+
+/* Element defaults built on the tokens. No component classes here. */
+
+@font-face {
+  font-family: "Source Serif 4 Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 900;
+  src: url("/fonts/source-serif-4-latin.woff2") format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--size-body);
+  line-height: var(--leading-body);
+  font-synthesis-weight: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  text-wrap: balance;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--size-title);
+  line-height: var(--leading-title);
+  letter-spacing: var(--tracking-title);
+}
+
+h2 {
+  font-size: var(--size-section);
+  line-height: var(--leading-heading);
+}
+
+h3 {
+  font-size: var(--size-sub);
+  line-height: var(--leading-heading);
+}
+
+h4 {
+  font-family: var(--sans);
+  font-size: var(--size-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--ink-faint);
+}
+
+p {
+  margin: 0 0 var(--s4);
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: from-font;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+strong,
+b {
+  font-weight: 650;
+}
+
+ul,
+ol {
+  padding-left: 1.15rem;
+  margin: 0 0 var(--s4);
+}
+
+li {
+  margin-bottom: var(--s2);
+}
+
+li::marker {
+  color: var(--ink-faint);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: var(--s8) 0;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── print ──────────────────────────────────────────────────────────────
+ * People will print or PDF their results. Keep the caveats, drop the
+ * controls, and expand anything that was behind a toggle.
+ */
+@media print {
+  :root {
+    --paper: #fff;
+    --card: #fff;
+    --ink: #000;
+    --ink-soft: #333;
+    --ink-faint: #555;
+    --rule: #bbb;
+    --accent: #000;
+    --accent-soft: #f2f2f2;
+  }
+
+  body {
+    font-size: 11pt;
+  }
+
+  button,
+  .page-nav,
+  .results-nav,
+  .flag,
+  .evidence-toggle,
+  nav.foot {
+    display: none !important;
+  }
+
+  .evidence-body {
+    display: block !important;
+  }
+
+  .scale-card,
+  .callout,
+  .grid-cell {
+    break-inside: avoid;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+    word-break: break-all;
+  }
+}
+
+/* Shared component vocabulary: used by the static pages and the app, so a
+ * kicker or a callout looks the same wherever it appears. */
+
+/* ── skip link ──────────────────────────────────────────────────────── */
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: var(--s2);
+  background: var(--card);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--size-small);
+  padding: var(--s3) var(--s4);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  z-index: 100;
+}
+
+.skip:focus {
+  left: var(--s4);
+}
+
+/* ── site header ────────────────────────────────────────────────────── */
+
+.site-head {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: var(--s6) var(--s4) 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s3) var(--s6);
+  font-family: var(--sans);
+  font-size: var(--size-small);
+}
+
+.wordmark {
+  font-weight: 650;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.site-head nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s3) var(--s4);
+}
+
+.site-head nav a {
+  color: var(--ink-faint);
+  text-decoration: none;
+}
+
+.site-head nav a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.site-head nav a[aria-current="page"] {
+  color: var(--ink);
+}
+
+/* ── layout ─────────────────────────────────────────────────────────── */
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: var(--s12) var(--s4) var(--s16);
+}
+
+.site-foot {
+  padding-top: 0;
+  padding-bottom: var(--s16);
+}
+
+.read-next {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s3);
+  margin-top: var(--s12);
+  border-top: 1px solid var(--rule);
+  padding-top: var(--s6);
+}
+
+.wrap-wide {
+  max-width: var(--measure-wide);
+}
+
+/* ── page head ──────────────────────────────────────────────────────── */
+
+.kicker {
+  font-family: var(--sans);
+  font-size: var(--size-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--ink-faint);
+  margin: 0 0 var(--s3);
+}
+
+.display {
+  font-size: var(--size-display);
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+  margin: 0 0 var(--s4);
+}
+
+.lede {
+  font-size: var(--size-lede);
+  line-height: var(--leading-lede);
+  color: var(--ink-soft);
+  margin-bottom: var(--s6);
+}
+
+.meta {
+  font-family: var(--sans);
+  font-size: var(--size-small);
+  color: var(--ink-faint);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s3);
+  margin-bottom: var(--s8);
+}
+
+.meta .sep::before {
+  content: "·";
+  margin-right: var(--s3);
+}
+
+/* ── sections ───────────────────────────────────────────────────────── */
+
+.section {
+  border-top: 1px solid var(--rule);
+  margin-top: var(--s12);
+  padding-top: var(--s6);
+}
+
+.section > h2 {
+  margin-bottom: var(--s4);
+}
+
+/* One sentence a section turns on. A claim, not a quotation. */
+.pull {
+  font-size: var(--size-lede);
+  line-height: 1.45;
+  color: var(--ink);
+  border-left: 3px solid var(--accent);
+  padding-left: var(--s4);
+  margin: var(--s8) 0;
+}
+
+/* ── callouts ───────────────────────────────────────────────────────── */
+
+.callout {
+  border-left: 3px solid var(--rule-strong);
+  background: var(--card);
+  padding: var(--s4) var(--s4) var(--s1);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: var(--s6) 0;
+  font-size: var(--size-small);
+}
+
+.callout > h4 {
+  margin-bottom: var(--s2);
+}
+
+.callout-evidence {
+  border-left-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.callout-caveat {
+  border-left-color: var(--warn);
+  background: var(--warn-soft);
+}
+
+.callout-practical {
+  border-left-color: var(--ink-faint);
+}
+
+/* ── evidence grades ────────────────────────────────────────────────── */
+
+.grade {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: var(--size-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.1em 0.5em;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius-sm);
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+.grade-strong {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.grade-none {
+  font-style: normal;
+  opacity: 0.8;
+}
+
+/* ── the band display ───────────────────────────────────────────────────
+ * A dot on a centred track, NOT a filled bar. A filled bar reads as
+ * "percentage of a maximum", which is the population comparison this test
+ * deliberately refuses to make. The centre tick is the person's own profile
+ * mean, so the only available reading is the correct one.
+ */
+
+.track {
+  position: relative;
+  height: var(--s6);
+  margin: var(--s3) 0 var(--s4);
+}
+
+.track-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--rule-strong);
+}
+
+.track-centre {
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 50%;
+  width: 1px;
+  background: var(--ink-faint);
+}
+
+.track-dot {
+  position: absolute;
+  top: 50%;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: translate(-50%, -50%);
+  transition: left 0.25s ease;
+}
+
+.track-ends {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--sans);
+  font-size: var(--size-label);
+  color: var(--ink-faint);
+  margin-top: calc(var(--s6) * -1);
+  padding-top: var(--s6);
+}
+
+/* ── tables ─────────────────────────────────────────────────────────────
+ * The scoring tables are the single most useful thing on the pillar page for
+ * someone who arrived looking for the original rules, so they get real styling
+ * rather than browser defaults. Wrapped for horizontal scroll on phones.
+ */
+
+.table-wrap {
+  /* max-width is load-bearing: without it the table's min-content width leaks
+     out and scrolls the whole page sideways on a phone instead of scrolling
+     inside its own box. */
+  max-width: 100%;
+  overflow-x: auto;
+  margin: var(--s6) 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: var(--sans);
+  font-size: var(--size-small);
+  line-height: 1.45;
+}
+
+thead th {
+  text-align: left;
+  font-weight: 600;
+  font-size: var(--size-label);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-faint);
+  border-bottom: 1px solid var(--rule-strong);
+  padding: 0 var(--s4) var(--s2) 0;
+  /* Headers wrap rather than forcing a wide min-content on small screens. */
+  text-wrap: balance;
+}
+
+tbody td {
+  border-bottom: 1px solid var(--rule);
+  padding: var(--s3) var(--s4) var(--s3) 0;
+  vertical-align: top;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+td:last-child,
+th:last-child {
+  padding-right: 0;
+}
+
+/* Numeric-looking first columns read better aligned and tabular. */
+tbody td:first-child {
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+/* ── tables of contents and footnotes ───────────────────────────────── */
+
+.toc {
+  font-family: var(--sans);
+  font-size: var(--size-small);
+  border-left: 2px solid var(--rule);
+  padding-left: var(--s4);
+  margin: var(--s6) 0 var(--s8);
+}
+
+.toc ol {
+  list-style: none;
+  padding: 0;
+  margin: var(--s2) 0 0;
+}
+
+.toc li {
+  margin-bottom: var(--s1);
+}
+
+.footnotes {
+  border-top: 1px solid var(--rule);
+  margin-top: var(--s12);
+  padding-top: var(--s6);
+  font-size: var(--size-small);
+  color: var(--ink-soft);
+}
+
+.footnotes ol {
+  padding-left: 1.3rem;
+}
+
+a.fn {
+  font-size: 0.72em;
+  vertical-align: super;
+  text-decoration: none;
+  padding: 0 0.1em;
+}
+
+/* ── source list ────────────────────────────────────────────────────── */
+
+.sources {
+  list-style: none;
+  padding: 0;
+  font-size: var(--size-small);
+}
+
+.sources li {
+  border-left: 2px solid var(--rule);
+  padding-left: var(--s4);
+  margin-bottom: var(--s4);
+}
+
+.sources .claim {
+  display: block;
+  color: var(--ink-faint);
+  margin-top: var(--s1);
+}
+
+/* ── buttons and links ──────────────────────────────────────────────── */
+
+/* One selector, not `.btn, button.btn`: the element-qualified form has higher
+   specificity (0-1-1) than `.btn-primary` (0-1-0), so it silently beat the
+   primary background on <button> elements while working fine on <a>. Every
+   property is set explicitly here, so no UA-style tiebreaker is needed. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s2);
+  font-family: var(--sans);
+  font-size: var(--size-body);
+  min-height: var(--tap);
+  padding: var(--s3) var(--s6);
+  /* Quieter than the old --rule-strong: the secondary action shouldn't compete
+     with the primary one sitting next to it. */
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--ink);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    border-color 0.12s ease,
+    background 0.12s ease;
+}
+
+.btn:hover {
+  border-color: var(--ink-faint);
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.btn-primary:hover {
+  border-color: var(--accent);
+  filter: brightness(1.08);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* The primary action keeps its colour while disabled. At 0.45 opacity the green
+   washed out to grey, which read as "this button is broken" rather than "finish
+   the page first". */
+.btn-primary:disabled {
+  opacity: 1;
+  background: color-mix(in oklab, var(--accent) 38%, var(--paper));
+  border-color: color-mix(in oklab, var(--accent) 38%, var(--paper));
+  color: color-mix(in oklab, var(--accent-ink) 70%, transparent);
+}
+
+/* ── footer nav ─────────────────────────────────────────────────────── */
+
+.foot-nav {
+  border-top: 1px solid var(--rule);
+  margin-top: var(--s16);
+  padding-top: var(--s6);
+  font-family: var(--sans);
+  font-size: var(--size-small);
+  display: flex;
+  gap: var(--s6);
+  flex-wrap: wrap;
+}
+
+.colophon {
+  color: var(--ink-faint);
+  font-size: var(--size-small);
+  margin-top: var(--s4);
+}

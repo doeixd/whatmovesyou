@@ -1,0 +1,382 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-09-16T00:00:00Z",
+  "locale": "en-US",
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Spectra",
+      "question": "Who you are",
+      "order": 0,
+      "standalone": true
+    }
+  ],
+  "responseScales": [
+    {
+      "id": "agree5",
+      "type": "likert",
+      "allowNotApplicable": false,
+      "options": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "id": "a8_episodicity",
+      "block": "A",
+      "name": "Episodicity",
+      "poles": {
+        "low": "Steady",
+        "high": "Cycling"
+      },
+      "definition": "Degree to which energy, confidence and output arrive in distinct phases rather than at a steady level.",
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 3
+      },
+      "bodyLinks": [
+        {
+          "system": "none claimed",
+          "grade": "none",
+          "mechanism": "No direct transmitter claim. The scale is justified predictively: the Hypomanic Personality Scale was the single best predictor of later bipolar disorder in a 23-year birth-cohort follow-up (d = 0.67).",
+          "verification": "Clinical assessment at the high end; prospective mood charting.",
+          "citations": [
+            "hps_finland2022"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": false,
+        "stigmaRisk": "high",
+        "stateSensitivity": "medium",
+        "copy": {
+          "costId": "copy_a8_cost",
+          "upsideId": "copy_a8_upside"
+        },
+        "internalOnly": true
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "a8_epi_01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "My energy and confidence come in waves rather than staying level.",
+      "informantText": "Their energy and confidence come in waves rather than staying level.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a8_epi_02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "My energy is about the same from one month to the next.",
+      "informantText": "Their energy is about the same from one month to the next.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a8_epi_03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "There are weeks when I get far more done than I usually do.",
+      "informantText": "There are weeks when they get far more done than they usually do.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 4.0,
+        "notes": "Boundary with A1 Drive: high steady drive also produces productive weeks. The discriminating feature is variability, not level — if this item correlates more with A1 than with the rest of A8, it is measuring Drive."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "boundary:a1"
+      ]
+    },
+    {
+      "id": "a8_epi_04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "People who know me would describe me as even-keeled over time.",
+      "informantText": "People who know them would describe them as even-keeled over time.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a8_epi_05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "I'm about as sociable and talkative in one month as in any other.",
+      "informantText": "They're about as sociable and talkative in one month as in any other.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.8
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a8_epi_06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "There are stretches when I need noticeably less sleep and don't feel tired.",
+      "informantText": "There are stretches when they need noticeably less sleep and don't seem tired.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.1,
+        "notes": "The discriminating item for this scale, per the construct sheet: reduced sleep *need* without fatigue, as distinct from insomnia. Must not be answerable by someone who simply sleeps badly — cognitive interviews should confirm the 'don't feel tired' clause is doing that work."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "discriminating"
+      ]
+    },
+    {
+      "id": "a8_epi_07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "My sense of what I'm capable of has stayed steady my whole life.",
+      "informantText": "Their sense of what they're capable of has stayed steady their whole life.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.4,
+        "notes": "Lifetime framing, applying the A4 r08 pattern: a 'never' claim resists current-state contamination in both directions. Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "state-resistant"
+      ]
+    },
+    {
+      "id": "a8_epi_08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "After a very productive spell I usually crash.",
+      "informantText": "After a very productive spell they usually crash.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a8_epi_09",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "My output is steady — I don't really have peaks and troughs.",
+      "informantText": "Their output is steady — they don't really have peaks and troughs.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.2,
+        "notes": "Externally-driven variation (shift work, seasonal work, caregiving cycles) produces peaks and troughs without episodicity. Context intake must capture work pattern before this scale is interpreted."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "confound:circumstance"
+      ]
+    },
+    {
+      "id": "a8_epi_10",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "In my most energetic phases I've made decisions I later couldn't explain.",
+      "informantText": "In their most energetic phases they've made decisions they later couldn't explain.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.8,
+        "notes": "Highest-information item on the scale and the one that feeds the pre-specified interaction rule (high A1 + low A3 + high A8 + impairment → suggest assessment). Deliberately describes consequence rather than using clinical language."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence",
+        "interaction-input"
+      ]
+    },
+    {
+      "id": "a8_epi_11",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "People close to me can tell when one of my phases is starting.",
+      "informantText": "People close to them can tell when one of their phases is starting.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a8_epi_12",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "Even at my busiest, I feel like the same person I always am.",
+      "informantText": "Even at their busiest, they seem like the same person they always are.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.0,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "state-resistant"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "hps_finland2022",
+      "title": "Predictive and discriminant validity of psychopathology and temperament scales — 23-year follow-up, Northern Finland Birth Cohort 1966",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9564146/",
+      "year": 2022,
+      "claim": "High Hypomanic Personality Scale score was the best single predictor of later bipolar disorder (d = 0.67)."
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-09-16T00:00:00Z",
+  "locale": "en-US",
+
+  "blocks": [
+    { "id": "A", "name": "Spectra", "question": "Who you are", "order": 0, "standalone": true },
+    { "id": "B", "name": "Gain", "question": "What moves you", "order": 1, "standalone": false },
+    { "id": "C", "name": "Setpoints", "question": "What might be physically different", "order": 2, "standalone": false }
+  ],
+
+  "responseScales": [
+    {
+      "id": "agree5",
+      "type": "likert",
+      "allowNotApplicable": false,
+      "options": [
+        { "value": 1, "label": "Strongly disagree" },
+        { "value": 2, "label": "Disagree" },
+        { "value": 3, "label": "Neutral" },
+        { "value": 4, "label": "Agree" },
+        { "value": 5, "label": "Strongly agree" }
+      ]
+    },
+    {
+      "id": "shift5",
+      "type": "magnitude",
+      "allowNotApplicable": true,
+      "notApplicableLabel": "Doesn't apply to me",
+      "options": [
+        { "value": 1, "label": "No different" },
+        { "value": 2, "label": "Slightly different" },
+        { "value": 3, "label": "Moderately different" },
+        { "value": 4, "label": "A lot different" },
+        { "value": 5, "label": "Completely derails me" }
+      ]
+    },
+    {
+      "id": "impair9",
+      "type": "impairment",
+      "allowNotApplicable": false,
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 2, "label": "Slightly" },
+        { "value": 4, "label": "Definitely" },
+        { "value": 6, "label": "Markedly" },
+        { "value": 8, "label": "Very severely" }
+      ]
+    },
+    { "id": "clock", "type": "clockTime", "allowNotApplicable": false },
+    {
+      "id": "yesno",
+      "type": "boolean",
+      "allowNotApplicable": true,
+      "notApplicableLabel": "I don't drink alcohol"
+    }
+  ],
+
+  "scales": [
+    {
+      "id": "a1_drive",
+      "block": "A",
+      "name": "Drive",
+      "poles": { "low": "Inert", "high": "Driven" },
+      "definition": "Exploration plus willingness to expend effort for reward.",
+      "facets": [
+        { "id": "a1_drive.exploration", "name": "Exploration", "definition": "Seeking novelty and information without external prompting." },
+        { "id": "a1_drive.effort", "name": "Effort tolerance", "definition": "Willingness to pay a cost for a larger reward." }
+      ],
+      "scoring": { "method": "mean", "minItemsAnswered": 5 },
+      "bodyLinks": [
+        {
+          "system": "dopamine (reward, effort, exploration)",
+          "grade": "strong",
+          "mechanism": "Dopamine agonists can produce impulse-control disorders, and amphetamine raises willingness to expend effort for reward.",
+          "verification": "Not individually verifiable; the causal evidence is from drug manipulation, not from measuring a person's level.",
+          "citations": ["dominion2010", "treadway2012", "deyoung2013"]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "low",
+        "stateSensitivity": "medium",
+        "copy": { "costId": "copy_a1_cost", "upsideId": "copy_a1_upside" }
+      }
+    },
+    {
+      "id": "a6_unusual",
+      "block": "A",
+      "name": "Unusual cognition",
+      "poles": { "low": "Conventional", "high": "Unusual" },
+      "definition": "Tendency toward unusual perceptions, associations and beliefs.",
+      "scoring": { "method": "mean", "minItemsAnswered": 6 },
+      "bodyLinks": [
+        {
+          "system": "dopamine (D2)",
+          "grade": "strong",
+          "mechanism": "Antipsychotics act by D2 blockade and amphetamine can induce psychosis, making this the dimension with the strongest dopamine evidence.",
+          "verification": "No individual-level test; inference is from pharmacology at the group level.",
+          "citations": ["hitop2021"]
+        }
+      ],
+      "report": {
+        "showPercentile": false,
+        "stigmaRisk": "high",
+        "stateSensitivity": "medium",
+        "copy": { "costId": "copy_a6_cost", "upsideId": "copy_a6_upside" },
+        "internalOnly": true
+      }
+    },
+    {
+      "id": "a9_impairment",
+      "block": "A",
+      "name": "Impairment",
+      "poles": { "low": "Unaffected", "high": "Severely affected" },
+      "definition": "How much current functioning is affected. Crossed with every other scale to distinguish trait from problem.",
+      "scoring": { "method": "mean", "minItemsAnswered": 4 },
+      "bodyLinks": [
+        {
+          "system": "none",
+          "grade": "none",
+          "mechanism": "Functional impact is measured directly and carries no biological claim.",
+          "verification": null,
+          "citations": []
+        }
+      ],
+      "report": {
+        "showPercentile": false,
+        "stigmaRisk": "medium",
+        "stateSensitivity": "high",
+        "copy": { "costId": "copy_a9_cost", "upsideId": "copy_a9_upside" }
+      }
+    },
+    {
+      "id": "b1_sleep_gain",
+      "block": "B",
+      "name": "Sleep reactivity",
+      "poles": { "low": "Unaffected by short sleep", "high": "Strongly affected" },
+      "definition": "How much mood, patience and initiative change after a short night.",
+      "scoring": { "method": "mean", "minItemsAnswered": 3 },
+      "bodyLinks": [
+        {
+          "system": "circadian / serotonergic",
+          "grade": "moderate",
+          "mechanism": "Sleep loss degrades motivation and emotion regulation, and insomnia severity tracks depression risk.",
+          "verification": "Observed coupling between logged sleep and next-day state over 3+ weeks of tracking.",
+          "citations": ["schmidt2017"]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "low",
+        "stateSensitivity": "medium",
+        "copy": { "costId": "copy_b1_cost", "upsideId": "copy_b1_upside" }
+      }
+    },
+    {
+      "id": "c1_chronotype",
+      "block": "C",
+      "name": "Chronotype",
+      "poles": { "low": "Early", "high": "Late" },
+      "definition": "Corrected mid-sleep on free days (MSFsc) as a proxy for circadian phase.",
+      "scoring": { "method": "derived", "minItemsAnswered": 4, "formula": "msfsc" },
+      "bodyLinks": [
+        {
+          "system": "circadian clock phase",
+          "grade": "strong",
+          "mechanism": "MSFsc from the Munich Chronotype Questionnaire correlates with dim-light melatonin onset at roughly r = .54-.68.",
+          "verification": "Wearable sleep timing across free days; DLMO in a research setting.",
+          "citations": ["mctq_dlmo2021"]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "low",
+        "stateSensitivity": "low",
+        "copy": { "costId": "copy_c1_cost", "upsideId": "copy_c1_upside" }
+      }
+    }
+  ],
+
+  "items": [
+    {
+      "id": "a1_drive_001",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "I start things nobody asked me to start.",
+      "informantText": "They start things nobody asked them to start.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": { "culturalLoad": "low", "desirabilityRisk": "medium", "readabilityGrade": 4.2 },
+      "provenance": { "origin": "original" },
+      "tags": ["behavioral"]
+    },
+    {
+      "id": "a1_drive_002",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I often decide something isn't worth the effort.",
+      "informantText": "They often decide something isn't worth the effort.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": { "culturalLoad": "low", "desirabilityRisk": "low", "readabilityGrade": 5.1 },
+      "provenance": { "origin": "original" }
+    },
+    {
+      "id": "a6_unusual_003",
+      "status": "in-review",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "text": "People have told me I read meaning into things that isn't there.",
+      "informantText": "They read meaning into things that isn't there.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "high",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.0,
+        "notes": "Rewritten from a 'a sign was meant for me' phrasing, which indexed religiosity rather than the construct. This version asks about others' reactions to the behavior instead of the belief's content. Must be DIF-tested by religiosity before piloting."
+      },
+      "provenance": { "origin": "original" }
+    },
+    {
+      "id": "a9_impair_001",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "Because of how I've been feeling or functioning, my work or studies have suffered.",
+      "informantText": "Because of how they've been feeling or functioning, their work or studies have suffered.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-month",
+      "review": { "culturalLoad": "low", "desirabilityRisk": "medium", "readabilityGrade": 7.4 },
+      "provenance": { "origin": "adapted", "sourceInstrument": "WSAS-style impairment format", "licence": "TO VERIFY before ship" }
+    },
+    {
+      "id": "a9_impair_005",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "In the past two weeks I've had thoughts of hurting myself.",
+      "informantText": "In the past two weeks they have talked about hurting themselves.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "safety": { "atOrAbove": 2, "severity": "urgent", "resourceSet": "crisis.suicide", "interrupt": true },
+      "review": { "culturalLoad": "low", "desirabilityRisk": "high", "readabilityGrade": 5.6 },
+      "provenance": { "origin": "original" }
+    },
+    {
+      "id": "b1_sleep_001",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "B",
+      "scaleId": "b1_sleep_gain",
+      "text": "After a night of clearly less sleep than usual, how different is your mood the next day?",
+      "informantText": "After a night of clearly less sleep than usual, how different is their mood the next day?",
+      "responseScaleId": "shift5",
+      "keyed": "+",
+      "timeframe": "typical-day",
+      "review": { "culturalLoad": "low", "desirabilityRisk": "low", "readabilityGrade": 6.8 },
+      "provenance": { "origin": "original" }
+    },
+    {
+      "id": "c1_chrono_freewake",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "C",
+      "scaleId": "c1_chronotype",
+      "text": "On days with no schedule, what time do you wake up without an alarm?",
+      "informantText": "On days with no schedule, what time do they wake up without an alarm?",
+      "responseScaleId": "clock",
+      "keyed": "+",
+      "timeframe": "typical-day",
+      "review": { "culturalLoad": "low", "desirabilityRisk": "low", "readabilityGrade": 5.0 },
+      "provenance": { "origin": "adapted", "sourceInstrument": "MCTQ-style sleep-timing question", "licence": "TO VERIFY before ship" }
+    },
+    {
+      "id": "c6_flush_001",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "C",
+      "scaleId": "c1_chronotype",
+      "text": "Do you flush, or did you used to flush, in the face after one drink?",
+      "informantText": "Do they flush in the face after one drink?",
+      "responseScaleId": "yesno",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "gate": { "not": { "source": "context", "ref": "alcohol.never", "op": "eq", "value": true } },
+      "review": { "culturalLoad": "low", "desirabilityRisk": "low", "readabilityGrade": 5.3 },
+      "provenance": { "origin": "adapted", "sourceInstrument": "Alcohol flushing questionnaire", "licence": "TO VERIFY before ship" },
+      "tags": ["setpoint", "ancestry-gated"]
+    },
+    {
+      "id": "val_attention_001",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "text": "Please select 'Disagree' for this statement.",
+      "informantText": "Please select 'Disagree' for this statement.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "right-now",
+      "validityRole": "attention-check",
+      "review": { "culturalLoad": "low", "desirabilityRisk": "low", "readabilityGrade": 3.0 },
+      "provenance": { "origin": "original" }
+    }
+  ],
+
+  "flags": [
+    {
+      "id": "flag_aldh2",
+      "name": "Alcohol flush response",
+      "target": "ALDH2 deficiency — a discrete genotype affecting alcohol metabolism",
+      "itemIds": ["c6_flush_001"],
+      "rule": { "kind": "threshold", "scoreOf": ["c6_flush_001"], "atOrAbove": 1 },
+      "performance": [
+        {
+          "population": "East Asian ancestry",
+          "appliesWhen": { "any": [{ "source": "context", "ref": "ancestry", "op": "includes", "value": "east-asian" }] },
+          "sensitivity": 1.0,
+          "specificity": 0.68,
+          "basePrevalence": 0.35,
+          "citations": ["aldh2_selfreport1996", "aldh2_validation2018"]
+        },
+        {
+          "population": "European ancestry",
+          "appliesWhen": { "any": [{ "source": "context", "ref": "ancestry", "op": "includes", "value": "european" }] },
+          "sensitivity": 1.0,
+          "specificity": 0.68,
+          "basePrevalence": 0.01,
+          "citations": ["aldh2_selfreport1996"]
+        }
+      ],
+      "minPpvToShow": 0.3,
+      "confirmationRouteId": "route_aldh2_genotype",
+      "copy": { "patternId": "copy_flag_aldh2" },
+      "citations": ["aldh2_validation2018"]
+    },
+    {
+      "id": "flag_ferritin",
+      "name": "Low iron pattern",
+      "target": "Low ferritin",
+      "itemIds": ["b1_sleep_001"],
+      "rule": { "kind": "count", "scoreOf": ["b1_sleep_001"], "countAtOrAbove": 4, "minCount": 2 },
+      "performance": [
+        {
+          "population": "menstruating adults",
+          "sensitivity": 0.7,
+          "specificity": 0.75,
+          "basePrevalence": 0.2,
+          "citations": ["iron_rct2017"]
+        }
+      ],
+      "minPpvToShow": 0.3,
+      "confirmationRouteId": "route_ferritin",
+      "copy": { "patternId": "copy_flag_ferritin" },
+      "citations": ["iron_rct2017"]
+    }
+  ],
+
+  "confirmationRoutes": [
+    {
+      "id": "route_ferritin",
+      "kind": "lab",
+      "name": "Serum ferritin",
+      "description": "A routine blood test measuring iron stores.",
+      "thresholdNote": "Restless-legs research uses <50 µg/L as the relevant threshold, while lab 'normal' ranges often start at 15 — so a 'normal' result can still be relevant.",
+      "accessNote": "Ask a GP, or order through a standard lab panel where direct-access testing is available."
+    },
+    {
+      "id": "route_aldh2_genotype",
+      "kind": "genotype",
+      "name": "ALDH2 genotype",
+      "description": "Reported by most consumer genetic tests, or by a clinical genetics lab.",
+      "accessNote": "An observed flush after one drink is also reasonable confirmation."
+    }
+  ],
+
+  "interactionRules": [
+    {
+      "id": "int_episodic_drive",
+      "priority": 10,
+      "conditions": [
+        { "source": "scale", "ref": "a1_drive", "op": "gte", "value": 80 },
+        { "source": "scale", "ref": "a9_impairment", "op": "gte", "value": 50 }
+      ],
+      "copyId": "copy_int_episodic_drive",
+      "rationale": "High drive combined with cycling energy and functional impact is the pattern with the strongest longitudinal link to bipolar-spectrum outcomes; the Hypomanic Personality Scale was the best single predictor over 23 years (d = 0.67).",
+      "citations": ["hps_finland2022"],
+      "suggestsAssessment": true
+    },
+    {
+      "id": "int_unexplained_impairment",
+      "priority": 20,
+      "conditions": [
+        { "source": "scale", "ref": "a9_impairment", "op": "gte", "value": 70 },
+        { "source": "scale", "ref": "a1_drive", "op": "lte", "value": 60 }
+      ],
+      "copyId": "copy_int_unexplained",
+      "rationale": "High impairment without an elevated trait profile is the cell that prevents false reassurance: something is affecting this person that the profile does not explain.",
+      "citations": [],
+      "suggestsAssessment": true
+    }
+  ],
+
+  "norms": [
+    {
+      "scaleId": "a1_drive",
+      "band": { "ageMin": 18, "ageMax": 29, "sex": "any", "locale": "en-US" },
+      "n": 0,
+      "mean": 3.4,
+      "sd": 0.7,
+      "source": "PLACEHOLDER — no norming sample collected yet",
+      "provisional": true
+    },
+    {
+      "scaleId": "c1_chronotype",
+      "band": { "ageMin": 18, "ageMax": 24, "sex": "any" },
+      "n": 0,
+      "mean": 5.0,
+      "sd": 1.2,
+      "source": "PLACEHOLDER — chronotype norms must be age-banded; peak lateness is around age 20",
+      "provisional": true
+    }
+  ],
+
+  "contextFields": [
+    {
+      "id": "ancestry",
+      "label": "Which best describes your genetic ancestry? (Used only to interpret a small number of results correctly.)",
+      "type": "multi",
+      "scored": false,
+      "options": [
+        { "value": 1, "label": "East Asian" },
+        { "value": 2, "label": "European" },
+        { "value": 3, "label": "African" },
+        { "value": 4, "label": "South Asian" },
+        { "value": 5, "label": "Other or mixed" },
+        { "value": 6, "label": "Prefer not to say" }
+      ]
+    },
+    { "id": "alcohol.never", "label": "I don't drink alcohol", "type": "boolean", "scored": false },
+    { "id": "sleep.avgHours", "label": "Average hours of sleep on a work night", "type": "number", "scored": false, "explains": ["a1_drive", "a9_impairment"] },
+    {
+      "id": "meds.current",
+      "label": "Which of these are you currently taking?",
+      "type": "multi",
+      "scored": false,
+      "explains": ["a1_drive", "a9_impairment"],
+      "options": [
+        { "value": 1, "label": "SSRI or SNRI" },
+        { "value": 2, "label": "Stimulant (e.g. for ADHD)" },
+        { "value": 3, "label": "Dopamine agonist" },
+        { "value": 4, "label": "Hormonal contraception" },
+        { "value": 5, "label": "GLP-1 agonist" },
+        { "value": 6, "label": "Thyroid medication" },
+        { "value": 7, "label": "None of these" }
+      ]
+    }
+  ],
+
+  "citations": [
+    { "id": "deyoung2013", "title": "The neuromodulator of exploration: a unifying theory of the role of dopamine in personality", "url": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2013.00762/full", "year": 2013, "claim": "Dopamine's general function is to promote exploration, linking it to Extraversion and Openness/Intellect." },
+    { "id": "treadway2012", "title": "Dopaminergic mechanisms of individual differences in human effort-based decision-making", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3391699/", "year": 2012, "claim": "Striatal and vmPFC dopamine responsivity predicts willingness to expend effort for larger rewards." },
+    { "id": "dominion2010", "title": "DOMINION study: impulse control disorders in Parkinson's disease", "url": "https://www.medscape.com/viewarticle/721768", "year": 2010, "claim": "Impulse control disorders occur in about 17% of Parkinson's patients taking a dopamine agonist, 2-3x the rate of those not taking one." },
+    { "id": "schmidt2017", "title": "PMDD symptoms following ovarian suppression: triggered by change in ovarian steroid levels but not continuous stable levels", "url": "https://psychiatryonline.org/doi/10.1176/appi.ajp.2017.16101113", "year": 2017, "claim": "Behavioral response depends on sensitivity to hormonal change rather than on hormone level." },
+    { "id": "mctq_dlmo2021", "title": "Concordance of chronotype categorisations based on DLMO, MEQ and MCTQ", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8293076/", "year": 2021, "claim": "MCTQ-derived MSFsc correlates with dim-light melatonin onset, supporting questionnaire measurement of circadian phase." },
+    { "id": "aldh2_selfreport1996", "title": "Investigator-observed alcohol-induced flushing but not self-report of flushing is a valid predictor of ALDH2 genotype", "url": "https://pubmed.ncbi.nlm.nih.gov/8709585/", "year": 1996, "claim": "Self-reported flushing is 100% sensitive but only 68% specific for ALDH2 genotype." },
+    { "id": "aldh2_validation2018", "title": "Validation of alcohol flushing questionnaires in determining inactive ALDH2", "url": "https://pubmed.ncbi.nlm.nih.gov/29205834/", "year": 2018, "claim": "Modified flushing questionnaires reach about 95% sensitivity and 77% specificity for inactive ALDH2." },
+    { "id": "iron_rct2017", "title": "Ferric carboxymaltose in patients with restless legs syndrome and nonanemic iron deficiency: a randomized trial", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5655783/", "year": 2017, "claim": "Iron repletion improved restless legs severity in non-anemic iron deficiency." },
+    { "id": "hps_finland2022", "title": "Predictive and discriminant validity of psychopathology and temperament scales - 23-year follow-up, Northern Finland Birth Cohort 1966", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9564146/", "year": 2022, "claim": "High Hypomanic Personality Scale score was the best predictor of later bipolar disorder (d = 0.67)." },
+    { "id": "hitop2021", "title": "The Hierarchical Taxonomy of Psychopathology (HiTOP): a quantitative nosology based on consensus of evidence", "url": "https://pubmed.ncbi.nlm.nih.gov/33577350/", "year": 2021, "claim": "Psychopathology is distributed dimensionally; no common mental disorder has been verified as a categorical entity." }
+  ]
+}

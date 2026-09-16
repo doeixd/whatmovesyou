@@ -1,0 +1,179 @@
+{
+  "locale": "en-US",
+  "version": "0.9.0",
+  "note": "Report copy deck. Every copyId referenced by bank/v1.json resolves here; tools/check-copy.py enforces that. Written under the constraints in research/PLAN-07-no-budget.md §2: no percentiles, no population claims, no diagnosis, cost and upside both stated.",
+
+  "framing": {
+    "before_start": {
+      "title": "Before you start",
+      "body": [
+        "This takes about eight minutes. There are no right answers and nothing is timed.",
+        "Answer for how you generally are, not how you'd like to be or how you've been this week. The last few questions ask specifically about the past two weeks — they'll say so.",
+        "One question asks about thoughts of self-harm. If that's difficult right now, you can skip it or stop entirely."
+      ]
+    },
+
+    "what_this_isnt": {
+      "title": "What this isn't",
+      "body": [
+        "**Not a diagnosis.** Nothing here can tell you whether you have a condition. It can sometimes suggest a conversation worth having with a doctor.",
+        "**Not a measurement of your brain chemistry.** No questionnaire can measure dopamine, serotonin or anything else. Where research links a trait to a chemical system, we say so and grade how strong that evidence is — but the link is between the *trait* and the system, not between your *answers* and your levels.",
+        "**Not validated.** This instrument is new. The questions were written by one author. Nobody independent has checked that they measure what they claim, and no pilot study has been run. Treat the results as a structured way of thinking about yourself, not as a measurement.",
+        "**Not a comparison to other people.** We don't yet have enough responses to say where you sit relative to the population, so we don't pretend to. What you'll see is the shape of your own profile — which of your scores are high and low relative to each other.",
+        "**Not permanent.** These scores move. Some of them move a lot depending on how your last few weeks have gone. Taking it again in a couple of months will tell you something this one can't.",
+        "**Not the Braverman test.** It was built partly as a response to that test. What we changed and why is explained at the end of your results."
+      ]
+    },
+
+    "no_norms_notice": {
+      "title": "Why there are no numbers here",
+      "body": "Most personality tests tell you a percentile. That requires a large, representative sample of people who've taken the same questions, and we don't have one. Rather than invent a comparison, we show how your scores sit relative to each other. If enough people take this and agree to contribute their answers, real comparisons become possible later."
+    },
+
+    "trait_vs_impairment": {
+      "title": "How to read this",
+      "body": "Each trait is shown alongside how much your life is currently affected. A high score with little disruption is a description of how you're built. The same score with a lot of disruption is worth taking to someone. And if things are hard but nothing in your profile stands out, that's worth noticing too — it means the explanation is somewhere this test doesn't look."
+    },
+
+    "unexplained_impairment": {
+      "title": "Your profile doesn't explain this",
+      "body": "You've reported a substantial amount of disruption, but none of your trait scores stand out. That combination matters. It suggests whatever is going on isn't a feature of your personality — it may be health, circumstances, or something else entirely. A few common and checkable possibilities: thyroid function, iron levels, sleep apnea, and the side effects of any medication you've started recently. A doctor can rule those in or out quickly."
+    },
+
+    "evidence_grades": {
+      "title": "What the evidence labels mean",
+      "body": [
+        "**Strong** — the link has been shown by manipulating the system directly (a drug that changes it changes the behavior), and replicated.",
+        "**Moderate** — replicated correlational evidence, often brain imaging, with meaningful effect sizes.",
+        "**Preliminary** — real findings, but from few studies or a single research group. Treat as a lead.",
+        "**Genetic** — strongly heritable, but with no clean chemical account. Saying so is more honest than inventing one.",
+        "**None** — we make no biological claim about this one."
+      ]
+    }
+  },
+
+  "bands": {
+    "high": "This is one of your higher scores.",
+    "above": "This sits above the middle of your profile.",
+    "middle": "This sits around the middle of your profile.",
+    "below": "This sits below the middle of your profile.",
+    "low": "This is one of your lower scores.",
+    "insufficient": "Not enough answers to report this one."
+  },
+
+  "entries": {
+    "copy_a1_cost": {
+      "title": "What it costs",
+      "body": "High Drive generates more than you can finish. The cost shows up as overcommitment, projects abandoned at the dull stage, and difficulty resting when nothing needs doing. At the low end the cost is different: things that would have been worth doing don't get started, and other people set the direction by default."
+    },
+    "copy_a1_upside": {
+      "title": "What it's good for",
+      "body": "Self-starting without being asked, and staying with a problem after other people have set it aside. The same tendency that overcommits you is the one that produces work nobody assigned. Low Drive has its own advantage: you're not compelled, so what you do take on tends to be chosen rather than compulsive."
+    },
+
+    "copy_a2_cost": {
+      "title": "What it costs",
+      "body": "High threat reactivity means small things land hard and stay. Conversations get replayed, criticism keeps its sting for days, and a fair amount of energy goes to things that haven't happened. The low end costs something too: warnings that would be useful don't register, and preparation that would have helped doesn't happen."
+    },
+    "copy_a2_upside": {
+      "title": "What it's good for",
+      "body": "Early detection. You notice a change in tone, a problem forming, a thing about to go wrong — often before anyone else does. People high on this are frequently the ones who prepared for the situation nobody else saw coming. This is also the trait most responsive to change: it moves with sleep, circumstances, and treatment more than anything else here."
+    },
+
+    "copy_a3_cost": {
+      "title": "What it costs",
+      "body": "Low restraint costs money, relationships and credibility in small increments — the purchase made in minutes, the message sent before sleeping on it, the thing said in the moment. High restraint has an opposite cost that's easy to miss: rigidity, holding to a decision past the point it made sense, and effort spent on control that could have gone elsewhere."
+    },
+    "copy_a3_upside": {
+      "title": "What it's good for",
+      "body": "Being someone whose commitments mean something, and not being moved by whatever is loudest right now. At the lower end there's a real advantage too: responsiveness. Acting fast is sometimes exactly right, and people who can't act without deliberating miss things."
+    },
+
+    "copy_a4_cost": {
+      "title": "What it costs",
+      "body": "At the low end, the cost is support that doesn't arrive because it was never asked for, and people who drift away without being noticed. At the high end, the cost is dependence on contact — difficulty with stretches alone, and more of your mood delegated to how your relationships are going."
+    },
+    "copy_a4_upside": {
+      "title": "What it's good for",
+      "body": "High sociality builds the thing that carries people through hard periods: being genuinely known by someone. Low sociality isn't a deficit — independence from social approval is a real advantage, and people who don't need the room's agreement can say things the rest of the room can't."
+    },
+
+    "copy_a5_cost": {
+      "title": "What it costs",
+      "body": "High antagonism wins arguments and loses relationships, often without the connection being obvious from the inside. That's the important part: this is the trait people see in you more clearly than you see in yourself. At the low end, the cost is being talked over, agreeing to things that don't serve you, and conflict avoided until it grows."
+    },
+    "copy_a5_upside": {
+      "title": "What it's good for",
+      "body": "Not folding. Holding a position under pressure, negotiating without needing to be liked, and saying the unwelcome thing are all genuinely useful, and they're in short supply. Low antagonism has the clearer upside: people trust you, and cooperation costs you nothing."
+    },
+
+    "copy_a6_cost": {
+      "title": "What it costs",
+      "body": "Reading more meaning into events than is there — a remark that seemed aimed at you, a pattern that turned out to be coincidence. The cost is decisions made on connections other people can't follow, and occasionally acting on something that wasn't happening."
+    },
+    "copy_a6_upside": {
+      "title": "What it's good for",
+      "body": "The same tendency produces original connections. Unusual associations are where new ideas actually come from, and people who only see the conventional links don't generate them. The difference between insight and error here is often just whether the connection turns out to hold."
+    },
+
+    "copy_a7_cost": {
+      "title": "What it costs",
+      "body": "Systemizing costs you in situations that run on implication rather than rules. Hints get missed, unannounced changes take a disproportionate toll, and busy environments drain more than they seem to drain other people. The low end costs the opposite: working by feel means the underlying mechanism sometimes never gets understood."
+    },
+    "copy_a7_upside": {
+      "title": "What it's good for",
+      "body": "Noticing what changed when nobody announced it, needing to know how a thing actually works, and saying exactly what you mean. In work that depends on precision, this is the trait that catches what everyone else waved past. One honest caveat: people who learned early to mask this tend to score lower than they are."
+    },
+
+    "copy_a8_cost": {
+      "title": "What it costs",
+      "body": "Energy that arrives in phases is hard to plan around — yours or anyone else's. The specific cost is what gets committed to during a peak and has to be honoured during a trough, and decisions made at the top that don't look the same afterwards."
+    },
+    "copy_a8_upside": {
+      "title": "What it's good for",
+      "body": "Peaks are genuinely productive, and people who cycle often do in three weeks what steadier people spread over three months. The useful move isn't to flatten them but to know which phase you're in before committing to anything."
+    },
+
+    "copy_a9_cost": {
+      "title": "What this is measuring",
+      "body": "How much your life is currently being affected — work, home, relationships, the things you'd normally do. This one deliberately doesn't ask why. It's here because a trait score means something completely different depending on whether it's costing you anything."
+    },
+    "copy_a9_upside": {
+      "title": "Why it matters",
+      "body": "Most tests skip this, which is how people end up with an interesting profile and no acknowledgement that things are hard. If your disruption is high, that's the most important number on the page, whatever the traits say."
+    }
+  },
+
+  "safety": {
+    "crisis.suicide": {
+      "trigger_title": "Before you go on",
+      "trigger_body": "You said you've had thoughts of hurting yourself. That's worth talking to someone about — not eventually, now. These are free, confidential, and open around the clock.",
+      "resources": [
+        { "region": "US", "name": "988 Suicide & Crisis Lifeline", "contact": "Call or text 988", "url": "https://988lifeline.org" },
+        { "region": "US, Canada, UK, Ireland", "name": "Crisis Text Line", "contact": "Text HOME to 741741 (US/Canada), 85258 (UK), 50808 (Ireland)", "url": "https://www.crisistextline.org" },
+        { "region": "UK, Ireland", "name": "Samaritans", "contact": "Call 116 123", "url": "https://www.samaritans.org" },
+        { "region": "International", "name": "Find a Helpline", "contact": "Directory of crisis lines by country", "url": "https://findahelpline.com" }
+      ],
+      "continue_label": "I'd like to continue the questions",
+      "exit_label": "Stop here",
+      "footer": "If you're in immediate danger, call your local emergency number."
+    },
+    "severe_impairment": {
+      "title": "This is a lot to be carrying",
+      "body": "The level of disruption you've described is substantial. Whatever your trait scores say, that's the part worth acting on — a GP or a therapist is a reasonable next step, and you don't need to have a diagnosis in mind to make the appointment."
+    }
+  },
+
+  "braverman_comparison": {
+    "title": "If you came here from the Braverman test",
+    "body": [
+      "The Braverman Nature Assessment (from *The Edge Effect*, 2005) sorts people into dopamine, acetylcholine, GABA and serotonin \"natures\" and then scores four matching \"deficiencies\". It's 315 true/false questions, and it has no published evidence of reliability or validity.",
+      "**What we kept:** the split between how you generally are and how you are right now. That distinction is sound and matches the research — traits are stable and only weakly tied to brain chemistry, while current states are changeable and much more strongly tied to it.",
+      "**What we dropped:** the GABA and acetylcholine \"natures\", because no validated personality trait corresponds to either. The one brain-imaging finding linking the acetylcholine system to a trait points to anxiety-proneness, which is close to the opposite of the creative, romantic type that test describes.",
+      "**What we inverted:** the serotonin nature. That test describes serotonin types as impulsive thrill-seekers. The research points the other way — serotonin tracks *restraint*, and thrill-seeking tracks dopamine.",
+      "**What survived closest to intact:** the dopamine nature, which overlaps with what we call Drive. Even there the shape differs: dopamine is better described as driving exploration and effort than as producing a rational, tough-minded personality.",
+      "**The irony worth knowing:** the trait with the strongest dopamine evidence anywhere in this literature is unusual thinking — antipsychotics work by blocking dopamine receptors, and amphetamine can induce psychosis. That's a dimension the 2005 model never mentions.",
+      "**What we won't do:** recommend supplement doses based on questionnaire answers. No trial has ever linked a score on a test like this to who benefits from a supplement, and several of the ones commonly recommended interact dangerously with antidepressants."
+    ]
+  }
+}

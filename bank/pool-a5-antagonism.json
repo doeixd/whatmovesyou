@@ -1,0 +1,729 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-09-16T00:00:00Z",
+  "locale": "en-US",
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Spectra",
+      "question": "Who you are",
+      "order": 0,
+      "standalone": true
+    }
+  ],
+  "responseScales": [
+    {
+      "id": "agree5",
+      "type": "likert",
+      "allowNotApplicable": false,
+      "options": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "id": "a5_antagonism",
+      "block": "A",
+      "name": "Antagonism",
+      "poles": {
+        "low": "Accommodating",
+        "high": "Combative"
+      },
+      "definition": "Disposition to pursue one's own interest at others' expense, and to meet friction with force.",
+      "facets": [
+        {
+          "id": "a5_antagonism.retaliation",
+          "name": "Retaliation",
+          "definition": "Escalating when pushed."
+        },
+        {
+          "id": "a5_antagonism.callousness",
+          "name": "Callousness",
+          "definition": "Low weight given to others' costs."
+        },
+        {
+          "id": "a5_antagonism.suspicion",
+          "name": "Suspicion",
+          "definition": "Assuming bad intent by default."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "serotonin",
+          "grade": "moderate",
+          "mechanism": "Central serotonin function correlates inversely with aggression, anger and hostility (r ≈ -.12 overall, -.21 in pharmacological challenge studies), and tryptophan depletion raises aggression specifically in people already prone to it.",
+          "verification": "Group-level challenge studies only.",
+          "citations": [
+            "duke2013"
+          ]
+        },
+        {
+          "system": "androgen exposure (clinical magnitudes only)",
+          "grade": "moderate",
+          "mechanism": "Congenital adrenal hyperplasia and testosterone therapy shift aggression-related measures, but normal-range testosterone does not — a preregistered trial in 1,000 men found no effect on economic behavior.",
+          "verification": "Not applicable to normal variation. Included to state explicitly that the popular 'high testosterone' explanation is unsupported.",
+          "citations": [
+            "cah_meta2024",
+            "geniole2020"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "high",
+        "stateSensitivity": "low",
+        "copy": {
+          "costId": "copy_a5_cost",
+          "upsideId": "copy_a5_upside"
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "a5_ant_r01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.retaliation",
+      "text": "If someone pushes, I push back harder.",
+      "informantText": "If someone pushes, they push back harder.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 3.8,
+        "notes": "Standing up for oneself is valued in some contexts and censured in others, and the same behavior is sanctioned differently by gender. DIF-test by gender and locale. Per the construct sheet, the provocation framing matters: this is where the serotonin and androgen literatures actually find effects."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a5_ant_r02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.retaliation",
+      "text": "When someone's rude to me, I let it go.",
+      "informantText": "When someone's rude to them, they let it go.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 3.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a5_ant_r03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.retaliation",
+      "text": "I'd rather smooth over a conflict than win it.",
+      "informantText": "They'd rather smooth over a conflict than win it.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 4.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a5_ant_r04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.retaliation",
+      "text": "I keep an argument going until the other person backs down.",
+      "informantText": "They keep an argument going until the other person backs down.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a5_ant_r05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.retaliation",
+      "text": "I can walk away from a fight I would win.",
+      "informantText": "They can walk away from a fight they would win.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 4.1,
+        "notes": "High desirability — restraint under provocation is flattering. Retained because it is the cleanest low-pole statement of the facet; matched by r01 and r04."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a5_ant_r06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.retaliation",
+      "text": "I've kept a disagreement going long after it stopped being about the issue.",
+      "informantText": "They've kept a disagreement going long after it stopped being about the issue.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.9,
+        "notes": "Boundary with A2 persistence: rumination after conflict is inward, this is outward continuation. If it loads on A2 it belongs there."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "behavioral-evidence",
+        "boundary:a2"
+      ]
+    },
+    {
+      "id": "a5_ant_r07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.retaliation",
+      "text": "I've gone out of my way to get back at someone.",
+      "informantText": "They've gone out of their way to get back at someone.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a5_ant_r08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.retaliation",
+      "text": "Even when I've been badly treated, wanting to get even hasn't occurred to me.",
+      "informantText": "Even when they've been badly treated, wanting to get even doesn't seem to occur to them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 6.3,
+        "notes": "Extreme low-pole with high desirability — the worst combination in the bank. Lifetime framing makes it harder to endorse casually, which is the only mitigation available without informant data."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "state-resistant"
+      ]
+    },
+    {
+      "id": "a5_ant_c01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.callousness",
+      "text": "How my decisions land on other people is mostly an afterthought.",
+      "informantText": "How their decisions land on other people is mostly an afterthought.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.6,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a5_ant_c02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.callousness",
+      "text": "Other people's feelings weigh on me when I'm deciding something.",
+      "informantText": "Other people's feelings weigh on them when they're deciding something.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.7
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a5_ant_c03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.callousness",
+      "text": "I've been told I'm blunt to the point of unkindness.",
+      "informantText": "They've been told they're blunt to the point of unkindness.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "high",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.1,
+        "notes": "Directness norms vary sharply: the same speech is 'honest' in one culture and 'unkind' in another, and the item is anchored to others' reactions, which are themselves culturally set. Retained because other-observed framing is the only defence against low self-report validity on this scale, but it is the top DIF candidate in the bank and should be the first item cut if locale effects appear."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "other-observed",
+        "boundary:a7"
+      ]
+    },
+    {
+      "id": "a5_ant_c04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.callousness",
+      "text": "Seeing someone upset affects me.",
+      "informantText": "Seeing someone upset affects them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 3.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a5_ant_c05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.callousness",
+      "text": "If someone's struggling because of a choice they made, that's their problem.",
+      "informantText": "If someone's struggling because of a choice they made, they consider it that person's problem.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.2,
+        "notes": "Political loading: this tracks beliefs about personal responsibility as much as callousness. Watch for correlation with political self-placement if collected; rewrite toward a specific interpersonal instance if it behaves like an attitude item."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "confound:political"
+      ]
+    },
+    {
+      "id": "a5_ant_c06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.callousness",
+      "text": "I check whether I've hurt someone without meaning to.",
+      "informantText": "They check whether they've hurt someone without meaning to.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a5_ant_c07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.callousness",
+      "text": "I can hurt someone and not feel much about it afterwards.",
+      "informantText": "They can hurt someone and not seem to feel much about it afterwards.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.5,
+        "notes": "The highest-stigma item in the bank. Endorsement is rare and honest endorsement rarer still; expect a severe floor effect. Kept because without it the scale has no top end at all — but it must never be surfaced as a standalone statement about the user."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "high-stigma"
+      ]
+    },
+    {
+      "id": "a5_ant_c08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.callousness",
+      "text": "Causing someone real distress would stay with me for a long time.",
+      "informantText": "Causing someone real distress would stay with them for a long time.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 5.8
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a5_ant_s01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.suspicion",
+      "text": "I assume people are looking out for themselves first.",
+      "informantText": "They assume people are looking out for themselves first.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.0,
+        "notes": "Low generalised trust is rational in some environments and tracks national and neighbourhood context, not only disposition. DIF-test by locale."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "confound:environment"
+      ]
+    },
+    {
+      "id": "a5_ant_s02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.suspicion",
+      "text": "I give people the benefit of the doubt by default.",
+      "informantText": "They give people the benefit of the doubt by default.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a5_ant_s03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.suspicion",
+      "text": "When someone's friendly, I wonder what they're after.",
+      "informantText": "When someone's friendly, they wonder what that person is after.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a5_ant_s04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.suspicion",
+      "text": "Most people are basically straight with me.",
+      "informantText": "They believe most people are basically straight with them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "confound:environment"
+      ]
+    },
+    {
+      "id": "a5_ant_s05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.suspicion",
+      "text": "I've been proved right about people I was wary of.",
+      "informantText": "They've been proved right about people they were wary of.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.0,
+        "notes": "Justification item: it lets a suspicious respondent endorse the construct without conceding a flaw. This is the only lever available against low self-report validity on this scale when no informant data exists — worth watching whether it out-performs the plainer items. Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "technique:justification"
+      ]
+    },
+    {
+      "id": "a5_ant_s06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.suspicion",
+      "text": "I trust people until they give me a reason not to.",
+      "informantText": "They trust people until those people give them a reason not to.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 4.7
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a5_ant_s07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.suspicion",
+      "text": "I assume most people would take advantage of me if it cost them nothing.",
+      "informantText": "They assume most people would take advantage of them if it cost those people nothing.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a5_ant_s08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.suspicion",
+      "text": "It wouldn't occur to me that someone close to me might be using me.",
+      "informantText": "It wouldn't occur to them that someone close might be using them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "duke2013",
+      "title": "Revisiting the serotonin-aggression relation in humans: a meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3718863/",
+      "year": 2013,
+      "claim": "Central serotonin function correlates inversely with aggression, anger and hostility (r = -.12; -.21 in pharmacological challenge)."
+    },
+    {
+      "id": "cah_meta2024",
+      "title": "Prenatal androgen exposure and sex-typical play behaviour: a meta-analysis of classic congenital adrenal hyperplasia studies",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38447820/",
+      "year": 2024,
+      "claim": "Clinical-magnitude prenatal androgen exposure shifts behavior, including physical aggression and tender-mindedness."
+    },
+    {
+      "id": "geniole2020",
+      "title": "Is testosterone linked to human aggression? A meta-analytic examination of baseline, dynamic and manipulated testosterone",
+      "url": "https://www.researchgate.net/publication/337658220",
+      "year": 2020,
+      "claim": "Baseline testosterone correlates with aggression at only r ≈ .07, with no evidence of a causal effect from administration."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "bankVersion": "0.9.0",
+  "note": "v1 item selection, versioned 0.9.0 — deliberately pre-1.0: the bank is complete but unvalidated, and 1.0.0 is reserved for a version whose psychometrics have been checked against real data. 65 items chosen from the 194-item pool by judgment against blueprint cells — no IRT, because there is no pilot data and will not be. Rationale per scale in v1-selection.md.",
+  "selection": {
+    "a1_drive": [
+      "a1_drive_e01",
+      "a1_drive_e02",
+      "a1_drive_e07",
+      "a1_drive_e12",
+      "a1_drive_f02",
+      "a1_drive_f05",
+      "a1_drive_f06",
+      "a1_drive_f10"
+    ],
+    "a2_threat": [
+      "a2_threat_p01",
+      "a2_threat_p02",
+      "a2_threat_a02",
+      "a2_threat_t04",
+      "a2_threat_t05",
+      "a2_threat_p05",
+      "a2_threat_t07",
+      "a2_threat_a08"
+    ],
+    "a3_restraint": [
+      "a3_restraint_c02",
+      "a3_restraint_f02",
+      "a3_restraint_b01",
+      "a3_restraint_c06",
+      "a3_restraint_f05",
+      "a3_restraint_b05",
+      "a3_restraint_c08",
+      "a3_restraint_f07"
+    ],
+    "a4_sociality": [
+      "a4_soc_n01",
+      "a4_soc_r02",
+      "a4_soc_d02",
+      "a4_soc_n06",
+      "a4_soc_r05",
+      "a4_soc_d04",
+      "a4_soc_n07",
+      "a4_soc_r08"
+    ],
+    "a5_antagonism": [
+      "a5_ant_c01",
+      "a5_ant_r02",
+      "a5_ant_s02",
+      "a5_ant_r04",
+      "a5_ant_c04",
+      "a5_ant_s05",
+      "a5_ant_r07",
+      "a5_ant_s08"
+    ],
+    "a6_unusual": [
+      "a6_unu_p03",
+      "a6_unu_a02",
+      "a6_unu_f02",
+      "a6_unu_p07",
+      "a6_unu_a05",
+      "a6_unu_f05",
+      "a6_unu_a09",
+      "a6_unu_f07"
+    ],
+    "a7_systemizing": [
+      "a7_sys_s01",
+      "a7_sys_s06",
+      "a7_sys_l01",
+      "a7_sys_s05",
+      "a7_sys_c02",
+      "a7_sys_l04",
+      "a7_sys_c07",
+      "a7_sys_c08"
+    ],
+    "a8_episodicity": [
+      "a8_epi_01",
+      "a8_epi_07",
+      "a8_epi_10",
+      "a8_epi_12"
+    ],
+    "a9_impairment": [
+      "a9_imp_01",
+      "a9_imp_03",
+      "a9_imp_05",
+      "a9_imp_09",
+      "a9_imp_10"
+    ]
+  }
+}

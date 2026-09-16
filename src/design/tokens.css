@@ -1,0 +1,102 @@
+/* Design tokens. Single source of truth for the static pages and the app.
+ *
+ * Type scale: minor third (1.2) on mobile, major third (1.25) from 40rem,
+ * anchored at 17px body. Spacing is a 4px base in named steps so the vertical
+ * rhythm survives a font change.
+ */
+
+:root {
+  /* ── ink and ground ───────────────────────────────────────────────── */
+  --ink: #17181b;
+  --ink-soft: #4d5058;
+  --ink-faint: #767981;
+  --paper: #fbfaf8;
+  --card: #ffffff;
+  --rule: #e4e2dd;
+  --rule-strong: #cfccc5;
+
+  --accent: #2d5b4e;
+  --accent-ink: #ffffff;
+  --accent-soft: #e7efeb;
+
+  --warn: #7f4526;
+  --warn-soft: #f9efe8;
+
+  /* ── type ─────────────────────────────────────────────────────────── */
+  --serif: "Source Serif 4 Variable", ui-serif, Georgia, Charter, "Times New Roman", serif;
+  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --size-display: 1.95rem;
+  --size-title: 1.6rem;
+  --size-section: 1.25rem;
+  --size-sub: 1.05rem;
+  --size-lede: 1.15rem;
+  --size-body: 1rem;
+  --size-small: 0.875rem;
+  --size-label: 0.75rem;
+
+  --leading-display: 1.12;
+  --leading-title: 1.2;
+  --leading-heading: 1.28;
+  --leading-lede: 1.5;
+  --leading-body: 1.65;
+
+  --tracking-display: -0.02em;
+  --tracking-title: -0.015em;
+  --tracking-label: 0.08em;
+
+  /* ── spacing (4px base) ───────────────────────────────────────────── */
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s6: 1.5rem;
+  --s8: 2rem;
+  --s12: 3rem;
+  --s16: 4rem;
+  --s24: 6rem;
+
+  /* ── other ────────────────────────────────────────────────────────── */
+  --measure: 34rem; /* ~62ch at body size */
+  --measure-wide: 46rem;
+  --radius: 10px;
+  --radius-sm: 5px;
+  --tap: 44px;
+
+  color-scheme: light;
+}
+
+@media (min-width: 40rem) {
+  :root {
+    --size-display: 2.6rem;
+    --size-title: 1.9rem;
+    --size-section: 1.4rem;
+    --size-sub: 1.1rem;
+    --size-lede: 1.25rem;
+    --size-body: 1.0625rem;
+    --size-small: 0.9rem;
+    --size-label: 0.78rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #eeece8;
+    --ink-soft: #b3b6bd;
+    --ink-faint: #85888f;
+    --paper: #131419;
+    --card: #1a1c22;
+    --rule: #2b2e36;
+    --rule-strong: #3c404a;
+
+    --accent: #8cc0ae;
+    --accent-ink: #10201b;
+    --accent-soft: #1d2b26;
+
+    --warn: #e6a878;
+    --warn-soft: #2b2119;
+
+    color-scheme: dark;
+  }
+}

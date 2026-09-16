@@ -1,0 +1,43 @@
+{
+  "name": "braverman",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "data": "node tools/build-data.mjs && node tools/build-references.mjs && node tools/build-content.mjs",
+    "dev": "pnpm run data && vp dev",
+    "build": "pnpm run data && tsc --noEmit && vp build",
+    "preview": "vp preview",
+    "test": "vp test --run",
+    "verify": "python tools/check-pool.py bank/pool-a1-drive.json bank/pool-a2-threat.json bank/pool-a3-restraint.json bank/pool-a4-sociality.json bank/pool-a5-antagonism.json bank/pool-a6-unusual.json bank/pool-a7-systemizing.json bank/pool-a8-episodicity.json bank/pool-a9-impairment.json bank/v1.json && python tools/check-copy.py copy/deck.en-US.json bank/v1.json && node tools/check-bank.mjs",
+    "prepare": "vp config",
+    "release": "pnpm run build && node tools/check-release.mjs dist"
+  },
+  "devDependencies": {
+    "@fontsource-variable/source-serif-4": "^5.3.0",
+    "jsdom": "^30.0.1",
+    "marked": "^18.0.13",
+    "sharp": "^0.35.4",
+    "typescript": "~6.0.2",
+    "vite": "catalog:",
+    "vite-plugin-solid": "3.0.0-next.27",
+    "vite-plus": "catalog:",
+    "vitest": "^4.1.11"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.4.2",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "24.18.0",
+      "onFail": "download"
+    }
+  },
+  "dependencies": {
+    "@solidjs/web": "2.0.0-rc.8",
+    "solid-js": "2.0.0-rc.8"
+  }
+}

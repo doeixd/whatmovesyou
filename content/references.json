@@ -1,0 +1,1825 @@
+{
+  "generated": "2026-09-16",
+  "grouped": [
+    {
+      "topic": "The Braverman test",
+      "entries": [
+        {
+          "id": "braverman-assessment",
+          "url": "https://ancronmedical.com/wp-content/uploads/2015/04/Braverman-Assessment.pdf",
+          "title": "Braverman Assessment Part 1 & 2",
+          "claim": "Braverman Assessment Part 1 & 2",
+          "topics": [
+            "The Braverman test"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "README.md"
+          ]
+        },
+        {
+          "id": "bravermantest-com",
+          "url": "https://bravermantest.com/frequently-asked-questions/",
+          "title": "Bravermantest.com FAQ (tie-break, 35+ dominance, 10–15 gap)",
+          "claim": "Bravermantest.com FAQ (tie-break, 35+ dominance, 10–15 gap)",
+          "topics": [
+            "The Braverman test"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "README.md"
+          ]
+        },
+        {
+          "id": "bravermantest-net",
+          "url": "https://bravermantest.net/",
+          "title": "Bravermantest.net",
+          "claim": "Bravermantest.net",
+          "topics": [
+            "The Braverman test"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "README.md"
+          ]
+        },
+        {
+          "id": "holistic-help",
+          "url": "https://www.holistichelp.net/blog/neurotransmitter-testing-accuracy-and-validity/",
+          "title": "Holistic Help, neurotransmitter testing validity",
+          "claim": "Holistic Help, neurotransmitter testing validity",
+          "topics": [
+            "The Braverman test"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "README.md"
+          ]
+        },
+        {
+          "id": "outliyr-overview",
+          "url": "https://outliyr.com/braverman-test",
+          "title": "Outliyr overview",
+          "claim": "Outliyr overview",
+          "topics": [
+            "The Braverman test"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "README.md"
+          ]
+        },
+        {
+          "id": "part-defining",
+          "url": "https://www.drhannetjie.co.za/assets/braverman-prt-2---deficiencies3.pdf",
+          "title": "Part 2 Defining your Deficiencies",
+          "claim": "Part 2 Defining your Deficiencies",
+          "topics": [
+            "The Braverman test"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "README.md"
+          ]
+        },
+        {
+          "id": "results-interpretation",
+          "url": "https://drtimkelly.net/fileupload/bravermantestresultsinfo.pdf",
+          "title": "Results/interpretation and supplement tables",
+          "claim": "Results/interpretation and supplement tables",
+          "topics": [
+            "The Braverman test"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "README.md"
+          ]
+        },
+        {
+          "id": "stars-braverman",
+          "url": "http://starsofwellness.com/pdfs/STARS-Braverman-Assessment.pdf",
+          "title": "STARS Braverman Assessment",
+          "claim": "STARS Braverman Assessment",
+          "topics": [
+            "The Braverman test"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Neurotransmitters and personality",
+      "entries": [
+        {
+          "id": "individual-variability-2026",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12799681/",
+          "title": "Individual variability in receptor density (2026)",
+          "claim": "Individual variability in receptor density (2026)",
+          "year": 2026,
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Receptor atlases",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "2024-personality",
+          "url": "https://www.nature.com/articles/s41562-024-01951-3",
+          "title": "2024 personality GWAS (Nature Human Behaviour)",
+          "claim": "2024 personality GWAS (Nature Human Behaviour)",
+          "year": 2024,
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Theory and reviews",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "hogsted-2023",
+          "url": "https://www.biorxiv.org/content/10.1101/2023.08.24.554575",
+          "title": "Høgsted et al. 2023, 5-HT2A and neuroticism replication",
+          "claim": "Høgsted et al. 2023, 5-HT2A and neuroticism replication",
+          "year": 2023,
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Serotonin",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "hansen-2022",
+          "url": "https://www.nature.com/articles/s41593-022-01186-3",
+          "title": "Hansen et al. 2022, receptor atlas",
+          "claim": "Hansen et al. 2022, receptor atlas",
+          "year": 2022,
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Receptor atlases",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "-opioid-receptors-2020",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S2451902220303177",
+          "title": "μ-opioid receptors and attachment (2020)",
+          "claim": "μ-opioid receptors and attachment (2020)",
+          "year": 2020,
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Opioids and oxytocin",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "castrellon-2019",
+          "url": "https://www.jneurosci.org/content/39/2/321",
+          "title": "Castrellon et al. 2019, dopamine and discounting in clinical groups but not healthy adults",
+          "claim": "Castrellon et al. 2019, dopamine and discounting in clinical groups but not healthy adults",
+          "year": 2019,
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Dopamine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "gwas-personality-2016",
+          "url": "https://www.nature.com/articles/ng.3736",
+          "title": "GWAS personality six loci (Nature Genetics 2016)",
+          "claim": "GWAS personality six loci (Nature Genetics 2016)",
+          "year": 2016,
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Theory and reviews",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "-opioid-receptors-2015",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26046928/",
+          "title": "μ-opioid receptors and attachment (2015)",
+          "claim": "μ-opioid receptors and attachment (2015)",
+          "year": 2015,
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Opioids and oxytocin",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "deyoung-2013",
+          "url": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2013.00762/full",
+          "title": "DeYoung 2013, dopamine and personality",
+          "claim": "DeYoung, 2013, \"The neuromodulator of exploration\" (Frontiers in Human Neuroscience)",
+          "year": 2013,
+          "topics": [
+            "Neurotransmitters and personality",
+            "Frameworks that came before"
+          ],
+          "subTopic": "Theory and reviews",
+          "citedIn": [
+            "neurotransmitters-and-personality.md",
+            "related-research.md"
+          ]
+        },
+        {
+          "id": "munafo-2008",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17574217/",
+          "title": "Munafò et al. 2008, DRD4 meta-analysis",
+          "claim": "Munafò et al., 2008, DRD4 meta-analysis",
+          "year": 2008,
+          "topics": [
+            "Neurotransmitters and personality",
+            "Frameworks that came before"
+          ],
+          "subTopic": "Dopamine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md",
+            "related-research.md"
+          ]
+        },
+        {
+          "id": "sen-2004",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/ajmg.b.20158",
+          "title": "Sen et al. 2004, 5-HTTLPR meta-analysis",
+          "claim": "Sen et al. 2004, 5-HTTLPR meta-analysis",
+          "year": 2004,
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Serotonin",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "leyton-2002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12464459/",
+          "title": "Leyton et al. 2002, amphetamine dopamine release and novelty seeking",
+          "claim": "Leyton et al. 2002, amphetamine dopamine release and novelty seeking",
+          "year": 2002,
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Dopamine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "5-ht1a-self-transcendence",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6241390/",
+          "title": "5-HT1A and self-transcendence, replication",
+          "claim": "5-HT1A and self-transcendence, replication",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Serotonin",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "5-ht4-receptor",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12244141/",
+          "title": "5-HT4 receptor and neuroticism, null",
+          "claim": "5-HT4 receptor and neuroticism, null",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Serotonin",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "acc-glutamate",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925492714000560",
+          "title": "ACC glutamate and trait anxiety",
+          "claim": "ACC glutamate and trait anxiety",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "GABA, glutamate, acetylcholine, norepinephrine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "cimbi-database",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25891375/",
+          "title": "Cimbi database",
+          "claim": "Cimbi database",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Serotonin",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "receptor-social",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5854259/",
+          "title": "D1 receptor and social behavior, failed replication",
+          "claim": "D1 receptor and social behavior, failed replication",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Dopamine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "receptors-impulsivity",
+          "url": "https://www.jneurosci.org/content/29/47/14734",
+          "title": "D2/3 receptors and impulsivity in methamphetamine dependence",
+          "claim": "D2/3 receptors and impulsivity in methamphetamine dependence",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Dopamine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "receptors-traits",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26944295/",
+          "title": "D2/3 receptors and traits in striatal subregions",
+          "claim": "D2/3 receptors and traits in striatal subregions",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Dopamine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "mrs-glutamate",
+          "url": "https://link.springer.com/article/10.1007/s11065-015-9295-8",
+          "title": "MRS, glutamate/GABA in neuropsychology",
+          "claim": "MRS, glutamate/GABA in neuropsychology",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "GABA, glutamate, acetylcholine, norepinephrine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "neuroticism-5-ht1a",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26337006/",
+          "title": "Neuroticism and 5-HT1A receptors",
+          "claim": "Neuroticism and 5-HT1A receptors",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Serotonin",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "neurotransmitter-gene",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7825153/",
+          "title": "Neurotransmitter gene polymorphisms and personality, review of single-gene studies and GWAS",
+          "claim": "Neurotransmitter gene polymorphisms and personality, review of single-gene studies and GWAS",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Theory and reviews",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "nicotinic-receptors",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3851586/",
+          "title": "Nicotinic receptors and harm avoidance",
+          "claim": "Nicotinic receptors and harm avoidance",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "GABA, glutamate, acetylcholine, norepinephrine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "norepinephrine-personality",
+          "url": "https://www.explorationpub.com/Journals/ent/Article/1004155",
+          "title": "Norepinephrine and personality (theoretical)",
+          "claim": "Norepinephrine and personality (theoretical)",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "GABA, glutamate, acetylcholine, norepinephrine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "opioid-system",
+          "url": "https://bpspubs.onlinelibrary.wiley.com/doi/10.1111/bph.13812",
+          "title": "Opioid system and human emotions (review)",
+          "claim": "Opioid system and human emotions (review)",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Opioids and oxytocin",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "prefrontal-glutamine",
+          "url": "https://www.nature.com/articles/s41398-019-0500-z",
+          "title": "Prefrontal glutamine and neuroticism",
+          "claim": "Prefrontal glutamine and neuroticism",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "GABA, glutamate, acetylcholine, norepinephrine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "receptor-atlas",
+          "url": "https://github.com/netneurolab/hansen_receptors",
+          "title": "Receptor atlas data and code",
+          "claim": "Receptor atlas data and code",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Receptor atlases",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "social-anxiety",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12295675/",
+          "title": "Social anxiety disorder, GABA/Glx pilot",
+          "claim": "Social anxiety disorder, GABA/Glx pilot",
+          "topics": [
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "GABA, glutamate, acetylcholine, norepinephrine",
+          "citedIn": [
+            "neurotransmitters-and-personality.md"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Drugs, hormones and behaviour",
+      "entries": [
+        {
+          "id": "geniole-2020",
+          "url": "https://www.researchgate.net/publication/337658220",
+          "title": "Geniole et al. 2020, testosterone and aggression meta-analysis",
+          "claim": "Geniole et al. 2020, testosterone and aggression meta-analysis",
+          "year": 2020,
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Testosterone and the dual-hormone hypothesis",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "stern-2020",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32130075/",
+          "title": "Stern et al. 2020, ovulatory shifts in preferences for men's behaviors",
+          "claim": "Stern et al. 2020, ovulatory shifts in preferences for men's behaviors",
+          "year": 2020,
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Ovarian hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "dekkers-2019",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30529754/",
+          "title": "Dekkers et al. 2019, dual-hormone meta-analysis",
+          "claim": "Dekkers et al. 2019, dual-hormone meta-analysis",
+          "year": 2019,
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Testosterone and the dual-hormone hypothesis",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "erritzoe-2018",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6220878/",
+          "title": "Erritzoe et al. 2018, psilocybin therapy and personality",
+          "claim": "Erritzoe et al. 2018, psilocybin therapy and personality",
+          "year": 2018,
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Serotonin and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "pmdd-ovarian-2017",
+          "url": "https://psychiatryonline.org/doi/10.1176/appi.ajp.2017.16101113",
+          "title": "PMDD, ovarian suppression and add-back (AJP 2017)",
+          "claim": "PMDD, ovarian suppression and add-back (AJP 2017)",
+          "year": 2017,
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Ovarian hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "ranehill-2015",
+          "url": "https://www.researchgate.net/publication/274093025",
+          "title": "Ranehill et al. 2015, power posing replication",
+          "claim": "Ranehill et al. 2015, power posing replication",
+          "year": 2015,
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Testosterone and the dual-hormone hypothesis",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "duke-2013",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3718863/",
+          "title": "Duke et al. 2013, serotonin-aggression meta-analysis (175 samples)",
+          "claim": "Duke et al. 2013, serotonin-aggression meta-analysis (175 samples)",
+          "year": 2013,
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Serotonin and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "treadway-2012",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3391699/",
+          "title": "Treadway et al. 2012, dopamine and effort",
+          "claim": "Treadway et al. 2012, dopamine and effort",
+          "year": 2012,
+          "topics": [
+            "Drugs, hormones and behaviour",
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Dopamine and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md",
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "maclean-2011",
+          "url": "https://journals.sagepub.com/doi/abs/10.1177/0269881111420188",
+          "title": "MacLean et al. 2011, psilocybin and openness",
+          "claim": "MacLean et al. 2011, psilocybin and openness",
+          "year": 2011,
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Serotonin and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "tang-2009",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2799251",
+          "title": "Tang et al. 2009, paroxetine and personality",
+          "claim": "Tang et al. 2009, paroxetine and personality change",
+          "year": 2009,
+          "topics": [
+            "Drugs, hormones and behaviour",
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Serotonin and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md",
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "acute-tryptophan",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3303767/",
+          "title": "Acute tryptophan depletion and reactive aggression",
+          "claim": "Acute tryptophan depletion and reactive aggression",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Serotonin and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "cortisol-motivated",
+          "url": "https://link.springer.com/article/10.1007/s00213-009-1725-y",
+          "title": "Cortisol and motivated decision-making",
+          "claim": "Cortisol and motivated decision-making",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Cortisol and noradrenaline",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "dominion-impulse",
+          "url": "https://www.medscape.com/viewarticle/721768",
+          "title": "DOMINION study, impulse control disorders in Parkinson's",
+          "claim": "DOMINION study, impulse control disorders in Parkinson's",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Dopamine and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "dopamine-agonists",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13444872/",
+          "title": "Dopamine agonists and ICDs",
+          "claim": "Dopamine agonists and ICDs",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Dopamine and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "exogenous-testosterone",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5840258/",
+          "title": "Exogenous testosterone and reactivity to provocation",
+          "claim": "Exogenous testosterone and reactivity to provocation",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Testosterone and the dual-hormone hypothesis",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "ghrelin-negative",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11039644/",
+          "title": "Ghrelin and negative feedback sensitivity (RCT)",
+          "claim": "Ghrelin and negative feedback sensitivity (RCT)",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Thyroid, appetite and metabolic hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "ghrelin-increases",
+          "url": "https://journals.physiology.org/doi/full/10.1152/ajpregu.00488.2011",
+          "title": "Ghrelin increases motivation to eat without changing palatability",
+          "claim": "Ghrelin increases motivation to eat without changing palatability",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Thyroid, appetite and metabolic hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "ghrelin-leptin",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1053811921006509",
+          "title": "Ghrelin, leptin and neural food-cue reactivity",
+          "claim": "Ghrelin, leptin and neural food-cue reactivity",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Thyroid, appetite and metabolic hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "ghrelin-glp-1",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8002922/",
+          "title": "Ghrelin/GLP-1 and food reward",
+          "claim": "Ghrelin/GLP-1 and food reward",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Thyroid, appetite and metabolic hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "hydrocortisone-forgetting",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9433412/",
+          "title": "Hydrocortisone and forgetting of a trauma-like event",
+          "claim": "Hydrocortisone and forgetting of a trauma-like event",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Cortisol and noradrenaline",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "hydrocortisone-metacognition",
+          "url": "https://www.nature.com/articles/s41598-020-71061-3",
+          "title": "Hydrocortisone and metacognition",
+          "claim": "Hydrocortisone and metacognition",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Cortisol and noradrenaline",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "icds-parkinson",
+          "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2021.635494/full",
+          "title": "ICDs in Parkinson's, epidemiology and mechanisms",
+          "claim": "ICDs in Parkinson's, epidemiology and mechanisms",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Dopamine and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "longitudinal-evaluation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33385373/",
+          "title": "Longitudinal evaluation of ovulatory cycle shifts",
+          "claim": "Longitudinal evaluation of ovulatory cycle shifts",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Ovarian hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "noradrenaline-cortisol",
+          "url": "https://link.springer.com/article/10.1007/s00213-026-07136-2",
+          "title": "Noradrenaline vs cortisol on working memory and risk",
+          "claim": "Noradrenaline vs cortisol on working memory and risk",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Cortisol and noradrenaline",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "oxytocin-social",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29032324/",
+          "title": "Oxytocin and social cognition, meta-analysis",
+          "claim": "Oxytocin and social cognition, meta-analysis",
+          "topics": [
+            "Drugs, hormones and behaviour",
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Oxytocin",
+          "citedIn": [
+            "chemistry-and-behavior.md",
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "oxytocin-trust",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0010945226000808",
+          "title": "Oxytocin and trust, registered report with equivalence testing",
+          "claim": "Oxytocin and trust, registered report with equivalence testing",
+          "topics": [
+            "Drugs, hormones and behaviour",
+            "Neurotransmitters and personality"
+          ],
+          "subTopic": "Oxytocin",
+          "citedIn": [
+            "chemistry-and-behavior.md",
+            "neurotransmitters-and-personality.md"
+          ]
+        },
+        {
+          "id": "psilocybin-escitalopram",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10692311/",
+          "title": "Psilocybin vs escitalopram, personality change",
+          "claim": "Psilocybin vs escitalopram, personality change",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Serotonin and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "psilocybin-assisted-therapy",
+          "url": "https://psychiatryonline.org/ajp/doi/10.1176/appi.ajp.20230887",
+          "title": "Psilocybin-assisted therapy in alcohol use disorder, personality",
+          "claim": "Psilocybin-assisted therapy in alcohol use disorder, personality",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Serotonin and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "replication-extension",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41030005/",
+          "title": "Replication and extension of differential ovarian-steroid effects",
+          "claim": "Replication and extension of differential ovarian-steroid effects",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Ovarian hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "semaglutide-alcohol",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39937469/",
+          "title": "Semaglutide for alcohol use disorder (phase 2 RCT)",
+          "claim": "Semaglutide for alcohol use disorder (phase 2 RCT)",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Thyroid, appetite and metabolic hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "semaglutide-aud",
+          "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00305-3/fulltext",
+          "title": "Semaglutide in AUD with obesity (Lancet RCT)",
+          "claim": "Semaglutide in AUD with obesity (Lancet RCT)",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Thyroid, appetite and metabolic hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "single-dose-testosterone",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0018506X24001843",
+          "title": "Single-dose testosterone RCTs, competition and risk",
+          "claim": "Single-dose testosterone RCTs, competition and risk",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Testosterone and the dual-hormone hypothesis",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "skovlund-hormonal",
+          "url": "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2552796",
+          "title": "Skovlund et al., hormonal contraception and depression (JAMA Psychiatry)",
+          "claim": "Skovlund et al., hormonal contraception and depression (JAMA Psychiatry)",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Ovarian hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "steroid-metabolome",
+          "url": "https://www.nature.com/articles/tp2017146",
+          "title": "Steroid metabolome in PMDD",
+          "claim": "Steroid metabolome in PMDD",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Ovarian hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "subclinical-hypothyroidism",
+          "url": "https://www.nature.com/articles/s41398-018-0283-7",
+          "title": "Subclinical hypothyroidism and depression meta-analysis",
+          "claim": "Subclinical hypothyroidism and depression meta-analysis",
+          "topics": [
+            "Drugs, hormones and behaviour",
+            "Setpoints you can actually check"
+          ],
+          "subTopic": "Thyroid, appetite and metabolic hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md",
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "testosterone-risk",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0149763426000308",
+          "title": "Testosterone and risk aversion, meta-analytic review",
+          "claim": "Testosterone and risk aversion, meta-analytic review",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Testosterone and the dual-hormone hypothesis",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "tryptophan-depletion",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3368260/",
+          "title": "Tryptophan depletion and prefrontal-amygdala connectivity",
+          "claim": "Tryptophan depletion and prefrontal-amygdala connectivity",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Serotonin and behavior",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        },
+        {
+          "id": "updated-meta-analysis",
+          "url": "https://link.springer.com/article/10.1186/s12888-018-2006-2",
+          "title": "Updated meta-analysis",
+          "claim": "Updated meta-analysis",
+          "topics": [
+            "Drugs, hormones and behaviour"
+          ],
+          "subTopic": "Thyroid, appetite and metabolic hormones",
+          "citedIn": [
+            "chemistry-and-behavior.md"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Setpoints you can actually check",
+      "entries": [
+        {
+          "id": "dopamine-hypothesis-2024",
+          "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1492126/full",
+          "title": "Dopamine hypothesis for ADHD, 2024 evaluation",
+          "claim": "Dopamine hypothesis for ADHD, 2024 evaluation",
+          "year": 2024,
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "b12-cognition",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11628180/",
+          "title": "B12 and cognition/depression meta-analysis",
+          "claim": "B12 and cognition/depression meta-analysis",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "b12-deficiency",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12143585/",
+          "title": "B12 deficiency, neurological sequelae and trial evidence",
+          "claim": "B12 deficiency, neurological sequelae and trial evidence",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "cah-sex-typical",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38447820/",
+          "title": "CAH and sex-typical play behavior, meta-analysis",
+          "claim": "CAH and sex-typical play behavior, meta-analysis",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "cyp1a2-caffeine",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7295849/",
+          "title": "CYP1A2 and caffeine effects on cognition",
+          "claim": "CYP1A2 and caffeine effects on cognition",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "cyp1a2-genotype",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11356906/",
+          "title": "CYP1A2 genotype, ergogenic effects and mood",
+          "claim": "CYP1A2 genotype, ergogenic effects and mood",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "ferric-carboxymaltose",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5655783/",
+          "title": "Ferric carboxymaltose in non-anemic iron deficiency with RLS (RCT)",
+          "claim": "Ferric carboxymaltose in non-anemic iron deficiency with RLS (RCT)",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "hsp-scale",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/19012276.2022.2093778",
+          "title": "HSP scale factor structure and personality",
+          "claim": "HSP scale factor structure and personality",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "iron-supplementation",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7284357/",
+          "title": "Iron supplementation, fatigue and RLS in blood donors",
+          "claim": "Iron supplementation, fatigue and RLS in blood donors",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "mctq-wrist",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5971234/",
+          "title": "MCTQ vs wrist actigraphy",
+          "claim": "MCTQ vs wrist actigraphy",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "mctq-meq",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8293076/",
+          "title": "MCTQ/MEQ vs DLMO concordance",
+          "claim": "MCTQ/MEQ vs DLMO concordance",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "meq-mctq",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26243627/",
+          "title": "MEQ/MCTQ compared to DLMO",
+          "claim": "MEQ/MCTQ compared to DLMO",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "personality-cah",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3296092/",
+          "title": "Personality and CAH",
+          "claim": "Personality and CAH",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "self-report-observed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8709585/",
+          "title": "Self-report vs observed alcohol flushing and ALDH2 genotype",
+          "claim": "Self-report vs observed alcohol flushing and ALDH2 genotype",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "sps-reactivity",
+          "url": "https://journals.sagepub.com/doi/10.1177/19485506221119357",
+          "title": "SPS and reactivity to daily events",
+          "claim": "SPS and reactivity to daily events",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "sps-health",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666518224000196",
+          "title": "SPS, health, and differential susceptibility",
+          "claim": "SPS, health, and differential susceptibility",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "striatal-dat-2",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22294258/",
+          "title": "Striatal DAT in ADHD, meta-analysis (medication confound)",
+          "claim": "Striatal DAT in ADHD, meta-analysis (medication confound)",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "testosterone-therapy",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0018506X20302385",
+          "title": "Testosterone therapy and aggression constructs in trans men, systematic review",
+          "claim": "Testosterone therapy and aggression constructs in trans men, systematic review",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "testosterone-therapy-2",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165178118312472",
+          "title": "Testosterone therapy and personality traits in trans men",
+          "claim": "Testosterone therapy and personality traits in trans men",
+          "topics": [
+            "Setpoints you can actually check"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md"
+          ]
+        },
+        {
+          "id": "validation-alcohol",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29205834/",
+          "title": "Validation of alcohol flushing questionnaires",
+          "claim": "Alcohol flushing questionnaire validation (sensitivity/specificity)",
+          "topics": [
+            "Setpoints you can actually check",
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-03-setpoints.md",
+            "PLAN-notes-05-gaps.md"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Traits that run into clinical territory",
+      "entries": [
+        {
+          "id": "haslam-2003",
+          "url": "https://doi.org/10.1111/j.1440-1614.2003.01258.x",
+          "title": "Haslam 2003, categorical vs dimensional models",
+          "claim": "Haslam 2003, categorical vs dimensional models",
+          "year": 2003,
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "affective-temperaments",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10228355/",
+          "title": "Affective temperaments in bipolar disorder (TEMPS)",
+          "claim": "Affective temperaments in bipolar disorder (TEMPS)",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "factor-models",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31464106/",
+          "title": "AQ factor models, two large samples",
+          "claim": "AQ factor models, two large samples",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "factor-structure",
+          "url": "https://link.springer.com/article/10.1007/s10803-008-0538-x",
+          "title": "AQ factor structure and criterion validity",
+          "claim": "AQ factor structure and criterion validity",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "autism-traits",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0891422222001913",
+          "title": "Autism traits dimensionality in the general population",
+          "claim": "Autism traits dimensionality in the general population",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "broader-autism",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2913943/",
+          "title": "Broader autism phenotype via AQ",
+          "claim": "Broader autism phenotype via AQ",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "continuum-model",
+          "url": "https://www.psicothema.com/pdf/4356.pdf",
+          "title": "Continuum model of the psychosis phenotype",
+          "claim": "Continuum model of the psychosis phenotype",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "haslam-taxometric",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21939592/",
+          "title": "Haslam et al., taxometric meta-analysis (dimensions over categories)",
+          "claim": "Haslam et al., taxometric meta-analysis (dimensions over categories)",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "hitop-neurobiological",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11529694/",
+          "title": "HiTOP and neurobiological substrates, systematic review",
+          "claim": "HiTOP and neurobiological substrates, systematic review",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "hitop-dimensional",
+          "url": "https://www.apa.org/pubs/journals/features/abn-abn0000258.pdf",
+          "title": "HiTOP dimensional alternative (APA)",
+          "claim": "HiTOP dimensional alternative (APA)",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "hitop-structure",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42158975/",
+          "title": "HiTOP structure and functional outcomes",
+          "claim": "HiTOP structure and functional outcomes",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "hitop-quantitative",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33577350/",
+          "title": "HiTOP: a quantitative nosology based on consensus of evidence",
+          "claim": "HiTOP: a quantitative nosology based on consensus of evidence",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "hps-temperament",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9564146/",
+          "title": "HPS and temperament scales, 23-year follow-up",
+          "claim": "HPS and temperament scales, 23-year follow-up",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "hps-short",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S019188691500166X",
+          "title": "HPS short form psychometrics",
+          "claim": "HPS short form psychometrics",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "o-life-psychotogenic",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7582076/",
+          "title": "O-LIFE and psychotogenic experiences",
+          "claim": "O-LIFE and psychotogenic experiences",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "pid-5-structure",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8033014/",
+          "title": "PID-5 structure and trait continuity",
+          "claim": "PID-5 structure and trait continuity",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "pid-5-bf-apa",
+          "url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf",
+          "title": "PID-5-BF (APA PDF)",
+          "claim": "PID-5-BF (APA PDF)",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "pid-5-sf-psychometrics",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5142430/",
+          "title": "PID-5-SF psychometrics and Big Five associations",
+          "claim": "PID-5-SF psychometrics and Big Five associations",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "schizotypy-predictive",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11879525/",
+          "title": "Schizotypy predictive validity, 8-year multiwave study",
+          "claim": "Schizotypy predictive validity, 8-year multiwave study",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        },
+        {
+          "id": "type-coronary",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smi.2460070407",
+          "title": "Type A and coronary heart disease, the hostility factor",
+          "claim": "Type A and coronary heart disease, the hostility factor",
+          "topics": [
+            "Traits that run into clinical territory"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-04-clinical-spectra.md"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Frameworks that came before",
+      "entries": [
+        {
+          "id": "fisher-2015",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2015.01098/full",
+          "title": "Fisher et al., 2015, \"Four broad temperament dimensions\" (Frontiers in Psychology)",
+          "claim": "Fisher et al., 2015, \"Four broad temperament dimensions\" (Frontiers in Psychology)",
+          "year": 2015,
+          "topics": [
+            "Frameworks that came before"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "related-research.md"
+          ]
+        },
+        {
+          "id": "brown-2013",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3827248/",
+          "title": "Brown et al., 2013, \"Neural Correlates of Four Broad Temperament Dimensions\" (PLOS One)",
+          "claim": "Brown et al., 2013, \"Neural Correlates of Four Broad Temperament Dimensions\" (PLOS One)",
+          "year": 2013,
+          "topics": [
+            "Frameworks that came before"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "related-research.md"
+          ]
+        },
+        {
+          "id": "braverman-blum-2003",
+          "url": "https://journals.sagepub.com/doi/abs/10.1177/155005940303400306",
+          "title": "Braverman & Blum, 2003, P300 latency",
+          "claim": "Braverman & Blum, 2003, P300 latency",
+          "year": 2003,
+          "topics": [
+            "Frameworks that came before"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "related-research.md"
+          ]
+        },
+        {
+          "id": "blum-braverman",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11280926/",
+          "title": "Blum, Braverman et al., Reward Deficiency Syndrome",
+          "claim": "Blum, Braverman et al., Reward Deficiency Syndrome",
+          "topics": [
+            "Frameworks that came before"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "related-research.md"
+          ]
+        },
+        {
+          "id": "cloninger-psychobiological",
+          "url": "https://dictionary.apa.org/cloningers-psychobiological-model-of-personality",
+          "title": "Cloninger's psychobiological model (APA Dictionary)",
+          "claim": "Cloninger's psychobiological model (APA Dictionary)",
+          "topics": [
+            "Frameworks that came before"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "related-research.md"
+          ]
+        },
+        {
+          "id": "dopamine-novelty",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0191886901002057",
+          "title": "Dopamine and novelty seeking, neuroendocrine study",
+          "claim": "Dopamine and novelty seeking, neuroendocrine study",
+          "topics": [
+            "Frameworks that came before"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "related-research.md"
+          ]
+        },
+        {
+          "id": "gwas-cloninger",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2963646/",
+          "title": "GWAS of Cloninger temperament scales",
+          "claim": "GWAS of Cloninger temperament scales",
+          "topics": [
+            "Frameworks that came before"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "related-research.md"
+          ]
+        },
+        {
+          "id": "striatal-dat",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11557681/",
+          "title": "Striatal DAT asymmetry and TCI traits",
+          "claim": "Striatal DAT asymmetry and TCI traits",
+          "topics": [
+            "Frameworks that came before"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "related-research.md"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Measurement and its limits",
+      "entries": [
+        {
+          "id": "anti-inflammatory-treatment",
+          "url": "https://psychiatryonline.org/doi/10.1176/appi.ajp.20241115",
+          "title": "Anti-inflammatory treatment in depressed patients with elevated inflammation (AJP meta-analysis)",
+          "claim": "Anti-inflammatory treatment in depressed patients with elevated inflammation (AJP meta-analysis)",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        },
+        {
+          "id": "decoupling-personality",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6782051/",
+          "title": "Decoupling personality and acute psychiatric symptoms",
+          "claim": "Decoupling personality and acute psychiatric symptoms",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        },
+        {
+          "id": "inflammatory-markers",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13203315/",
+          "title": "Inflammatory markers as predictors of antidepressant response (meta-analysis)",
+          "claim": "Inflammatory markers as predictors of antidepressant response (meta-analysis)",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        },
+        {
+          "id": "influence-depressive",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12113925/",
+          "title": "Influence of depressive state features on trait measurement",
+          "claim": "Influence of depressive state features on trait measurement",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        },
+        {
+          "id": "informant-self",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4753771/",
+          "title": "Informant vs self report internal consistency",
+          "claim": "Informant vs self report internal consistency",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        },
+        {
+          "id": "osa-depression",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5381386/",
+          "title": "OSA, depression and cognitive impairment",
+          "claim": "OSA, depression and cognitive impairment",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        },
+        {
+          "id": "self-other-agreement",
+          "url": "https://journals.sagepub.com/doi/abs/10.1177/0956797618810000",
+          "title": "Self-other agreement meta-analysis (N≈33,000)",
+          "claim": "Self-other agreement meta-analysis (N≈33,000)",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        },
+        {
+          "id": "self-other-knowledge",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3424287/",
+          "title": "Self-other knowledge asymmetries in personality pathology",
+          "claim": "Self-other knowledge asymmetries in personality pathology",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        },
+        {
+          "id": "self-other-knowledge-2",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0092656622001489",
+          "title": "Self-Other Knowledge Asymmetry extended to pathological traits",
+          "claim": "Self-Other Knowledge Asymmetry extended to pathological traits",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        },
+        {
+          "id": "stop-bang-narrative",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1087079224001114",
+          "title": "STOP-Bang narrative review (thresholds, sensitivity/specificity)",
+          "claim": "STOP-Bang narrative review (thresholds, sensitivity/specificity)",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        },
+        {
+          "id": "stop-bang-plus",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9578009/",
+          "title": "STOP-Bang plus Epworth for specificity",
+          "claim": "STOP-Bang plus Epworth for specificity",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        },
+        {
+          "id": "stratifying-inflamed",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12752927/",
+          "title": "Stratifying the inflamed endotype in difficult-to-treat depression",
+          "claim": "Stratifying the inflamed endotype in difficult-to-treat depression",
+          "topics": [
+            "Measurement and its limits"
+          ],
+          "subTopic": null,
+          "citedIn": [
+            "PLAN-notes-05-gaps.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

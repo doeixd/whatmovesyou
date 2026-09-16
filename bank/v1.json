@@ -1,0 +1,2232 @@
+{
+  "version": "0.9.0",
+  "updatedAt": "2026-09-16T00:00:00Z",
+  "locale": "en-US",
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Spectra",
+      "question": "Who you are",
+      "order": 0,
+      "standalone": true
+    }
+  ],
+  "responseScales": [
+    {
+      "id": "agree5",
+      "type": "likert",
+      "allowNotApplicable": false,
+      "options": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "impair9",
+      "type": "impairment",
+      "allowNotApplicable": true,
+      "notApplicableLabel": "Doesn't apply to my situation",
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 2,
+          "label": "Slightly"
+        },
+        {
+          "value": 4,
+          "label": "Definitely"
+        },
+        {
+          "value": 6,
+          "label": "Markedly"
+        },
+        {
+          "value": 8,
+          "label": "Very severely"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "id": "a1_drive",
+      "block": "A",
+      "name": "Drive",
+      "poles": {
+        "low": "Inert",
+        "high": "Driven"
+      },
+      "definition": "Tendency to initiate activity and to expend effort for reward, absent external demand.",
+      "facets": [
+        {
+          "id": "a1_drive.exploration",
+          "name": "Exploration",
+          "definition": "Seeking novelty and information unprompted."
+        },
+        {
+          "id": "a1_drive.effort",
+          "name": "Effort tolerance",
+          "definition": "Paying a cost for a larger or later reward."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "dopamine (reward, effort, exploration)",
+          "grade": "strong",
+          "mechanism": "Dopamine agonists can produce impulse-control disorders, and amphetamine raises willingness to expend effort for reward.",
+          "verification": "Not verifiable at the individual level; the causal evidence comes from drug manipulation, not from measuring a person's level.",
+          "citations": [
+            "dominion2010",
+            "treadway2012",
+            "deyoung2013"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "low",
+        "stateSensitivity": "medium",
+        "copy": {
+          "costId": "copy_a1_cost",
+          "upsideId": "copy_a1_upside"
+        }
+      }
+    },
+    {
+      "id": "a2_threat",
+      "block": "A",
+      "name": "Threat reactivity",
+      "poles": {
+        "low": "Unflappable",
+        "high": "Highly reactive"
+      },
+      "definition": "How readily and how durably negative emotion is triggered by threat, loss or criticism.",
+      "facets": [
+        {
+          "id": "a2_threat.trigger",
+          "name": "Trigger threshold",
+          "definition": "How little it takes to set off negative emotion."
+        },
+        {
+          "id": "a2_threat.persistence",
+          "name": "Persistence",
+          "definition": "How long negative emotion lasts once triggered."
+        },
+        {
+          "id": "a2_threat.anticipation",
+          "name": "Anticipation",
+          "definition": "How much is spent on threats that have not happened."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "serotonin 5-HT2A",
+          "grade": "moderate",
+          "mechanism": "Cortical 5-HT2A binding tracks the inward facets of neuroticism (r = .37, replicated with a second tracer), and SSRIs lower neuroticism beyond their effect on depression.",
+          "verification": "No individual-level test. Group-level PET and drug-response evidence only.",
+          "citations": [
+            "hogsted2023",
+            "tang2009"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "medium",
+        "stateSensitivity": "high",
+        "copy": {
+          "costId": "copy_a2_cost",
+          "upsideId": "copy_a2_upside"
+        }
+      }
+    },
+    {
+      "id": "a3_restraint",
+      "block": "A",
+      "name": "Restraint",
+      "poles": {
+        "low": "Impulsive",
+        "high": "Controlled"
+      },
+      "definition": "Capacity to hold to an intention against a competing immediate pull.",
+      "facets": [
+        {
+          "id": "a3_restraint.cue",
+          "name": "Cue resistance",
+          "definition": "Not acting on an available temptation."
+        },
+        {
+          "id": "a3_restraint.followthrough",
+          "name": "Follow-through",
+          "definition": "Continuing after motivation fades or something more appealing appears."
+        },
+        {
+          "id": "a3_restraint.brake",
+          "name": "Brake",
+          "definition": "Not saying or doing the thing in the moment."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "dopamine (reward-cue)",
+          "grade": "strong",
+          "mechanism": "Dopamine agonists produce impulse-control disorders — gambling, shopping, hypersexuality — in about 17% of Parkinson's patients, reversing on withdrawal.",
+          "verification": "Not verifiable at the individual level; the causal evidence is from drug exposure.",
+          "citations": [
+            "dominion2010"
+          ]
+        },
+        {
+          "system": "serotonin (constraint)",
+          "grade": "moderate",
+          "mechanism": "Serotonin function correlates inversely with aggression and impulsivity (r ≈ -.12 overall, strongest in pharmacological challenge studies), with tryptophan depletion raising aggression in already-prone individuals.",
+          "verification": "Group-level challenge studies only.",
+          "citations": [
+            "duke2013"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "medium",
+        "stateSensitivity": "medium",
+        "copy": {
+          "costId": "copy_a3_cost",
+          "upsideId": "copy_a3_upside"
+        }
+      }
+    },
+    {
+      "id": "a4_sociality",
+      "block": "A",
+      "name": "Sociality",
+      "poles": {
+        "low": "Detached",
+        "high": "Connected"
+      },
+      "definition": "Baseline need for, and reward from, closeness with other people.",
+      "facets": [
+        {
+          "id": "a4_sociality.need",
+          "name": "Need",
+          "definition": "Discomfort when close contact is absent."
+        },
+        {
+          "id": "a4_sociality.reward",
+          "name": "Reward",
+          "definition": "Pleasure taken from closeness when it is present."
+        },
+        {
+          "id": "a4_sociality.disclosure",
+          "name": "Disclosure",
+          "definition": "Willingness to be known by others."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "μ-opioid",
+          "grade": "preliminary",
+          "mechanism": "Cerebral μ-opioid receptor availability tracks adult attachment style, with lower availability associated with avoidant attachment.",
+          "verification": "PET, and from a single research group. Treat as a lead, not a finding.",
+          "citations": [
+            "nummenmaa2015"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "medium",
+        "stateSensitivity": "high",
+        "copy": {
+          "costId": "copy_a4_cost",
+          "upsideId": "copy_a4_upside"
+        }
+      }
+    },
+    {
+      "id": "a5_antagonism",
+      "block": "A",
+      "name": "Antagonism",
+      "poles": {
+        "low": "Accommodating",
+        "high": "Combative"
+      },
+      "definition": "Disposition to pursue one's own interest at others' expense, and to meet friction with force.",
+      "facets": [
+        {
+          "id": "a5_antagonism.retaliation",
+          "name": "Retaliation",
+          "definition": "Escalating when pushed."
+        },
+        {
+          "id": "a5_antagonism.callousness",
+          "name": "Callousness",
+          "definition": "Low weight given to others' costs."
+        },
+        {
+          "id": "a5_antagonism.suspicion",
+          "name": "Suspicion",
+          "definition": "Assuming bad intent by default."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "serotonin",
+          "grade": "moderate",
+          "mechanism": "Central serotonin function correlates inversely with aggression, anger and hostility (r ≈ -.12 overall, -.21 in pharmacological challenge studies), and tryptophan depletion raises aggression specifically in people already prone to it.",
+          "verification": "Group-level challenge studies only.",
+          "citations": [
+            "duke2013"
+          ]
+        },
+        {
+          "system": "androgen exposure (clinical magnitudes only)",
+          "grade": "moderate",
+          "mechanism": "Congenital adrenal hyperplasia and testosterone therapy shift aggression-related measures, but normal-range testosterone does not — a preregistered trial in 1,000 men found no effect on economic behavior.",
+          "verification": "Not applicable to normal variation. Included to state explicitly that the popular 'high testosterone' explanation is unsupported.",
+          "citations": [
+            "cah_meta2024",
+            "geniole2020"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "high",
+        "stateSensitivity": "low",
+        "copy": {
+          "costId": "copy_a5_cost",
+          "upsideId": "copy_a5_upside"
+        }
+      }
+    },
+    {
+      "id": "a6_unusual",
+      "block": "A",
+      "name": "Unusual cognition",
+      "poles": {
+        "low": "Conventional",
+        "high": "Unusual"
+      },
+      "definition": "Tendency toward unusual perceptions, associations and beliefs, and to act on them. Scored on form and consequence, never on the content of a belief.",
+      "facets": [
+        {
+          "id": "a6_unusual.perceptual",
+          "name": "Perceptual",
+          "definition": "Sensing what others do not sense."
+        },
+        {
+          "id": "a6_unusual.associative",
+          "name": "Associative",
+          "definition": "Making links others do not see."
+        },
+        {
+          "id": "a6_unusual.referential",
+          "name": "Referential",
+          "definition": "The sense that events pertain to oneself."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 6
+      },
+      "bodyLinks": [
+        {
+          "system": "dopamine (D2)",
+          "grade": "strong",
+          "mechanism": "Antipsychotics act by D2 blockade and amphetamine can induce psychosis — the strongest dopamine-to-trait link anywhere in this research, and on a dimension the original Braverman model never mentions.",
+          "verification": "No individual-level test; the inference is pharmacological and group-level.",
+          "citations": [
+            "hitop2021",
+            "schizotypy2025"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": false,
+        "stigmaRisk": "high",
+        "stateSensitivity": "medium",
+        "copy": {
+          "costId": "copy_a6_cost",
+          "upsideId": "copy_a6_upside"
+        },
+        "internalOnly": true
+      }
+    },
+    {
+      "id": "a7_systemizing",
+      "block": "A",
+      "name": "Systemizing",
+      "poles": {
+        "low": "Fluid / social",
+        "high": "Systematic / literal"
+      },
+      "definition": "Preference for deriving rules and structure over reading people and context, together with heightened sensitivity to detail and change.",
+      "facets": [
+        {
+          "id": "a7_systemizing.rule",
+          "name": "Rule-seeking",
+          "definition": "Needing the mechanism before acting."
+        },
+        {
+          "id": "a7_systemizing.detail",
+          "name": "Detail and change sensitivity",
+          "definition": "Noticing alterations others miss; load from sensory input."
+        },
+        {
+          "id": "a7_systemizing.literality",
+          "name": "Literality",
+          "definition": "Taking and giving language at face value."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "polygenic — no transmitter account",
+          "grade": "genetic",
+          "mechanism": "Autistic traits are continuously distributed in the general population and highly heritable, but no clean neurotransmitter story exists. Saying so is part of the point.",
+          "verification": "Formal assessment for the clinical end; the trait itself is not confirmable by any biomarker.",
+          "citations": [
+            "aq_dimensional2022",
+            "aq_factor2019"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "medium",
+        "stateSensitivity": "low",
+        "copy": {
+          "costId": "copy_a7_cost",
+          "upsideId": "copy_a7_upside"
+        }
+      }
+    },
+    {
+      "id": "a8_episodicity",
+      "block": "A",
+      "name": "Episodicity",
+      "poles": {
+        "low": "Steady",
+        "high": "Cycling"
+      },
+      "definition": "Degree to which energy, confidence and output arrive in distinct phases rather than at a steady level.",
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 3
+      },
+      "bodyLinks": [
+        {
+          "system": "none claimed",
+          "grade": "none",
+          "mechanism": "No direct transmitter claim. The scale is justified predictively: the Hypomanic Personality Scale was the single best predictor of later bipolar disorder in a 23-year birth-cohort follow-up (d = 0.67).",
+          "verification": "Clinical assessment at the high end; prospective mood charting.",
+          "citations": [
+            "hps_finland2022"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": false,
+        "stigmaRisk": "high",
+        "stateSensitivity": "medium",
+        "copy": {
+          "costId": "copy_a8_cost",
+          "upsideId": "copy_a8_upside"
+        },
+        "internalOnly": true
+      }
+    },
+    {
+      "id": "a9_impairment",
+      "block": "A",
+      "name": "Impairment",
+      "poles": {
+        "low": "Unaffected",
+        "high": "Severely affected"
+      },
+      "definition": "How much current functioning is affected, whatever the cause. Crossed with every other scale to separate a feature of how someone is built from something that is costing them.",
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 4
+      },
+      "bodyLinks": [
+        {
+          "system": "none",
+          "grade": "none",
+          "mechanism": "Functional impact is measured directly and carries no biological claim. This scale deliberately does not ask why.",
+          "verification": null,
+          "citations": []
+        }
+      ],
+      "report": {
+        "showPercentile": false,
+        "stigmaRisk": "medium",
+        "stateSensitivity": "high",
+        "copy": {
+          "costId": "copy_a9_cost",
+          "upsideId": "copy_a9_upside"
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "a1_drive_e01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "I start things nobody asked me to start.",
+      "informantText": "They start things nobody asked them to start.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 4.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "source:interview-style"
+      ]
+    },
+    {
+      "id": "a1_drive_e02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "I'd rather stick with what already works than try an unfamiliar option.",
+      "informantText": "They'd rather stick with what already works than try an unfamiliar option.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.1
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a1_drive_e07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "Once I finish something, I'm happy to let the next thing wait.",
+      "informantText": "Once they finish something, they're happy to let the next thing wait.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.4,
+        "notes": "Reworded from \"When I finish something, I'm content to leave it there\", which was ambiguous: \"leave it there\" could be read as not refining the finished thing (perfectionism) rather than not seeking the next one. The facet is exploration, so the wording now names the next thing explicitly."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a1_drive_e12",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "People close to me have asked me to stop starting things.",
+      "informantText": "People close to them have asked them to stop starting things.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a1_drive_f02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I often decide the effort outweighs the payoff.",
+      "informantText": "They often decide the effort outweighs the payoff.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.1,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a1_drive_f05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I keep working on a problem after other people have set it aside.",
+      "informantText": "They keep working on a problem after other people have set it aside.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a1_drive_f06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I lose interest once the interesting part of a project is over.",
+      "informantText": "They lose interest once the interesting part of a project is over.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "facet-separator"
+      ]
+    },
+    {
+      "id": "a1_drive_f10",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I've pushed myself to exhaustion for something nobody required of me.",
+      "informantText": "They've pushed themselves to exhaustion for something nobody required of them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a2_threat_p01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.persistence",
+      "text": "Something that went wrong hours ago is still running in my head.",
+      "informantText": "Something that went wrong hours ago is still running in their head.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a2_threat_p02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.persistence",
+      "text": "Once a difficult conversation ends, I stop thinking about it.",
+      "informantText": "Once a difficult conversation ends, they stop thinking about it.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.0,
+        "notes": "Reworded from \"Once a difficult conversation is over, it's over for me\", which readers found ambiguous — \"it's over\" could be heard as the relationship ending rather than the rumination stopping. The construct is persistence, so the replacement names the mental act directly. Item is still status:draft, so the id is reused rather than retired."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a2_threat_a02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.anticipation",
+      "text": "My mind stays on what's in front of me rather than what might go wrong.",
+      "informantText": "Their mind stays on what's in front of them rather than what might go wrong.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.8,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a2_threat_t04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.trigger",
+      "text": "People describe me as hard to upset.",
+      "informantText": "People describe them as hard to upset.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.1
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a2_threat_t05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.trigger",
+      "text": "A short, neutral message from someone can put me on edge.",
+      "informantText": "A short, neutral message from someone can put them on edge.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.7
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a2_threat_p05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.persistence",
+      "text": "A single piece of criticism can stay with me for days.",
+      "informantText": "A single piece of criticism can stay with them for days.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a2_threat_t07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.trigger",
+      "text": "The smallest sign of disapproval can change how my whole day feels.",
+      "informantText": "The smallest sign of disapproval can change how their whole day feels.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a2_threat_a08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.anticipation",
+      "text": "I can walk into a situation with an uncertain outcome feeling no dread at all.",
+      "informantText": "They can walk into a situation with an uncertain outcome feeling no dread at all.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 7.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a3_restraint_c02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.cue",
+      "text": "I can have something tempting in the house and forget it's there.",
+      "informantText": "They can have something tempting in the house and forget it's there.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.4,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a3_restraint_f02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.followthrough",
+      "text": "I move to whatever's more appealing before the current thing is done.",
+      "informantText": "They move to whatever's more appealing before the current thing is done.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a3_restraint_b01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.brake",
+      "text": "I've said something in the moment that cost me later.",
+      "informantText": "They've said something in the moment that cost them later.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a3_restraint_c06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.cue",
+      "text": "When something I've given up is right in front of me, it stays easy to ignore.",
+      "informantText": "When something they've given up is right in front of them, it stays easy to ignore.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.1,
+        "notes": "Reworded from \"Being around something I've decided against leaves me unbothered\", which was abstract on both halves: \"decided against\" is vague and \"leaves me unbothered\" describes an absence. The facet is cue resistance, so the wording now names a present temptation and a concrete response to it."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a3_restraint_f05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.followthrough",
+      "text": "Once I commit to a plan, I stay with it even when a better offer appears.",
+      "informantText": "Once they commit to a plan, they stay with it even when a better offer appears.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.4,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a3_restraint_b05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.brake",
+      "text": "I send messages I later wish I'd slept on.",
+      "informantText": "They send messages they later wish they'd slept on.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a3_restraint_c08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.cue",
+      "text": "I gave something up years ago and have stuck with it, even when the pull came back.",
+      "informantText": "They gave something up years ago and have stuck with it, even when the pull came back.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.2,
+        "notes": "Reworded from \"I've held to a decision for years despite regular temptation\", which was abstract on both halves — \"held to a decision\" names no decision, and \"despite regular temptation\" is stiff. The facet is cue resistance, so the recurring pull has to stay explicit (otherwise it reads as follow-through), and \"years\" carries the extreme severity."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a3_restraint_f07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.followthrough",
+      "text": "People have stopped relying on me to finish what I take on.",
+      "informantText": "People have stopped relying on them to finish what they take on.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a4_soc_n01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.need",
+      "text": "I notice the gap when it's been a while since I saw anyone close to me.",
+      "informantText": "They notice the gap when it's been a while since they saw anyone close to them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.8,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_r02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.reward",
+      "text": "Time with people leaves my mood about where it started.",
+      "informantText": "Time with people leaves their mood about where it started.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_d02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.disclosure",
+      "text": "I keep parts of my life separate from everyone.",
+      "informantText": "They keep parts of their life separate from everyone.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_n06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.need",
+      "text": "Most times, I'd choose a weekend alone over a weekend with people.",
+      "informantText": "Most times, they'd choose a weekend alone over a weekend with people.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a4_soc_r05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.reward",
+      "text": "I look forward to seeing certain people the way other people look forward to a holiday.",
+      "informantText": "They look forward to seeing certain people the way other people look forward to a holiday.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a4_soc_d04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.disclosure",
+      "text": "The people close to me get the honest version of how I'm doing.",
+      "informantText": "The people close to them get the honest version of how they're doing.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 4.9,
+        "notes": "Reworded from \"People who know me know what's actually going on with me\", which repeated \"know\" and left \"what's actually going on\" vague. The facet is disclosure, so the wording now contrasts an honest account with a tidied one."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a4_soc_n07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.need",
+      "text": "A long stretch apart from people I'm close to starts to feel physically unsettling.",
+      "informantText": "A long stretch apart from people they're close to starts to feel physically unsettling.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.0,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a4_soc_r08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.reward",
+      "text": "What people get out of closeness has always been a mystery to me.",
+      "informantText": "What people get out of closeness has always been a mystery to them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.0,
+        "notes": "Lifetime framing deliberately separates trait detachment from current withdrawal — 'never understood' is much harder to endorse during a depressive episode than 'don't feel it now'. This is the design fix for the state-contamination problem on this facet. Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "state-resistant"
+      ]
+    },
+    {
+      "id": "a5_ant_c01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.callousness",
+      "text": "How my decisions land on other people is mostly an afterthought.",
+      "informantText": "How their decisions land on other people is mostly an afterthought.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.6,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a5_ant_r02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.retaliation",
+      "text": "When someone's rude to me, I let it go.",
+      "informantText": "When someone's rude to them, they let it go.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 3.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a5_ant_s02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.suspicion",
+      "text": "I give people the benefit of the doubt by default.",
+      "informantText": "They give people the benefit of the doubt by default.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a5_ant_r04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.retaliation",
+      "text": "I keep an argument going until the other person backs down.",
+      "informantText": "They keep an argument going until the other person backs down.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a5_ant_c04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.callousness",
+      "text": "Seeing someone upset affects me.",
+      "informantText": "Seeing someone upset affects them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 3.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a5_ant_s05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.suspicion",
+      "text": "I've been proved right about people I was wary of.",
+      "informantText": "They've been proved right about people they were wary of.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.0,
+        "notes": "Justification item: it lets a suspicious respondent endorse the construct without conceding a flaw. This is the only lever available against low self-report validity on this scale when no informant data exists — worth watching whether it out-performs the plainer items. Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "technique:justification"
+      ]
+    },
+    {
+      "id": "a5_ant_r07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.retaliation",
+      "text": "I've gone out of my way to get back at someone.",
+      "informantText": "They've gone out of their way to get back at someone.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a5_ant_s08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a5_antagonism",
+      "facetId": "a5_antagonism.suspicion",
+      "text": "It wouldn't occur to me that someone close to me might be using me.",
+      "informantText": "It wouldn't occur to them that someone close might be using them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a6_unu_p03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "Movement at the edge of my vision sometimes turns out to be imaginary.",
+      "informantText": "Movement at the edge of their vision sometimes turns out to be imaginary.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.6,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a6_unu_a02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "My thinking is conventional and I'm fine with that.",
+      "informantText": "Their thinking is conventional and they're fine with that.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a6_unu_f02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "I take what happens around me as coincidence.",
+      "informantText": "They take what happens around them as coincidence.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.9,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a6_unu_p07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.perceptual",
+      "text": "As far as I can tell, I perceive the world the same way everyone else does.",
+      "informantText": "As far as they can tell, they perceive the world the same way everyone else does.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a6_unu_a05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "I've worked out how things fit together in a way others couldn't follow.",
+      "informantText": "They've worked out how things fit together in a way others couldn't follow.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a6_unu_f05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "A stranger's passing comment has felt like it was aimed at me.",
+      "informantText": "A stranger's passing comment has felt to them like it was aimed at them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4,
+        "notes": "Reworded from \"I've felt that a stranger's remark was really about me\", where \"really about me\" could be read as the remark legitimately concerning the respondent. The facet is referential thinking, so \"aimed at me\" names the sense of being personally targeted, and \"passing\" marks the remark as incidental."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a6_unu_a09",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.associative",
+      "text": "Even my most unusual ideas turn out to be ones plenty of other people share.",
+      "informantText": "Even their most unusual ideas turn out to be ones plenty of other people share.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.9,
+        "notes": "Written specifically to give the shared-community case a low-pole answer: someone whose unusual beliefs are held within a tradition should be able to endorse this and score low, which is the construct-sheet rule made answerable."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "technique:community-check"
+      ]
+    },
+    {
+      "id": "a6_unu_f07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a6_unusual",
+      "facetId": "a6_unusual.referential",
+      "text": "I've changed my plans because events seemed to be pointing at me.",
+      "informantText": "They've changed their plans because events seemed to be pointing at them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.6,
+        "notes": "Reworded from \"I've acted on the sense that events were directed at me\", which was stilted and abstract. Two constraints shaped the replacement. It must stay consequence-anchored — naming what the person DID, not what they believed — because that is what keeps this facet out of religious content. And it avoids \"aimed at me\", which now belongs to f05 on the same scale, so the two items don't read as the same question twice."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence",
+        "technique:consequence-anchored"
+      ]
+    },
+    {
+      "id": "a7_sys_s01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.rule",
+      "text": "I need to know how something works before I'm comfortable using it.",
+      "informantText": "They need to know how something works before they're comfortable using it.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.3,
+        "notes": "Occupational confound: engineers and technicians self-select. Check DIF by occupation if collected."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "confound:occupation"
+      ]
+    },
+    {
+      "id": "a7_sys_s06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.rule",
+      "text": "I prefer to feel my way through a new situation rather than map it out.",
+      "informantText": "They prefer to feel their way through a new situation rather than map it out.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a7_sys_l01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.literality",
+      "text": "I read between the lines easily in conversation.",
+      "informantText": "They read between the lines easily in conversation.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a7_sys_s05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.rule",
+      "text": "I'd rather have an explicit procedure than be told to use my judgement.",
+      "informantText": "They'd rather have an explicit procedure than be told to use their judgement.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.1
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a7_sys_c02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.detail",
+      "text": "Small changes to a room usually pass me by.",
+      "informantText": "Small changes to a room usually pass them by.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a7_sys_l04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.literality",
+      "text": "People have told me I take things too literally.",
+      "informantText": "People have told them they take things too literally.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a7_sys_c07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.detail",
+      "text": "I've had to leave somewhere because the noise, light or crowding became unbearable.",
+      "informantText": "They've had to leave somewhere because the noise, light or crowding became unbearable.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a7_sys_c08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.detail",
+      "text": "I can move between very different environments all day and feel much the same.",
+      "informantText": "They can move between very different environments all day and feel much the same.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.6,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a8_epi_01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "My energy and confidence come in waves rather than staying level.",
+      "informantText": "Their energy and confidence come in waves rather than staying level.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a8_epi_07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "My sense of what I'm capable of has stayed steady my whole life.",
+      "informantText": "Their sense of what they're capable of has stayed steady their whole life.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.4,
+        "notes": "Lifetime framing, applying the A4 r08 pattern: a 'never' claim resists current-state contamination in both directions. Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "state-resistant"
+      ]
+    },
+    {
+      "id": "a8_epi_10",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "In my most energetic phases I've made decisions I later couldn't explain.",
+      "informantText": "In their most energetic phases they've made decisions they later couldn't explain.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.8,
+        "notes": "Highest-information item on the scale and the one that feeds the pre-specified interaction rule (high A1 + low A3 + high A8 + impairment → suggest assessment). Deliberately describes consequence rather than using clinical language."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence",
+        "interaction-input"
+      ]
+    },
+    {
+      "id": "a8_epi_12",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a8_episodicity",
+      "text": "Even at my busiest, I feel like the same person I always am.",
+      "informantText": "Even at their busiest, they seem like the same person they always are.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.0,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "state-resistant"
+      ]
+    },
+    {
+      "id": "a9_imp_01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "Because of how I've been feeling or functioning, my work or studies have suffered.",
+      "informantText": "Because of how they've been feeling or functioning, their work or studies have suffered.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 7.4
+      },
+      "provenance": {
+        "origin": "adapted",
+        "sourceInstrument": "WSAS-style impairment format",
+        "licence": "TO VERIFY before ship"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a9_imp_03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "Because of how I've been feeling or functioning, I've done less of what I enjoy.",
+      "informantText": "Because of how they've been feeling or functioning, they've done less of what they enjoy.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.5
+      },
+      "provenance": {
+        "origin": "adapted",
+        "sourceInstrument": "WSAS-style impairment format",
+        "licence": "TO VERIFY before ship"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a9_imp_05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "In the past two weeks I've avoided things I'd normally do.",
+      "informantText": "In the past two weeks they've avoided things they'd normally do.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a9_imp_09",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "In the past two weeks, basic daily demands have been beyond me.",
+      "informantText": "In the past two weeks, basic daily demands have been beyond them.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.0,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a9_imp_10",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "In the past two weeks I've had thoughts of hurting myself.",
+      "informantText": "In the past two weeks they have talked about hurting themselves.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "safety": {
+        "atOrAbove": 2,
+        "severity": "urgent",
+        "resourceSet": "crisis.suicide",
+        "interrupt": true
+      },
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 5.4,
+        "notes": "The only risk-disclosure item in Block A. Any response at or above 'Slightly' interrupts immediately with region-aware crisis resources — never deferred to the results page. The informant paraphrase deliberately asks about disclosed statements, not inferred inner states, because informants cannot report thoughts."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "safety"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "aq_dimensional2022",
+      "title": "Autism traits dimensionality and multivariate relationship with alexithymia and anxiety in the general population",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0891422222001913",
+      "year": 2022,
+      "claim": "Autistic traits are continuously distributed through the general population rather than forming a discrete category."
+    },
+    {
+      "id": "aq_factor2019",
+      "title": "A comprehensive psychometric analysis of autism-spectrum quotient factor models using two large samples",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31464106/",
+      "year": 2019,
+      "claim": "The AQ's factor structure is unstable across samples; a reduced multi-factor solution performs best in both community and clinical data."
+    },
+    {
+      "id": "cah_meta2024",
+      "title": "Prenatal androgen exposure and sex-typical play behaviour: a meta-analysis of classic congenital adrenal hyperplasia studies",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38447820/",
+      "year": 2024,
+      "claim": "Clinical-magnitude prenatal androgen exposure shifts behavior, including physical aggression and tender-mindedness."
+    },
+    {
+      "id": "deyoung2013",
+      "title": "The neuromodulator of exploration: a unifying theory of the role of dopamine in personality",
+      "url": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2013.00762/full",
+      "year": 2013,
+      "claim": "Dopamine's general function is to promote exploration, linking it to Extraversion and Openness/Intellect."
+    },
+    {
+      "id": "dominion2010",
+      "title": "DOMINION study: impulse control disorders in Parkinson's disease",
+      "url": "https://www.medscape.com/viewarticle/721768",
+      "year": 2010,
+      "claim": "Impulse control disorders occur in about 17% of Parkinson's patients taking a dopamine agonist, 2-3x the rate of those not taking one."
+    },
+    {
+      "id": "duke2013",
+      "title": "Revisiting the serotonin-aggression relation in humans: a meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3718863/",
+      "year": 2013,
+      "claim": "Central serotonin function correlates inversely with aggression, anger and hostility (r = -.12; -.21 in pharmacological challenge)."
+    },
+    {
+      "id": "geniole2020",
+      "title": "Is testosterone linked to human aggression? A meta-analytic examination of baseline, dynamic and manipulated testosterone",
+      "url": "https://www.researchgate.net/publication/337658220",
+      "year": 2020,
+      "claim": "Baseline testosterone correlates with aggression at only r ≈ .07, with no evidence of a causal effect from administration."
+    },
+    {
+      "id": "hitop2021",
+      "title": "The Hierarchical Taxonomy of Psychopathology (HiTOP): a quantitative nosology based on consensus of evidence",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33577350/",
+      "year": 2021,
+      "claim": "Psychopathology including the thought-disorder spectrum is distributed dimensionally rather than categorically."
+    },
+    {
+      "id": "hogsted2023",
+      "title": "The association between brain serotonin 2A receptor binding and neuroticism in healthy individuals: a Cimbi database independent replication study",
+      "url": "https://www.biorxiv.org/content/10.1101/2023.08.24.554575",
+      "year": 2023,
+      "claim": "Cortical 5-HT2A binding is associated with the inward facets of neuroticism (r = .37) in an independent replication."
+    },
+    {
+      "id": "hps_finland2022",
+      "title": "Predictive and discriminant validity of psychopathology and temperament scales — 23-year follow-up, Northern Finland Birth Cohort 1966",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9564146/",
+      "year": 2022,
+      "claim": "High Hypomanic Personality Scale score was the best single predictor of later bipolar disorder (d = 0.67)."
+    },
+    {
+      "id": "nummenmaa2015",
+      "title": "Adult attachment style is associated with cerebral μ-opioid receptor availability in humans",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26046928/",
+      "year": 2015,
+      "claim": "μ-opioid receptor availability tracks adult attachment style; lower availability is associated with avoidant attachment."
+    },
+    {
+      "id": "schizotypy2025",
+      "title": "Predictive validity of psychometrically assessed schizotypy for psychopathology dimensions and functioning in an 8-year multiwave study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11879525/",
+      "year": 2025,
+      "claim": "Positive and negative schizotypy measured in non-clinical samples predict later symptoms and functioning along distinct paths."
+    },
+    {
+      "id": "tang2009",
+      "title": "Personality change during depression treatment: a placebo-controlled trial",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2799251",
+      "year": 2009,
+      "claim": "Paroxetine reduced neuroticism 6.8x as much as placebo among patients matched for depression improvement."
+    },
+    {
+      "id": "treadway2012",
+      "title": "Dopaminergic mechanisms of individual differences in human effort-based decision-making",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3391699/",
+      "year": 2012,
+      "claim": "Striatal and vmPFC dopamine responsivity predicts willingness to expend effort for larger rewards."
+    }
+  ]
+}

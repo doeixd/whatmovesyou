@@ -1,0 +1,457 @@
+First name            Braverman Test - Your answers and scores
+Last name
+Email            John
+Date of test     Doe
+                 John.Doe@gmail.com
+                 2021-06-16T08:53:22.919Z
+
+Part 1: Determining your dominant nature
+
+Part 1 | Dopamine | Memory and attention                         true
+I find it easy to process my thoughts                            false
+I concentrate effectively                                        true
+I am a deep thinker                                              false
+I am a quick thinker                                             true
+I become distracted because I do so many tasks at once           false
+I enjoy intense debate                                           true
+I have a good imagination                                        false
+I tend to criticize and analyze my thoughts                      8
+Total number of True - Part 1 | Dopamine | Memory and attention
+
+Part 1 | Dopamine | Physical
+
+I have a lot of energy most of the time                          true
+
+My blood pressure is often elevated                              false
+
+Sometimes in my life I have had episodes of extreme energy       true
+
+I have insomnia                                                  false
+
+I find exercising invigorating                                   true
+
+I don't ordinarily need coffee to jump-start me in the morning   false
+
+My veins are visible and tend to look as though they might pop out of my skin true
+
+I tend to have a high body temperature                           false
+
+I eat my lunch while I'm working                                 true
+
+I engage in sexual intercourse any chance I get                  false
+
+I have a temper                                                  true
+
+I eat only to reenergize my body                                 false
+
+I love action movies                                             true
+Exercising makes me feel powerful                                               false
+Total number of True - Part 1 | Dopamine | Physical                             14
+
+Part 1 | Dopamine | Character                                                   true
+Some individuals view me as tough-minded                                        false
+Most people view me as achievement-oriented                                     true
+Some people say that I am irrational                                            false
+I will do anything to reach a goal                                              true
+I value a religious philosophy                                                  false
+Incompetence makes me angry                                                     true
+I have high standards for myself and for others                                 7
+Total number of True - Part 1 | Dopamine | Character
+
+Part 1 | Dopamine | Personality                                                 true
+I am a very domineering individual                                              false
+I sometimes don't notice my feelings                                            true
+I often have trouble listening to others because my own ideas dominate          false
+I have been in many fights                                                      true
+I tend to be future-oriented                                                    false
+I am sometimes speculative                                                      true
+Most people view me as thinking-oriented                                        false
+I daydream and often fantasize                                                  true
+I like to read history and other non-fiction books                              false
+I admire ingenuity                                                              true
+I can be slow in identifying how people can cause trouble                       false
+I don't usually get tricked by people who say they need my help                 true
+Most people view me as innovative
+People have thought I have had some strange ideas, but I can always explain     false
+the basis for them rationally
+I am often agitated or irritated                                                true
+Little things make me anxious or upset                                          false
+I have fantasies of unlimited power                                             true
+I love spending money                                                           false
+I dominate others in relationships                                              false
+I am very hard on myself                                                        false
+I react aggressively to criticism, often becoming defensive in front of others  true
+Total number of True - Part 1 | Dopamine | Personality                          21
+
+Total number of True responses - Dopamine nature                                50
+
+Part 1 | Acetylcholine | Memory and attention                                   true
+My memory is very strong                                                        false
+I am an excellent listener                                                      true
+I am good at remembering stories                                                true
+I am very creative                                                              false
+I have an excellent attention span and rarely miss a thing                      true
+I have many good hunches                                                        false
+I notice everything going on around me                                          true
+I have a good imagination                                                       9
+Total number of True - Part 1 | Acetylcholine | Memory and attention
+
+Part 1 | Acetylcholine | Physical                                               true
+I tend to have a slow pulse                                                     false
+My body has excellent tone                                                      true
+I have a great figure/build                                                     false
+I have really low cholesterol                                                   true
+When I eat, I love to experience the aromas and the beauty of food              false
+I love yoga and stretching my muscles                                           true
+During sex, I am very sensual                                                   false
+I have had an eating disorder at some point in my life                          true
+I have tried many alternative remedies                                          9
+Total number of True - Part 1 | Acetylcholine | Physical
+
+Part 1 | Acetylcholine | Character                                              true
+I foresee a better future                                                       false
+I am inspired to help other people                                              true
+I believe that all things are possible, particularly for those who are devoted  false
+I am good at creating harmony between people                                    true
+Charity and altruism come from the heart, and I have plenty of both             false
+Others think me of as having vision                                             true
+My thoughts on religion often change                                            false
+I am an idealist, but not a perfectionist
+I'm happy with someone who just treats me right                     true
+Total number of True - Part 1 | Acetylcholine | Character           9
+
+Part 1 | Acetylcholine | Personality                                true
+I am a perpetual romantic                                           false
+I am in touch with my feelings                                      true
+I tend to make decisions based on hunches                           false
+I like to speculate                                                 true
+Some people say I have my head in the clouds                        false
+I love reading fiction                                              true
+I have a rich fantasy life                                          false
+I am creative when solving people problems                          true
+I am very expressive; I like to talk about what's bothering me      false
+I am buoyant                                                        true
+I believe that it is possible to have a mystical experience         false
+I believe in being a soul mate                                      true
+Sometimes the mystical can excite me                                false
+I tend to overreact to my body                                      true
+I find it easy to change things; I am not set in my ways            false
+I am deeply in touch with my emotions                               true
+I tend to love someone one minute and hate him or her the next      false
+I am flirtatious                                                    false
+I don't mind spending money if it benefits my relationships         true
+I tend to fantasize when I'm having sex                             false
+My relationships tend to be filled with romance                     true
+I love watching romantic movies                                     false
+I take risks in my love life                                        23
+Total number of True - Part 1 | Acetylcholine | Personality
+                                                                    50
+Total number of True responses - Acetylcholine nature
+                                                                    true
+Part 1 | GABA | Memory and attention                                false
+I have a stable attention span and can follow other people's logic  true
+I enjoy reading people more than books                              false
+I retain most of what I hear
+I can remember facts people tell me
+I learn from my experiences                                              true
+I am good at remembering names                                           false
+I can focus very well on tasks and people's stories                      true
+Total number of True - Part 1 | GABA | Memory and attention              7
+
+Part 1 | GABA | Physical                                                 true
+I find it easy to relax                                                  false
+I am a calm person                                                       true
+I find it easy to fall asleep at night                                   false
+I tend to have high physical endurance                                   true
+I have low blood pressure                                                false
+I do not have a family history of stroke                                 true
+When it comes to sex, I am not very experimental                         false
+I have little muscle tension                                             true
+Caffeine has little effect on me                                         false
+I take my time eating my meals                                           false
+I sleep well                                                             false
+I don't have many harmful food cravings such as sugar
+Exercising is a regimented habit for me                                  13
+Total number of True - Part 1 | GABA | Physical
+                                                                         true
+Part 1 | GABA | Character                                                false
+I believe in the adage "Early to bed, early to rise."                    true
+I believe in meeting deadlines                                           false
+I try to please others the best I can                                    true
+I am a perfectionist                                                     false
+I am good at maintaining long-lasting relationships
+I pay attention to where my money goes                                   true
+I believe that the world would be more peaceful if people would improve
+upon their morals                                                        false
+I am very loyal and devoted to my loved ones                             true
+I have high ethical standards that I live by                             false
+I pay close attention to laws, principles, and policies                  true
+I believe in participating in service for the community                  11
+Total number of True - Part 1 | GABA | Character
+Part 1 | GABA | Personality                                        true
+I am not very adventurous                                          false
+I do not have a temper                                             true
+I have a lot of patience                                           false
+I don't enjoy philosophy                                           true
+I love watching sitcoms about families                             false
+I dislike movies about other worlds or universes                   true
+I am not a risk-taker                                              false
+I keep past experiences in mind before I make decisions            true
+I am a realistic person                                            false
+I believe in closure                                               true
+I like facts and details                                           false
+When I make a decision, it's permanent                             true
+I like to plan my day, week, month, etc                            false
+I collect things                                                   true
+I am a little sad                                                  false
+I am afraid of confrontations and altercations                     true
+I save up a lot of money in the event of a crisis                  false
+I tend to create strong, lasting bonds with others                 false
+I am a stable pillar in people's lives                             19
+Total number of True - Part 1 | GABA | Personality
+                                                                   50
+Total number of True responses - GABA nature
+                                                                   true
+Part 1 | Serotonin | Memory and attention                          false
+I can easily concentrate on manual-labor tasks                     true
+I have a good visual memory                                        false
+I am very perceptive                                               true
+I am an impulsive thinker                                          false
+I live in the here and now                                         true
+I tend to say, "Tell me the bottom line."
+I am a slow book learner, but I learn easily from experience       false
+I need to experience something or work at it hands-on in order to
+understand it                                                      8
+Total number of True - Part 1 | Serotonin | Memory and attention
+Part 1 | Serotonin | Physical                                                   true
+I sleep too much                                                                false
+When it comes to sex, I am very experimental                                    true
+I have low blood pressure                                                       false
+I am very action-oriented                                                       true
+I am very handy around the house                                                false
+I am very active outdoors                                                       true
+I engage in daring activities such as skydiving and motorcycle riding           false
+I can solve problems spontaneously                                              true
+I rarely have carbohydrate cravings                                             false
+I usually grab a quick meal on the run
+I'm usually not very consistent with my exercise routine; I may exercise daily  true
+for three weeks and then skip it for a month
+Total number of True - Part 1 | Serotonin | Physical                            11
+
+Part 1 | Serotonin | Character                                                  true
+I always keep my options open in case something better comes up                 false
+I don't like working hard for long periods of time                              true
+I believe things should have a function and purpose                             false
+I am optimistic                                                                 true
+I live in the moment                                                            false
+I pray only when I'm in need of spiritual support                               true
+I don't have particularly high morals and ethical values                        false
+I do what I want, when I want to                                                true
+I don't care about being perfect; I just live my life                           false
+Savings are for suckers                                                         10
+Total number of True - Part 1 | Serotonin | Character
+
+Part 1 | Serotonin | Personality                                                true
+I live life in the immediate moment                                             false
+I like to perform/entertain in public                                           true
+I tend to gather facts in an unorganized manner                                 false
+I am very flexible                                                              true
+I am a great negotiator                                                         false
+I often just like to "eat, drink, and be merry"                                 true
+I am dramatic
+I am very artistic                                                           false
+I am a good craftsman                                                        true
+I'm a risk taker when it comes to sports                                     false
+I believe in psychics                                                        true
+I can easily take advantage of others                                        false
+I am cynical of others' philosophies                                         true
+I like to have fun                                                           false
+My favorite type of movies are horror flicks                                 true
+I am fascinated with weapons                                                 false
+I rarely stick to a plan or agenda                                           false
+I have trouble remaining faithful                                            false
+I am easily able to separate and move on when relationships with loved ones
+end                                                                          true
+I don't pay much attention to how I spend my money
+I have many frivolous relationships                                          true
+Total number of True - Part 1 | Serotonin | Personality                      true
+                                                                             21
+
+Total number of True responses - Serotonin nature                            50
+
+Part 2: Defining your deficiencies
+
+Part 2 | Dopamine | Memory and attention                                     true
+I have trouble paying consistent attention and concentrating                 false
+I need caffeine to wake up                                                   true
+I cannot think quickly enough                                                false
+I do not have a good attention span                                          true
+I have trouble getting through a task even when it is interesting to me      false
+I am slow in learning new ideas                                              6
+Total number of True - Part 2 | Dopamine | Memory and attention
+
+Part 2 | Dopamine | Physical                                                 true
+I crave sugar                                                                false
+I have decreased libido                                                      true
+I sleep too much                                                             false
+I have a history of alcohol or addiction                                     true
+I have recently felt worn out for no apparent reason
+I sometimes experience total exhaustion without even exerting myself  false
+I have always battled weight problems                                 true
+I have little motivation for sexual experiences                       false
+I have little trouble getting out of bed in the morning               true
+I have had a craving for cocaine, amphetamines, or Ecstasy            false
+Total number of True - Part 2 | Dopamine | Physical                   10
+
+Part 2 | Dopamine | Character                                         true
+I have lost my reasoning skills                                       false
+I can't make good decisions                                           2
+Total number of True - Part 2 | Dopamine | Character
+
+Part 2 | Dopamine | Personality                                       true
+I feel fine just following others                                     false
+People seem to take advantage of me                                   true
+I am feeling very down or depressed                                   false
+People have told me I am too mellow                                   true
+I have little urgency                                                 false
+I let people criticize me                                             true
+I always look to others to lead me                                    7
+Total number of True - Part 2 | Dopamine | Personality
+
+Total number of True responses - Dopamine deficiency                  25
+
+Part 2 | Acetylcholine | Memory and attention                         true
+I lack imagination                                                    false
+I have difficulty remembering names when I first meet people          true
+I have noticed that my memory ability is decreasing                   false
+My significant other tells me I don't have romantic thoughts          true
+I can't remember my friend's birthday                                 false
+I have lost some of my creativity                                     6
+Total number of True - Part 2 | Acetylcholine | Memory and attention
+
+Part 2 | Acetylcholine | Physical                                     true
+I have insomnia                                                       false
+I have lost muscle tone
+I don't exercise anymore                                                      true
+I crave fatty food                                                            false
+I have experimented with hallucinogens or other illicit drugs                 true
+I feel like my body is falling apart                                          false
+I can't breathe easily                                                        true
+Total number of True - Part 2 | Acetylcholine | Physical                      7
+
+Part 2 | Acetylcholine | Character                                            true
+I don't care about anyone's stories but my own                                false
+I don't pay attention to people's feelings                                    true
+I don't feel buoyant                                                          3
+Total number of True - Part 2 | Acetylcholine | Character
+
+Part 2 | Acetylcholine | Personality                                          true
+I don't feel joy very often                                                   false
+I feel despair
+I protect myself from being hurt by others by never telling much about        true
+myself
+I find it more comfortable to do things alone rather than in a large group    false
+Other people get angrier about bothersome things than I do                    true
+I give in easily and tend to be submissive                                    false
+I rarely feel passionate about anything                                       true
+I like routine                                                                false
+Total number of True - Part 2 | Acetylcholine | Personality                   8
+
+Total number of True responses - Acetylcholine deficiency                     24
+
+Part 2 | GABA | Memory and attention                                          true
+I find it difficult to concentrate because I'm nervous and jumpy              false
+I can't remember phone numbers                                                true
+I have trouble finding the right word                                         false
+I have trouble remembering things when I am put on the spot                   true
+I know I am intelligent, but it is hard to show others                        false
+My ability to focus comes and goes
+When I read, I find I have to go back over the same paragraph a few times to  true
+absorb the information
+I am a quick thinker but can't always say what I mean                             false
+Total number of True - Part 2 | GABA | Memory and attention                       8
+
+Part 2 | GABA | Physical                                                          true
+I feel shaky                                                                      false
+I sometimes tremble                                                               true
+I have frequent backaches and/or headaches                                        false
+I tend to have shortness of breath                                                true
+I tend to have heart palpitations                                                 false
+I tend to have cold hands                                                         true
+I sometimes sweat too much
+I am sometimes dizzy                                                              false
+I often have muscle tension                                                       true
+I tend to get butterflies in my stomach                                           false
+I crave bitter foods                                                              true
+I am often nervous                                                                false
+I like yoga because it helps me to relax                                          true
+I often feel fatigued even when I have had a good night's sleep                   false
+I overea                                                                          15
+Total number of True - Part 2 | GABA | Physical
+
+Part 2 | GABA | Character                                                         true
+I don't play by the rules anymore                                                 false
+I have lost my friends                                                            true
+I can't sustain romantic relationships                                            false
+I consider the law arbitrary and without reason                                   false
+I now consider rules that I used to follow ridiculous                             5
+Total number of True - Part 2 | GABA | Character
+
+Part 2 | GABA | Personality                                                       true
+I have mood swings
+I enjoy doing many things at one time, but I find it difficult to decide what to  false
+do first
+I tend to do things just because I think they'd be fun                            true
+When things are dull, I always try to introduce some excitement                   false
+I tend to be fickle, changing my mood and thoughts frequently                     true
+I tend to get overly excited about things                                 false
+My impulses tend to get me into a lot of trouble                          true
+I tend to be theatrical and draw attention to myself                      false
+I speak my mind no matter what the reaction of others may be              true
+I sometimes have fits of rage and then feel terribly guilty               false
+I often tell lies to get out of trouble                                   true
+I have always had less interest than the average person in sex            false
+                                                                          12
+Total number of True - Part 2 | GABA | Personality
+                                                                          40
+Total number of True responses - GABA deficiency
+                                                                          true
+Part 2 | Serotonin | Memory and attention                                 false
+I am not very perceptive                                                  true
+I can't remember things that I have seen in the past                      false
+I have a slow reaction time                                               4
+I have a poor sense of direction
+Total number of True - Part 2 | Serotonin | Memory and attention          true
+                                                                          false
+Part 2 | Serotonin | Physical                                             true
+I have night sweats                                                       false
+I have insomnia                                                           true
+I tend to sleep in many different positions in order to feel comfortable  false
+I always awake early in the morning                                       true
+I can't relax                                                             false
+I wake up at least two times per night                                    true
+It is difficult for me to fall back asleep when I am awakened             false
+I crave salt                                                              10
+I have less energy to exercise
+I am sad                                                                  true
+Total number of True - Part 2 | Serotonin | Physical                      false
+                                                                          true
+Part 2 | Serotonin | Character
+I can't stop thinking about the meaning of life
+I no longer want to take risks
+The lack of meaning in my life is painful to me
+Total number of True - Part 2 | Serotonin | Character    3
+
+Par 2 | Serotonin | Personality                          true
+I have chronic anxiety                                   false
+I am easily irritated                                    true
+I have thoughts of self-destruction                      false
+I have had suicidal thoughts in my life                  true
+I tend to dwell on ideas too much                        false
+I am sometimes so structured that I become inflexible    true
+My imagination takes over                                false
+Fear grips me                                            8
+Total number of True - Part 2 | Serotonin | Personality
+                                                         25
+Total number of True responses - Serotonin deficiency
+

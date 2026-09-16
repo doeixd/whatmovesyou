@@ -1,0 +1,709 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-09-16T00:00:00Z",
+  "locale": "en-US",
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Spectra",
+      "question": "Who you are",
+      "order": 0,
+      "standalone": true
+    }
+  ],
+  "responseScales": [
+    {
+      "id": "agree5",
+      "type": "likert",
+      "allowNotApplicable": false,
+      "options": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "id": "a7_systemizing",
+      "block": "A",
+      "name": "Systemizing",
+      "poles": {
+        "low": "Fluid / social",
+        "high": "Systematic / literal"
+      },
+      "definition": "Preference for deriving rules and structure over reading people and context, together with heightened sensitivity to detail and change.",
+      "facets": [
+        {
+          "id": "a7_systemizing.rule",
+          "name": "Rule-seeking",
+          "definition": "Needing the mechanism before acting."
+        },
+        {
+          "id": "a7_systemizing.detail",
+          "name": "Detail and change sensitivity",
+          "definition": "Noticing alterations others miss; load from sensory input."
+        },
+        {
+          "id": "a7_systemizing.literality",
+          "name": "Literality",
+          "definition": "Taking and giving language at face value."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "polygenic — no transmitter account",
+          "grade": "genetic",
+          "mechanism": "Autistic traits are continuously distributed in the general population and highly heritable, but no clean neurotransmitter story exists. Saying so is part of the point.",
+          "verification": "Formal assessment for the clinical end; the trait itself is not confirmable by any biomarker.",
+          "citations": [
+            "aq_dimensional2022",
+            "aq_factor2019"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "medium",
+        "stateSensitivity": "low",
+        "copy": {
+          "costId": "copy_a7_cost",
+          "upsideId": "copy_a7_upside"
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "a7_sys_s01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.rule",
+      "text": "I need to know how something works before I'm comfortable using it.",
+      "informantText": "They need to know how something works before they're comfortable using it.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.3,
+        "notes": "Occupational confound: engineers and technicians self-select. Check DIF by occupation if collected."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "confound:occupation"
+      ]
+    },
+    {
+      "id": "a7_sys_s02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.rule",
+      "text": "I'm happy to use something without understanding it.",
+      "informantText": "They're happy to use something without understanding it.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a7_sys_s03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.rule",
+      "text": "I look for the rule behind what people are doing.",
+      "informantText": "They look for the rule behind what people are doing.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.2,
+        "notes": "Boundary case from the construct sheet: reading people *by* system counts as Systemizing, not as social skill. Cognitive interviews should confirm respondents hear it that way rather than as 'I understand people'."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a7_sys_s04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.rule",
+      "text": "Vague instructions don't bother me; I'll work it out as I go.",
+      "informantText": "Vague instructions don't bother them; they'll work it out as they go.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.8
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a7_sys_s05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.rule",
+      "text": "I'd rather have an explicit procedure than be told to use my judgement.",
+      "informantText": "They'd rather have an explicit procedure than be told to use their judgement.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.1
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a7_sys_s06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.rule",
+      "text": "I prefer to feel my way through a new situation rather than map it out.",
+      "informantText": "They prefer to feel their way through a new situation rather than map it out.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a7_sys_s07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.rule",
+      "text": "I've taken something apart — physically or on paper — just to see how it was put together.",
+      "informantText": "They've taken something apart — physically or on paper — just to see how it was put together.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.7
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a7_sys_s08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.rule",
+      "text": "How things work underneath holds no interest for me at all.",
+      "informantText": "How things work underneath holds no interest for them at all.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a7_sys_c01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.detail",
+      "text": "I notice small changes to a room or a routine that others miss.",
+      "informantText": "They notice small changes to a room or a routine that others miss.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.1
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a7_sys_c02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.detail",
+      "text": "Small changes to a room usually pass me by.",
+      "informantText": "Small changes to a room usually pass them by.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a7_sys_c03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.detail",
+      "text": "Background noise or lighting affects me more than it seems to affect other people.",
+      "informantText": "Background noise or lighting affects them more than it seems to affect other people.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.5,
+        "notes": "Boundary with sensory processing sensitivity and with A2: sensory load can be distress-driven. If the whole detail facet loads on A2 rather than A7, the facet belongs elsewhere."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "boundary:a2"
+      ]
+    },
+    {
+      "id": "a7_sys_c04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.detail",
+      "text": "Unannounced changes to a plan don't particularly affect me.",
+      "informantText": "Unannounced changes to a plan don't particularly affect them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a7_sys_c05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.detail",
+      "text": "A change to my routine I wasn't told about can throw off my whole day.",
+      "informantText": "A change to their routine they weren't told about can throw off their whole day.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a7_sys_c06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.detail",
+      "text": "Busy, loud environments don't drain me.",
+      "informantText": "Busy, loud environments don't drain them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.8,
+        "notes": "Also an A4 boundary: this could read as sociability rather than sensory load. Watch the correlation with the A4 reward facet."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "boundary:a4"
+      ]
+    },
+    {
+      "id": "a7_sys_c07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.detail",
+      "text": "I've had to leave somewhere because the noise, light or crowding became unbearable.",
+      "informantText": "They've had to leave somewhere because the noise, light or crowding became unbearable.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a7_sys_c08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.detail",
+      "text": "I can move between very different environments all day and feel much the same.",
+      "informantText": "They can move between very different environments all day and feel much the same.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.6,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a7_sys_l01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.literality",
+      "text": "I read between the lines easily in conversation.",
+      "informantText": "They read between the lines easily in conversation.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a7_sys_l02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.literality",
+      "text": "I answer the question people asked rather than the one they meant.",
+      "informantText": "They answer the question people asked rather than the one they meant.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a7_sys_l03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.literality",
+      "text": "I pick up on hints without them being spelled out.",
+      "informantText": "They pick up on hints without them being spelled out.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.2,
+        "notes": "High-context vs low-context communication cultures differ in how much is hinted at in the first place. DIF-test by locale."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a7_sys_l04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.literality",
+      "text": "People have told me I take things too literally.",
+      "informantText": "People have told them they take things too literally.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a7_sys_l05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.literality",
+      "text": "I can tell when someone's being polite rather than sincere.",
+      "informantText": "They can tell when someone's being polite rather than sincere.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.7
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a7_sys_l06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.literality",
+      "text": "I'd rather people said exactly what they wanted than implied it.",
+      "informantText": "They'd rather people said exactly what they wanted than implied it.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4,
+        "notes": "Directness preference overlaps A5 and varies by culture; same DIF concern as l03."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "boundary:a5"
+      ]
+    },
+    {
+      "id": "a7_sys_l07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.literality",
+      "text": "I've only realised a conversation was going badly when someone told me afterwards.",
+      "informantText": "They've only realised a conversation was going badly when someone told them afterwards.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a7_sys_l08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a7_systemizing",
+      "facetId": "a7_systemizing.literality",
+      "text": "I read social situations quickly and accurately, almost without trying.",
+      "informantText": "They read social situations quickly and accurately, almost without trying.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 6.8,
+        "notes": "High desirability, and the group most likely to under-endorse it is also the group most likely to have learned to camouflage. Camouflaging is learned and gendered, so self-report understates Systemizing in some respondents — a known limitation of every autistic-trait self-report measure, to be stated in the report copy."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "confound:camouflaging"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "aq_dimensional2022",
+      "title": "Autism traits dimensionality and multivariate relationship with alexithymia and anxiety in the general population",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0891422222001913",
+      "year": 2022,
+      "claim": "Autistic traits are continuously distributed through the general population rather than forming a discrete category."
+    },
+    {
+      "id": "aq_factor2019",
+      "title": "A comprehensive psychometric analysis of autism-spectrum quotient factor models using two large samples",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31464106/",
+      "year": 2019,
+      "claim": "The AQ's factor structure is unstable across samples; a reduced multi-factor solution performs best in both community and clinical data."
+    }
+  ]
+}

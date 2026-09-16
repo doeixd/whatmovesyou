@@ -1,0 +1,488 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schema/item-bank.schema.json",
+  "title": "Item bank",
+  "description": "Validates a serialized item bank. Mirrors schema/types.ts; keep in sync.",
+  "type": "object",
+  "required": ["version", "updatedAt", "locale", "blocks", "responseScales", "scales", "items", "citations"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "$ref": "#/$defs/semver" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "locale": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
+    "blocks": { "type": "array", "items": { "$ref": "#/$defs/block" } },
+    "responseScales": { "type": "array", "items": { "$ref": "#/$defs/responseScale" }, "minItems": 1 },
+    "scales": { "type": "array", "items": { "$ref": "#/$defs/scale" }, "minItems": 1 },
+    "items": { "type": "array", "items": { "$ref": "#/$defs/item" }, "minItems": 1 },
+    "flags": { "type": "array", "items": { "$ref": "#/$defs/flag" } },
+    "confirmationRoutes": { "type": "array", "items": { "$ref": "#/$defs/confirmationRoute" } },
+    "interactionRules": { "type": "array", "items": { "$ref": "#/$defs/interactionRule" } },
+    "norms": { "type": "array", "items": { "$ref": "#/$defs/normTable" } },
+    "contextFields": { "type": "array", "items": { "$ref": "#/$defs/contextField" } },
+    "citations": { "type": "array", "items": { "$ref": "#/$defs/citation" } }
+  },
+
+  "$defs": {
+    "semver": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_.-]{1,63}$" },
+    "blockId": { "enum": ["A", "B", "C"] },
+    "citationRefs": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+
+    "block": {
+      "type": "object",
+      "required": ["id", "name", "question", "order", "standalone"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/blockId" },
+        "name": { "type": "string" },
+        "question": { "type": "string" },
+        "order": { "type": "integer", "minimum": 0 },
+        "standalone": { "type": "boolean" }
+      }
+    },
+
+    "responseScale": {
+      "type": "object",
+      "required": ["id", "type", "allowNotApplicable"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "type": {
+          "enum": ["likert", "magnitude", "frequency", "impairment", "clockTime", "duration", "boolean", "single", "multi"]
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["value", "label"],
+            "additionalProperties": false,
+            "properties": { "value": { "type": "number" }, "label": { "type": "string" } }
+          }
+        },
+        "allowNotApplicable": { "type": "boolean" },
+        "notApplicableLabel": { "type": "string" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "enum": ["likert", "magnitude", "frequency", "impairment", "single", "multi"] } } },
+          "then": { "required": ["options"] }
+        },
+        {
+          "if": { "properties": { "allowNotApplicable": { "const": true } } },
+          "then": { "required": ["notApplicableLabel"] }
+        }
+      ]
+    },
+
+    "evidenceGrade": { "enum": ["strong", "moderate", "preliminary", "genetic", "none"] },
+
+    "bodyLink": {
+      "type": "object",
+      "description": "Every biological claim carries a grade, a mechanism sentence and citations.",
+      "required": ["system", "grade", "mechanism", "verification", "citations"],
+      "additionalProperties": false,
+      "properties": {
+        "system": { "type": "string" },
+        "grade": { "$ref": "#/$defs/evidenceGrade" },
+        "mechanism": { "type": "string", "minLength": 10 },
+        "verification": { "type": ["string", "null"] },
+        "citations": { "$ref": "#/$defs/citationRefs" }
+      },
+      "allOf": [
+        {
+          "comment": "A strong or moderate claim must cite something.",
+          "if": { "properties": { "grade": { "enum": ["strong", "moderate"] } } },
+          "then": { "properties": { "citations": { "minItems": 1 } } }
+        }
+      ]
+    },
+
+    "scale": {
+      "type": "object",
+      "required": ["id", "block", "name", "poles", "definition", "scoring", "bodyLinks", "report"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "block": { "$ref": "#/$defs/blockId" },
+        "name": { "type": "string" },
+        "poles": {
+          "type": "object",
+          "required": ["low", "high"],
+          "additionalProperties": false,
+          "properties": { "low": { "type": "string" }, "high": { "type": "string" } }
+        },
+        "definition": { "type": "string" },
+        "facets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "definition"],
+            "additionalProperties": false,
+            "properties": { "id": { "$ref": "#/$defs/id" }, "name": { "type": "string" }, "definition": { "type": "string" } }
+          }
+        },
+        "scoring": {
+          "type": "object",
+          "required": ["method", "minItemsAnswered"],
+          "additionalProperties": false,
+          "properties": {
+            "method": { "enum": ["mean", "sum", "derived"] },
+            "minItemsAnswered": { "type": "integer", "minimum": 1 },
+            "formula": { "type": "string" }
+          },
+          "if": { "properties": { "method": { "const": "derived" } } },
+          "then": { "required": ["formula"] }
+        },
+        "bodyLinks": { "type": "array", "items": { "$ref": "#/$defs/bodyLink" }, "minItems": 1 },
+        "report": { "$ref": "#/$defs/reportPolicy" }
+      }
+    },
+
+    "reportPolicy": {
+      "type": "object",
+      "required": ["showPercentile", "stigmaRisk", "stateSensitivity", "copy"],
+      "additionalProperties": false,
+      "properties": {
+        "showPercentile": { "type": "boolean" },
+        "stigmaRisk": { "enum": ["low", "medium", "high"] },
+        "stateSensitivity": { "enum": ["low", "medium", "high"] },
+        "copy": {
+          "type": "object",
+          "description": "Cost and upside are both required; no consolation-prize framing.",
+          "required": ["costId", "upsideId"],
+          "additionalProperties": false,
+          "properties": { "costId": { "$ref": "#/$defs/id" }, "upsideId": { "$ref": "#/$defs/id" } }
+        },
+        "internalOnly": { "type": "boolean" }
+      }
+    },
+
+    "item": {
+      "type": "object",
+      "required": ["id", "status", "addedInVersion", "block", "scaleId", "text", "responseScaleId", "keyed", "timeframe", "review", "provenance"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "status": { "enum": ["draft", "in-review", "piloted", "retired"] },
+        "addedInVersion": { "$ref": "#/$defs/semver" },
+        "retiredInVersion": { "$ref": "#/$defs/semver" },
+        "block": { "$ref": "#/$defs/blockId" },
+        "scaleId": { "$ref": "#/$defs/id" },
+        "facetId": { "$ref": "#/$defs/id" },
+        "text": { "type": "string", "minLength": 8, "maxLength": 240 },
+        "informantText": { "type": "string", "minLength": 8, "maxLength": 240 },
+        "responseScaleId": { "$ref": "#/$defs/id" },
+        "keyed": { "enum": ["+", "-"] },
+        "timeframe": { "enum": ["general", "past-2-weeks", "past-month", "right-now", "typical-day", "lifetime"] },
+        "gate": { "$ref": "#/$defs/gate" },
+        "safety": { "$ref": "#/$defs/safetyTrigger" },
+        "validityRole": { "enum": ["attention-check", "infrequency", "desirability"] },
+        "review": { "$ref": "#/$defs/itemReview" },
+        "psychometrics": { "$ref": "#/$defs/itemPsychometrics" },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      },
+      "allOf": [
+        {
+          "comment": "A piloted item must carry informant wording and have been reviewed.",
+          "if": { "properties": { "status": { "const": "piloted" } } },
+          "then": { "required": ["informantText"] }
+        },
+        {
+          "comment": "High cultural load must not ship without review notes explaining the decision.",
+          "if": { "properties": { "review": { "properties": { "culturalLoad": { "const": "high" } } } } },
+          "then": { "properties": { "review": { "required": ["notes"] } } }
+        },
+        {
+          "comment": "Retired items record when.",
+          "if": { "properties": { "status": { "const": "retired" } } },
+          "then": { "required": ["retiredInVersion"] }
+        }
+      ]
+    },
+
+    "itemReview": {
+      "type": "object",
+      "required": ["culturalLoad", "desirabilityRisk", "readabilityGrade"],
+      "additionalProperties": false,
+      "properties": {
+        "culturalLoad": { "enum": ["low", "medium", "high"] },
+        "desirabilityRisk": { "enum": ["low", "medium", "high"] },
+        "readabilityGrade": { "type": "number", "minimum": 1, "maximum": 16 },
+        "reviewedBy": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+
+    "itemPsychometrics": {
+      "type": "object",
+      "required": ["sampleN", "sampleVersion"],
+      "additionalProperties": false,
+      "properties": {
+        "sampleN": { "type": "integer", "minimum": 1 },
+        "sampleVersion": { "type": "string" },
+        "itemTotalR": { "type": "number", "minimum": -1, "maximum": 1 },
+        "alphaIfDropped": { "type": "number" },
+        "meanResponse": { "type": "number" },
+        "sdResponse": { "type": "number" },
+        "difFlags": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["grouping", "effect", "note"],
+            "additionalProperties": false,
+            "properties": {
+              "grouping": { "enum": ["religiosity", "gender", "age", "locale", "ancestry"] },
+              "effect": { "type": "number" },
+              "note": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+
+    "provenance": {
+      "type": "object",
+      "required": ["origin"],
+      "additionalProperties": false,
+      "properties": {
+        "origin": { "enum": ["original", "adapted", "licensed"] },
+        "sourceInstrument": { "type": "string" },
+        "licence": { "type": "string" },
+        "adaptedFrom": { "type": "string" }
+      },
+      "if": { "properties": { "origin": { "enum": ["adapted", "licensed"] } } },
+      "then": { "required": ["sourceInstrument", "licence"] }
+    },
+
+    "condition": {
+      "type": "object",
+      "required": ["source", "ref", "op"],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "enum": ["context", "item", "scale", "flag"] },
+        "ref": { "type": "string" },
+        "op": { "enum": ["eq", "neq", "gt", "gte", "lt", "lte", "in", "includes", "answered"] },
+        "value": {}
+      },
+      "if": { "properties": { "op": { "not": { "const": "answered" } } } },
+      "then": { "required": ["value"] }
+    },
+
+    "gate": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["all"],
+          "additionalProperties": false,
+          "properties": { "all": { "type": "array", "items": { "$ref": "#/$defs/condition" }, "minItems": 1 } }
+        },
+        {
+          "type": "object",
+          "required": ["any"],
+          "additionalProperties": false,
+          "properties": { "any": { "type": "array", "items": { "$ref": "#/$defs/condition" }, "minItems": 1 } }
+        },
+        {
+          "type": "object",
+          "required": ["not"],
+          "additionalProperties": false,
+          "properties": { "not": { "$ref": "#/$defs/condition" } }
+        }
+      ]
+    },
+
+    "safetyTrigger": {
+      "type": "object",
+      "required": ["atOrAbove", "severity", "resourceSet", "interrupt"],
+      "additionalProperties": false,
+      "properties": {
+        "atOrAbove": { "type": "number" },
+        "severity": { "enum": ["support", "urgent"] },
+        "resourceSet": { "type": "string" },
+        "interrupt": { "const": true, "description": "Resources are shown immediately, never deferred to results." }
+      }
+    },
+
+    "flag": {
+      "type": "object",
+      "required": ["id", "name", "target", "itemIds", "rule", "performance", "minPpvToShow", "confirmationRouteId", "copy", "citations"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "type": "string" },
+        "target": { "type": "string" },
+        "itemIds": { "type": "array", "items": { "$ref": "#/$defs/id" }, "minItems": 1 },
+        "rule": { "$ref": "#/$defs/flagRule" },
+        "performance": { "type": "array", "items": { "$ref": "#/$defs/flagPerformance" }, "minItems": 1 },
+        "minPpvToShow": { "type": "number", "minimum": 0, "maximum": 1 },
+        "gate": { "$ref": "#/$defs/gate" },
+        "confirmationRouteId": { "$ref": "#/$defs/id" },
+        "copy": {
+          "type": "object",
+          "required": ["patternId"],
+          "additionalProperties": false,
+          "properties": { "patternId": { "$ref": "#/$defs/id" }, "notThisId": { "$ref": "#/$defs/id" } }
+        },
+        "citations": { "$ref": "#/$defs/citationRefs" }
+      }
+    },
+
+    "flagRule": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["kind", "scoreOf", "atOrAbove"],
+          "additionalProperties": false,
+          "properties": {
+            "kind": { "const": "threshold" },
+            "scoreOf": { "type": "array", "items": { "$ref": "#/$defs/id" }, "minItems": 1 },
+            "atOrAbove": { "type": "number" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "scoreOf", "countAtOrAbove", "minCount"],
+          "additionalProperties": false,
+          "properties": {
+            "kind": { "const": "count" },
+            "scoreOf": { "type": "array", "items": { "$ref": "#/$defs/id" }, "minItems": 1 },
+            "countAtOrAbove": { "type": "number" },
+            "minCount": { "type": "integer", "minimum": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "formula"],
+          "additionalProperties": false,
+          "properties": {
+            "kind": { "const": "formula" },
+            "formula": { "type": "string" },
+            "atOrAbove": { "type": "number" },
+            "atOrBelow": { "type": "number" }
+          }
+        }
+      ]
+    },
+
+    "flagPerformance": {
+      "type": "object",
+      "description": "Per-population accuracy. PPV is computed from these, and a flag below minPpvToShow is suppressed.",
+      "required": ["population", "sensitivity", "specificity", "basePrevalence", "citations"],
+      "additionalProperties": false,
+      "properties": {
+        "population": { "type": "string" },
+        "appliesWhen": { "$ref": "#/$defs/gate" },
+        "sensitivity": { "type": "number", "minimum": 0, "maximum": 1 },
+        "specificity": { "type": "number", "minimum": 0, "maximum": 1 },
+        "basePrevalence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "citations": { "$ref": "#/$defs/citationRefs" }
+      }
+    },
+
+    "confirmationRoute": {
+      "type": "object",
+      "required": ["id", "kind", "name", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "kind": { "enum": ["lab", "device", "clinical", "protocol", "genotype"] },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "thresholdNote": { "type": "string" },
+        "accessNote": { "type": "string" }
+      }
+    },
+
+    "interactionRule": {
+      "type": "object",
+      "description": "Pre-specified and hand-written only. Never mined from data.",
+      "required": ["id", "priority", "conditions", "copyId", "rationale", "citations"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "priority": { "type": "integer", "minimum": 0 },
+        "conditions": { "type": "array", "items": { "$ref": "#/$defs/condition" }, "minItems": 2 },
+        "copyId": { "$ref": "#/$defs/id" },
+        "rationale": { "type": "string", "minLength": 10 },
+        "citations": { "$ref": "#/$defs/citationRefs" },
+        "suggestsAssessment": { "type": "boolean" }
+      }
+    },
+
+    "normTable": {
+      "type": "object",
+      "required": ["scaleId", "band", "n", "mean", "sd", "source", "provisional"],
+      "additionalProperties": false,
+      "properties": {
+        "scaleId": { "$ref": "#/$defs/id" },
+        "band": {
+          "type": "object",
+          "required": ["ageMin", "ageMax"],
+          "additionalProperties": false,
+          "properties": {
+            "ageMin": { "type": "integer", "minimum": 0 },
+            "ageMax": { "type": "integer", "maximum": 120 },
+            "sex": { "enum": ["female", "male", "other", "any"] },
+            "locale": { "type": "string" }
+          }
+        },
+        "n": { "type": "integer", "minimum": 0, "description": "0 is allowed only for placeholder norms, which must be marked provisional." },
+        "mean": { "type": "number" },
+        "sd": { "type": "number", "exclusiveMinimum": 0 },
+        "percentiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["p", "score"],
+            "additionalProperties": false,
+            "properties": { "p": { "type": "number", "minimum": 0, "maximum": 100 }, "score": { "type": "number" } }
+          }
+        },
+        "source": { "type": "string" },
+        "provisional": { "type": "boolean" }
+      },
+      "if": {
+        "comment": "Thin or absent norming samples must force hedged copy.",
+        "properties": { "n": { "maximum": 99 } }
+      },
+      "then": { "properties": { "provisional": { "const": true } } }
+    },
+
+    "contextField": {
+      "type": "object",
+      "required": ["id", "label", "type", "scored"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "type": { "enum": ["boolean", "number", "single", "multi", "text"] },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["value", "label"],
+            "additionalProperties": false,
+            "properties": { "value": { "type": "number" }, "label": { "type": "string" } }
+          }
+        },
+        "scored": { "const": false },
+        "explains": { "type": "array", "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+
+    "citation": {
+      "type": "object",
+      "required": ["id", "title", "url", "claim"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "title": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "year": { "type": "integer" },
+        "claim": { "type": "string", "minLength": 10 }
+      }
+    }
+  }
+}

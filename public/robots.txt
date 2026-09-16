@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /assessment/
+Sitemap: https://whatmovesyou.pages.dev/sitemap.xml

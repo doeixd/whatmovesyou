@@ -1,0 +1,13 @@
+# Short, typeable URLs for the pages people will link to by name, plus the
+# obvious misses. 301 because these are permanent.
+
+/braverman              /about/braverman   301
+/braverman-test         /about/braverman   301
+/test                   /assessment/            301
+/take                   /assessment/            301
+/assessment             /assessment/            301
+/articles               /articles/              301
+/sources                /about/sources     301
+/evidence               /about/evidence    301
+/method                 /about/method      301
+/about                  /about/method      301

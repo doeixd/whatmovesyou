@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How this was built, and what wasn't done</title>
+<meta name="description" content="Construct definitions, a 194-item pool cut to 65, and an honest account of the validation steps that were skipped.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131419" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://whatmovesyou.pages.dev/about/method">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How this was built, and what wasn't done">
+<meta property="og:description" content="Construct definitions, a 194-item pool cut to 65, and an honest account of the validation steps that were skipped.">
+<meta property="og:site_name" content="What moves you">
+<meta property="og:url" content="https://whatmovesyou.pages.dev/about/method">
+<meta property="og:image" content="https://whatmovesyou.pages.dev/og/method.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How this was built, and what wasn't done">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <a class="wordmark" href="/">What moves you</a>
+  <nav aria-label="Main">
+    <a href="/about/braverman">The Braverman test</a>
+    <a href="/articles/">Explainers</a>
+    <a href="/about/evidence">Evidence</a>
+    <a href="/about/method" aria-current="page">Method</a>
+    <a href="/about/sources">Sources</a>
+  </nav>
+</header>
+<main class="wrap" id="main">
+
+<p class="kicker">Method</p>
+<h1 class="display">How this was built — and what wasn't done</h1>
+<p class="lede">The short version: the construction was careful, and the validation hasn't happened. Both halves matter.</p>
+
+<h2>What was done</h2>
+<ul>
+<li><strong>Constructs defined first.</strong> Each dimension has a written definition with explicit out-of-scope boundaries and pre-decided edge cases, so items couldn't drift toward whatever sounded good.</li>
+<li><strong>A blueprint before writing.</strong> Each scale was allocated a fixed number of items per facet and per severity level — mild, moderate and extreme — so the test discriminates across the range rather than only in the middle.</li>
+<li><strong>194 items written, 65 kept.</strong> Roughly three times what was needed, so the selection could cut anything carrying a known confound.</li>
+<li><strong>Recorded confounds.</strong> Items that might track culture, religion, income or circumstance rather than the construct are flagged in the source data with the reasoning attached.</li>
+<li><strong>Cost and upside for every dimension.</strong> Enforced by a build check: a scale missing either half fails the build.</li>
+</ul>
+
+<h2>What wasn't done</h2>
+<ul>
+<li><strong>No independent review.</strong> Nobody but the author checked whether the items measure what the definitions say.</li>
+<li><strong>No cognitive interviews.</strong> No item has been read aloud to a stranger to find out what they think it's asking.</li>
+<li><strong>No pilot study.</strong> There are no reliability figures, no factor analysis, and no evidence the nine dimensions separate as intended.</li>
+<li><strong>No norms.</strong> Which is why there are no percentiles anywhere in the results.</li>
+<li><strong>No differential item functioning testing.</strong> Items that may behave differently for religious respondents, or across cultures, haven't been checked. The most affected dimension is deliberately withheld from the report entirely.</li>
+</ul>
+
+<div class="callout callout-evidence">
+<p>Those five gaps exist because this was built without a budget, and participant panels cost money. They are stated rather than hidden, which is the difference between an honest instrument in development and a test that claims more than it has earned.</p>
+</div>
+
+<h2>What would change that</h2>
+<p>Everything above is recoverable from ordinary use: reliability figures, factor structure and item performance all fall out of enough responses. If a contribution option is added later, it will be explicit, optional, identifier-free, and reversible with a deletion code.</p>
+
+</main>
+<footer class="wrap site-foot">
+  <nav class="foot-nav" aria-label="Footer">
+    <a href="/">Home</a>
+    <a href="/assessment/">Take the test</a>
+    <a href="/about/braverman">The Braverman test</a>
+    <a href="/articles/">Explainers</a>
+    <a href="/about/evidence">Evidence</a>
+    <a href="/about/method">Method</a>
+    <a href="/about/sources">Sources</a>
+  </nav>
+  <p class="colophon">Item bank 0.9.0 · not independently validated · not a diagnosis · nothing you answer is sent anywhere</p>
+</footer>
+</body>
+</html>

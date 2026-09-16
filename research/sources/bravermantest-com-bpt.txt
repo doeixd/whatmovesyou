@@ -1,0 +1,25 @@
+-->
+Braverman Personality Type Assessment - Online Test
+Braverman Personality Type Assessment
+Part 1: Determining your Dominant Nature
+Instructions: Answer each question by selecting either True or False. Answer the questions in terms of how you feel
+most of the time. For example, if you’ve had a bad night’s sleep and feel tired today, answer the questions that
+pertain to your energy levels based on how you feel on a more average day.
+Total Results Summary
+{{s.sectionNumber}} Total Number of True Responses - {{s.sectionName}} Nature:
+{{calculate(s.section)}}
+You are
+{{dominance()}}
+Dominant.
+Share on Facebook
+Part 2: Defining your Deficiencies
+Instructions: Answer each question by selecting either True or False. The second assessment will determine if you
+are deficient in any of the four biochemicals, including the one that governs your nature. Many of the questions
+relate to symptoms you might now be experiencing. Answer the questions in terms of how you feel right now; it
+doesn’t matter how long you’ve been experiencing these symptoms, or even if they occurred today for the first
+time.
+Deficiency Results Summary
+{{s.sectionNumber}} Total Number of True Responses - {{s.sectionName}} Deficiency:
+{{calculate(s.section)}}
+This test and the following recommendations are taken directly from Dr. Eric R. Braverman’s book, “The Edge Effect:
+Achieve Total Health and Longevity with the Balanced Brain Advantage” New York: Sterling Publications, 2005.

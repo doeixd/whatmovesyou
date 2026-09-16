@@ -1,0 +1,714 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-09-16T00:00:00Z",
+  "locale": "en-US",
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Spectra",
+      "question": "Who you are",
+      "order": 0,
+      "standalone": true
+    }
+  ],
+  "responseScales": [
+    {
+      "id": "agree5",
+      "type": "likert",
+      "allowNotApplicable": false,
+      "options": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "id": "a1_drive",
+      "block": "A",
+      "name": "Drive",
+      "poles": {
+        "low": "Inert",
+        "high": "Driven"
+      },
+      "definition": "Tendency to initiate activity and to expend effort for reward, absent external demand.",
+      "facets": [
+        {
+          "id": "a1_drive.exploration",
+          "name": "Exploration",
+          "definition": "Seeking novelty and information unprompted."
+        },
+        {
+          "id": "a1_drive.effort",
+          "name": "Effort tolerance",
+          "definition": "Paying a cost for a larger or later reward."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "dopamine (reward, effort, exploration)",
+          "grade": "strong",
+          "mechanism": "Dopamine agonists can produce impulse-control disorders, and amphetamine raises willingness to expend effort for reward.",
+          "verification": "Not verifiable at the individual level; the causal evidence comes from drug manipulation, not from measuring a person's level.",
+          "citations": [
+            "dominion2010",
+            "treadway2012",
+            "deyoung2013"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "low",
+        "stateSensitivity": "medium",
+        "copy": {
+          "costId": "copy_a1_cost",
+          "upsideId": "copy_a1_upside"
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "a1_drive_e01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "I start things nobody asked me to start.",
+      "informantText": "They start things nobody asked them to start.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 4.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "source:interview-style"
+      ]
+    },
+    {
+      "id": "a1_drive_e02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "I'd rather stick with what already works than try an unfamiliar option.",
+      "informantText": "They'd rather stick with what already works than try an unfamiliar option.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.1
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a1_drive_e03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "I look things up for no reason other than wanting to know.",
+      "informantText": "They look things up for no reason other than wanting to know.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.8
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a1_drive_e04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "I wait until someone tells me what needs doing.",
+      "informantText": "They wait until someone tells them what needs doing.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 4.0,
+        "notes": "Workplace-culture loading: deference to instruction is normative in some settings and hierarchies. Watch in DIF by locale."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a1_drive_e05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "I rarely find myself wondering how something could be done differently.",
+      "informantText": "They rarely wonder aloud how something could be done differently.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a1_drive_e06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "I have more things I want to do than time to do them.",
+      "informantText": "They have more things they want to do than time to do them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 3.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a1_drive_e07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "Once I finish something, I'm happy to let the next thing wait.",
+      "informantText": "Once they finish something, they're happy to let the next thing wait.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.4,
+        "notes": "Reworded from \"When I finish something, I'm content to leave it there\", which was ambiguous: \"leave it there\" could be read as not refining the finished thing (perfectionism) rather than not seeking the next one. The facet is exploration, so the wording now names the next thing explicitly."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a1_drive_e08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "I've changed an arrangement that was working fine just to see if it could be better.",
+      "informantText": "They've changed an arrangement that was working fine just to see if it could be better.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a1_drive_e09",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "New projects are something I let other people volunteer for.",
+      "informantText": "New projects are something they let other people volunteer for.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a1_drive_e10",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "I've taken on something new while already overcommitted, knowing what it would cost me.",
+      "informantText": "They've taken on something new while already overcommitted, knowing what it would cost them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.8
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a1_drive_e11",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "Whole months go by where I don't want to learn or try anything new.",
+      "informantText": "Whole months go by where they don't want to learn or try anything new.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.2,
+        "notes": "Overlaps depressive anhedonia. Check discriminant correlation with the state block; if it tracks PHQ more than Drive, cut."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a1_drive_e12",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.exploration",
+      "text": "People close to me have asked me to stop starting things.",
+      "informantText": "People close to them have asked them to stop starting things.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a1_drive_f01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I'll do work others would find tedious if the thing itself interests me.",
+      "informantText": "They'll do work others would find tedious if the thing itself interests them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a1_drive_f02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I often decide the effort outweighs the payoff.",
+      "informantText": "They often decide the effort outweighs the payoff.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.1,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a1_drive_f03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I'll take the harder option when the payoff is bigger.",
+      "informantText": "They'll take the harder option when the payoff is bigger.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 4.4,
+        "notes": "High desirability. Retained because it is the most direct behavioral analogue of the effort-for-reward paradigm; matched by f02 and f04 at the opposite pole."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "construct-analogue:effort-discounting"
+      ]
+    },
+    {
+      "id": "a1_drive_f04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "If something takes more work than I expected, I usually drop it.",
+      "informantText": "If something takes more work than they expected, they usually drop it.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.8,
+        "notes": "Boundary risk with A3 follow-through. Kept because the trigger here is effort cost, not competing pull. Verify in the cross-loading check."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "boundary:a3"
+      ]
+    },
+    {
+      "id": "a1_drive_f05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I keep working on a problem after other people have set it aside.",
+      "informantText": "They keep working on a problem after other people have set it aside.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a1_drive_f06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I lose interest once the interesting part of a project is over.",
+      "informantText": "They lose interest once the interesting part of a project is over.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "facet-separator"
+      ]
+    },
+    {
+      "id": "a1_drive_f07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "The idea of months of unglamorous work for a later payoff puts me off entirely.",
+      "informantText": "The idea of months of unglamorous work for a later payoff puts them off entirely.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 8.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a1_drive_f08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I've talked myself out of goals by deciding the work wasn't realistic.",
+      "informantText": "They've talked themselves out of goals by deciding the work wasn't realistic.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.7
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a1_drive_f09",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I've spent my own time and money on something no one was paying me for.",
+      "informantText": "They've spent their own time and money on something no one was paying them for.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.9,
+        "notes": "SES confound: requires disposable resources. Check DIF by income band if collected."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "behavioral-evidence",
+        "confound:ses"
+      ]
+    },
+    {
+      "id": "a1_drive_f10",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I've pushed myself to exhaustion for something nobody required of me.",
+      "informantText": "They've pushed themselves to exhaustion for something nobody required of them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a1_drive_f11",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "Looking back, I've let big opportunities go because pursuing them looked like too much work.",
+      "informantText": "Looking back, they've let big opportunities go because pursuing them looked like too much work.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a1_drive_f12",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a1_drive",
+      "facetId": "a1_drive.effort",
+      "text": "I find it hard to rest even when nothing needs doing.",
+      "informantText": "They find it hard to rest even when nothing needs doing.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.7,
+        "notes": "Overlaps A2 (restlessness from anxiety) and A8 (reduced sleep need in a phase). Cross-loading check required; if it loads on A2, cut."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "boundary:a2",
+        "boundary:a8"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "deyoung2013",
+      "title": "The neuromodulator of exploration: a unifying theory of the role of dopamine in personality",
+      "url": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2013.00762/full",
+      "year": 2013,
+      "claim": "Dopamine's general function is to promote exploration, linking it to Extraversion and Openness/Intellect."
+    },
+    {
+      "id": "treadway2012",
+      "title": "Dopaminergic mechanisms of individual differences in human effort-based decision-making",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3391699/",
+      "year": 2012,
+      "claim": "Striatal and vmPFC dopamine responsivity predicts willingness to expend effort for larger rewards."
+    },
+    {
+      "id": "dominion2010",
+      "title": "DOMINION study: impulse control disorders in Parkinson's disease",
+      "url": "https://www.medscape.com/viewarticle/721768",
+      "year": 2010,
+      "claim": "Impulse control disorders occur in about 17% of Parkinson's patients taking a dopamine agonist, 2-3x the rate of those not taking one."
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-09-16T00:00:00Z",
+  "locale": "en-US",
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Spectra",
+      "question": "Who you are",
+      "order": 0,
+      "standalone": true
+    }
+  ],
+  "responseScales": [
+    {
+      "id": "impair9",
+      "type": "impairment",
+      "allowNotApplicable": true,
+      "notApplicableLabel": "Doesn't apply to my situation",
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 2,
+          "label": "Slightly"
+        },
+        {
+          "value": 4,
+          "label": "Definitely"
+        },
+        {
+          "value": 6,
+          "label": "Markedly"
+        },
+        {
+          "value": 8,
+          "label": "Very severely"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "id": "a9_impairment",
+      "block": "A",
+      "name": "Impairment",
+      "poles": {
+        "low": "Unaffected",
+        "high": "Severely affected"
+      },
+      "definition": "How much current functioning is affected, whatever the cause. Crossed with every other scale to separate a feature of how someone is built from something that is costing them.",
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 4
+      },
+      "bodyLinks": [
+        {
+          "system": "none",
+          "grade": "none",
+          "mechanism": "Functional impact is measured directly and carries no biological claim. This scale deliberately does not ask why.",
+          "verification": null,
+          "citations": []
+        }
+      ],
+      "report": {
+        "showPercentile": false,
+        "stigmaRisk": "medium",
+        "stateSensitivity": "high",
+        "copy": {
+          "costId": "copy_a9_cost",
+          "upsideId": "copy_a9_upside"
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "a9_imp_01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "Because of how I've been feeling or functioning, my work or studies have suffered.",
+      "informantText": "Because of how they've been feeling or functioning, their work or studies have suffered.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 7.4
+      },
+      "provenance": {
+        "origin": "adapted",
+        "sourceInstrument": "WSAS-style impairment format",
+        "licence": "TO VERIFY before ship"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a9_imp_02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "Because of how I've been feeling or functioning, things at home have slipped.",
+      "informantText": "Because of how they've been feeling or functioning, things at home have slipped.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.8
+      },
+      "provenance": {
+        "origin": "adapted",
+        "sourceInstrument": "WSAS-style impairment format",
+        "licence": "TO VERIFY before ship"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a9_imp_03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "Because of how I've been feeling or functioning, I've done less of what I enjoy.",
+      "informantText": "Because of how they've been feeling or functioning, they've done less of what they enjoy.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.5
+      },
+      "provenance": {
+        "origin": "adapted",
+        "sourceInstrument": "WSAS-style impairment format",
+        "licence": "TO VERIFY before ship"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a9_imp_04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "Because of how I've been feeling or functioning, my close relationships have been strained.",
+      "informantText": "Because of how they've been feeling or functioning, their close relationships have been strained.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 7.7
+      },
+      "provenance": {
+        "origin": "adapted",
+        "sourceInstrument": "WSAS-style impairment format",
+        "licence": "TO VERIFY before ship"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a9_imp_05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "In the past two weeks I've avoided things I'd normally do.",
+      "informantText": "In the past two weeks they've avoided things they'd normally do.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a9_imp_06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "In the past two weeks I've cancelled or not turned up to things I'd committed to.",
+      "informantText": "In the past two weeks they've cancelled or not turned up to things they'd committed to.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.9,
+        "notes": "Boundary with A3 follow-through: non-attendance can be low Restraint rather than impairment. The 'because of how I've been feeling' framing is carried by the block instructions; cognitive interviews must confirm it reaches this item."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "boundary:a3"
+      ]
+    },
+    {
+      "id": "a9_imp_07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "In the past two weeks, looking after myself — eating, sleeping, washing — has been harder than usual.",
+      "informantText": "In the past two weeks, looking after themselves — eating, sleeping, washing — has been harder than usual.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 7.1
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a9_imp_08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "In the past two weeks other people have had to cover for me.",
+      "informantText": "In the past two weeks other people have had to cover for them.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.6,
+        "notes": "Circumstance-dependent: people without colleagues, family or support have nobody to cover for them and will under-endorse regardless of severity. The not-applicable option exists for exactly this."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "confound:circumstance",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a9_imp_09",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "In the past two weeks, basic daily demands have been beyond me.",
+      "informantText": "In the past two weeks, basic daily demands have been beyond them.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.0,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a9_imp_10",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a9_impairment",
+      "text": "In the past two weeks I've had thoughts of hurting myself.",
+      "informantText": "In the past two weeks they have talked about hurting themselves.",
+      "responseScaleId": "impair9",
+      "keyed": "+",
+      "timeframe": "past-2-weeks",
+      "safety": {
+        "atOrAbove": 2,
+        "severity": "urgent",
+        "resourceSet": "crisis.suicide",
+        "interrupt": true
+      },
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 5.4,
+        "notes": "The only risk-disclosure item in Block A. Any response at or above 'Slightly' interrupts immediately with region-aware crisis resources — never deferred to the results page. The informant paraphrase deliberately asks about disclosed statements, not inferred inner states, because informants cannot report thoughts."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "safety"
+      ]
+    }
+  ],
+  "citations": []
+}

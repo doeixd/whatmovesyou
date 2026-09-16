@@ -1,0 +1,134 @@
+-opioid-receptors-2015             μ-opioid receptors and attachment (2015)
+-opioid-receptors-2020             μ-opioid receptors and attachment (2020)
+2024-personality                   2024 personality GWAS (Nature Human Behaviour)
+5-ht1a-self-transcendence          5-HT1A and self-transcendence, replication
+5-ht4-receptor                     5-HT4 receptor and neuroticism, null
+acc-glutamate                      ACC glutamate and trait anxiety
+acute-tryptophan                   Acute tryptophan depletion and reactive aggression
+affective-temperaments             Affective temperaments in bipolar disorder (TEMPS)
+anti-inflammatory-treatment        Anti-inflammatory treatment in depressed patients with elevated inflammation (AJP meta-analysis)
+autism-traits                      Autism traits dimensionality in the general population
+b12-cognition                      B12 and cognition/depression meta-analysis
+b12-deficiency                     B12 deficiency, neurological sequelae and trial evidence
+blum-braverman                     Blum, Braverman et al., Reward Deficiency Syndrome
+braverman-assessment               Braverman Assessment Part 1 & 2
+braverman-blum-2003                Braverman & Blum, 2003, P300 latency
+bravermantest-com                  Bravermantest.com FAQ (tie-break, 35+ dominance, 10–15 gap)
+bravermantest-net                  Bravermantest.net
+broader-autism                     Broader autism phenotype via AQ
+brown-2013                         Brown et al., 2013, "Neural Correlates of Four Broad Temperament Dimensions" (PLOS One)
+cah-sex-typical                    CAH and sex-typical play behavior, meta-analysis
+castrellon-2019                    Castrellon et al. 2019, dopamine and discounting in clinical groups but not healthy adults
+cimbi-database                     Cimbi database
+cloninger-psychobiological         Cloninger's psychobiological model (APA Dictionary)
+continuum-model                    Continuum model of the psychosis phenotype
+cortisol-motivated                 Cortisol and motivated decision-making
+cyp1a2-caffeine                    CYP1A2 and caffeine effects on cognition
+cyp1a2-genotype                    CYP1A2 genotype, ergogenic effects and mood
+decoupling-personality             Decoupling personality and acute psychiatric symptoms
+dekkers-2019                       Dekkers et al. 2019, dual-hormone meta-analysis
+deyoung-2013                       DeYoung 2013, dopamine and personality
+dominion-impulse                   DOMINION study, impulse control disorders in Parkinson's
+dopamine-agonists                  Dopamine agonists and ICDs
+dopamine-hypothesis-2024           Dopamine hypothesis for ADHD, 2024 evaluation
+dopamine-novelty                   Dopamine and novelty seeking, neuroendocrine study
+duke-2013                          Duke et al. 2013, serotonin-aggression meta-analysis (175 samples)
+erritzoe-2018                      Erritzoe et al. 2018, psilocybin therapy and personality
+exogenous-testosterone             Exogenous testosterone and reactivity to provocation
+factor-models                      AQ factor models, two large samples
+factor-structure                   AQ factor structure and criterion validity
+ferric-carboxymaltose              Ferric carboxymaltose in non-anemic iron deficiency with RLS (RCT)
+fisher-2015                        Fisher et al., 2015, "Four broad temperament dimensions" (Frontiers in Psychology)
+geniole-2020                       Geniole et al. 2020, testosterone and aggression meta-analysis
+ghrelin-glp-1                      Ghrelin/GLP-1 and food reward
+ghrelin-increases                  Ghrelin increases motivation to eat without changing palatability
+ghrelin-leptin                     Ghrelin, leptin and neural food-cue reactivity
+ghrelin-negative                   Ghrelin and negative feedback sensitivity (RCT)
+gwas-cloninger                     GWAS of Cloninger temperament scales
+gwas-personality-2016              GWAS personality six loci (Nature Genetics 2016)
+hansen-2022                        Hansen et al. 2022, receptor atlas
+haslam-2003                        Haslam 2003, categorical vs dimensional models
+haslam-taxometric                  Haslam et al., taxometric meta-analysis (dimensions over categories)
+hitop-dimensional                  HiTOP dimensional alternative (APA)
+hitop-neurobiological              HiTOP and neurobiological substrates, systematic review
+hitop-quantitative                 HiTOP: a quantitative nosology based on consensus of evidence
+hitop-structure                    HiTOP structure and functional outcomes
+hogsted-2023                       Høgsted et al. 2023, 5-HT2A and neuroticism replication
+holistic-help                      Holistic Help, neurotransmitter testing validity
+hps-short                          HPS short form psychometrics
+hps-temperament                    HPS and temperament scales, 23-year follow-up
+hsp-scale                          HSP scale factor structure and personality
+hydrocortisone-forgetting          Hydrocortisone and forgetting of a trauma-like event
+hydrocortisone-metacognition       Hydrocortisone and metacognition
+icds-parkinson                     ICDs in Parkinson's, epidemiology and mechanisms
+individual-variability-2026        Individual variability in receptor density (2026)
+inflammatory-markers               Inflammatory markers as predictors of antidepressant response (meta-analysis)
+influence-depressive               Influence of depressive state features on trait measurement
+informant-self                     Informant vs self report internal consistency
+iron-supplementation               Iron supplementation, fatigue and RLS in blood donors
+leyton-2002                        Leyton et al. 2002, amphetamine dopamine release and novelty seeking
+longitudinal-evaluation            Longitudinal evaluation of ovulatory cycle shifts
+maclean-2011                       MacLean et al. 2011, psilocybin and openness
+mctq-meq                           MCTQ/MEQ vs DLMO concordance
+mctq-wrist                         MCTQ vs wrist actigraphy
+meq-mctq                           MEQ/MCTQ compared to DLMO
+mrs-glutamate                      MRS, glutamate/GABA in neuropsychology
+munafo-2008                        Munafò et al. 2008, DRD4 meta-analysis
+neuroticism-5-ht1a                 Neuroticism and 5-HT1A receptors
+neurotransmitter-gene              Neurotransmitter gene polymorphisms and personality, review of single-gene studies and GWAS
+nicotinic-receptors                Nicotinic receptors and harm avoidance
+noradrenaline-cortisol             Noradrenaline vs cortisol on working memory and risk
+norepinephrine-personality         Norepinephrine and personality (theoretical)
+o-life-psychotogenic               O-LIFE and psychotogenic experiences
+opioid-system                      Opioid system and human emotions (review)
+osa-depression                     OSA, depression and cognitive impairment
+outliyr-overview                   Outliyr overview
+oxytocin-social                    Oxytocin and social cognition, meta-analysis
+oxytocin-trust                     Oxytocin and trust, registered report with equivalence testing
+part-defining                      Part 2 Defining your Deficiencies
+personality-cah                    Personality and CAH
+pid-5-bf-apa                       PID-5-BF (APA PDF)
+pid-5-sf-psychometrics             PID-5-SF psychometrics and Big Five associations
+pid-5-structure                    PID-5 structure and trait continuity
+pmdd-ovarian-2017                  PMDD, ovarian suppression and add-back (AJP 2017)
+prefrontal-glutamine               Prefrontal glutamine and neuroticism
+psilocybin-assisted-therapy        Psilocybin-assisted therapy in alcohol use disorder, personality
+psilocybin-escitalopram            Psilocybin vs escitalopram, personality change
+ranehill-2015                      Ranehill et al. 2015, power posing replication
+receptor-atlas                     Receptor atlas data and code
+receptor-social                    D1 receptor and social behavior, failed replication
+receptors-impulsivity              D2/3 receptors and impulsivity in methamphetamine dependence
+receptors-traits                   D2/3 receptors and traits in striatal subregions
+replication-extension              Replication and extension of differential ovarian-steroid effects
+results-interpretation             Results/interpretation and supplement tables
+schizotypy-predictive              Schizotypy predictive validity, 8-year multiwave study
+self-other-agreement               Self-other agreement meta-analysis (N≈33,000)
+self-other-knowledge               Self-other knowledge asymmetries in personality pathology
+self-other-knowledge-2             Self-Other Knowledge Asymmetry extended to pathological traits
+self-report-observed               Self-report vs observed alcohol flushing and ALDH2 genotype
+semaglutide-alcohol                Semaglutide for alcohol use disorder (phase 2 RCT)
+semaglutide-aud                    Semaglutide in AUD with obesity (Lancet RCT)
+sen-2004                           Sen et al. 2004, 5-HTTLPR meta-analysis
+single-dose-testosterone           Single-dose testosterone RCTs, competition and risk
+skovlund-hormonal                  Skovlund et al., hormonal contraception and depression (JAMA Psychiatry)
+social-anxiety                     Social anxiety disorder, GABA/Glx pilot
+sps-health                         SPS, health, and differential susceptibility
+sps-reactivity                     SPS and reactivity to daily events
+stars-braverman                    STARS Braverman Assessment
+stern-2020                         Stern et al. 2020, ovulatory shifts in preferences for men's behaviors
+steroid-metabolome                 Steroid metabolome in PMDD
+stop-bang-narrative                STOP-Bang narrative review (thresholds, sensitivity/specificity)
+stop-bang-plus                     STOP-Bang plus Epworth for specificity
+stratifying-inflamed               Stratifying the inflamed endotype in difficult-to-treat depression
+striatal-dat                       Striatal DAT asymmetry and TCI traits
+striatal-dat-2                     Striatal DAT in ADHD, meta-analysis (medication confound)
+subclinical-hypothyroidism         Subclinical hypothyroidism and depression meta-analysis
+tang-2009                          Tang et al. 2009, paroxetine and personality
+testosterone-risk                  Testosterone and risk aversion, meta-analytic review
+testosterone-therapy               Testosterone therapy and aggression constructs in trans men, systematic review
+testosterone-therapy-2             Testosterone therapy and personality traits in trans men
+treadway-2012                      Treadway et al. 2012, dopamine and effort
+tryptophan-depletion               Tryptophan depletion and prefrontal-amygdala connectivity
+type-coronary                      Type A and coronary heart disease, the hostility factor
+updated-meta-analysis              Updated meta-analysis
+validation-alcohol                 Validation of alcohol flushing questionnaires

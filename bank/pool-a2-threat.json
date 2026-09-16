@@ -1,0 +1,710 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-09-16T00:00:00Z",
+  "locale": "en-US",
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Spectra",
+      "question": "Who you are",
+      "order": 0,
+      "standalone": true
+    }
+  ],
+  "responseScales": [
+    {
+      "id": "agree5",
+      "type": "likert",
+      "allowNotApplicable": false,
+      "options": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "id": "a2_threat",
+      "block": "A",
+      "name": "Threat reactivity",
+      "poles": {
+        "low": "Unflappable",
+        "high": "Highly reactive"
+      },
+      "definition": "How readily and how durably negative emotion is triggered by threat, loss or criticism.",
+      "facets": [
+        {
+          "id": "a2_threat.trigger",
+          "name": "Trigger threshold",
+          "definition": "How little it takes to set off negative emotion."
+        },
+        {
+          "id": "a2_threat.persistence",
+          "name": "Persistence",
+          "definition": "How long negative emotion lasts once triggered."
+        },
+        {
+          "id": "a2_threat.anticipation",
+          "name": "Anticipation",
+          "definition": "How much is spent on threats that have not happened."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "serotonin 5-HT2A",
+          "grade": "moderate",
+          "mechanism": "Cortical 5-HT2A binding tracks the inward facets of neuroticism (r = .37, replicated with a second tracer), and SSRIs lower neuroticism beyond their effect on depression.",
+          "verification": "No individual-level test. Group-level PET and drug-response evidence only.",
+          "citations": [
+            "hogsted2023",
+            "tang2009"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "medium",
+        "stateSensitivity": "high",
+        "copy": {
+          "costId": "copy_a2_cost",
+          "upsideId": "copy_a2_upside"
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "a2_threat_t01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.trigger",
+      "text": "Small criticisms land harder on me than they should.",
+      "informantText": "Small criticisms land harder on them than they should.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.2,
+        "notes": "Re-tagged mild → moderate: the item asks the respondent to concede disproportion, which is a stronger admission than a mild-band statement."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a2_threat_t02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.trigger",
+      "text": "It takes a lot to rattle me.",
+      "informantText": "It takes a lot to rattle them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 3.4,
+        "notes": "Stoicism is differently valued by culture and gender; the same inner experience may be reported differently. DIF-test by gender."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a2_threat_t03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.trigger",
+      "text": "I pick up on a change in someone's tone straight away.",
+      "informantText": "They pick up on a change in someone's tone straight away.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.0,
+        "notes": "Boundary with A7 detail/change sensitivity, and with sensory processing sensitivity generally. Detection is not the same as distress; cut if it loads on A7."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "boundary:a7"
+      ]
+    },
+    {
+      "id": "a2_threat_t04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.trigger",
+      "text": "People describe me as hard to upset.",
+      "informantText": "People describe them as hard to upset.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.1
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a2_threat_t05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.trigger",
+      "text": "A short, neutral message from someone can put me on edge.",
+      "informantText": "A short, neutral message from someone can put them on edge.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.7
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a2_threat_t06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.trigger",
+      "text": "I can be corrected in front of other people without it getting to me.",
+      "informantText": "They can be corrected in front of other people without it getting to them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.0,
+        "notes": "Face and public correction carry different weight across cultures; flagged for DIF by locale."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a2_threat_t07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.trigger",
+      "text": "The smallest sign of disapproval can change how my whole day feels.",
+      "informantText": "The smallest sign of disapproval can change how their whole day feels.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a2_threat_t08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.trigger",
+      "text": "Things that visibly upset other people genuinely don't sting me.",
+      "informantText": "Things that visibly upset other people genuinely don't sting them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.8,
+        "notes": "Extreme low-pole item. Risks capturing emotional flatness or callousness rather than low reactivity; check cross-loading on A5 callousness and on the state block."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "boundary:a5"
+      ]
+    },
+    {
+      "id": "a2_threat_p01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.persistence",
+      "text": "Something that went wrong hours ago is still running in my head.",
+      "informantText": "Something that went wrong hours ago is still running in their head.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a2_threat_p02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.persistence",
+      "text": "Once a difficult conversation ends, I stop thinking about it.",
+      "informantText": "Once a difficult conversation ends, they stop thinking about it.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.0,
+        "notes": "Reworded from \"Once a difficult conversation is over, it's over for me\", which readers found ambiguous — \"it's over\" could be heard as the relationship ending rather than the rumination stopping. The construct is persistence, so the replacement names the mental act directly. Item is still status:draft, so the id is reused rather than retired."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a2_threat_p03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.persistence",
+      "text": "I replay conversations looking for what I should have said.",
+      "informantText": "They replay conversations looking for what they should have said.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a2_threat_p04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.persistence",
+      "text": "I let go of things faster than most people I know.",
+      "informantText": "They let go of things faster than most people they know.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 4.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a2_threat_p05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.persistence",
+      "text": "A single piece of criticism can stay with me for days.",
+      "informantText": "A single piece of criticism can stay with them for days.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a2_threat_p06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.persistence",
+      "text": "I can set a worry aside and come back to it when it's useful.",
+      "informantText": "They can set a worry aside and come back to it when it's useful.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a2_threat_p07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.persistence",
+      "text": "I've lost nights of sleep over something someone said in passing.",
+      "informantText": "They've lost nights of sleep over something someone said in passing.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.1,
+        "notes": "Sleep content overlaps the Block C insomnia and Block B sleep-reactivity material. The anchor here is the trigger (a passing remark), not the sleep loss; verify it doesn't load on the state block."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a2_threat_p08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.persistence",
+      "text": "Even after a serious setback, I'm back to myself within a day.",
+      "informantText": "Even after a serious setback, they're back to themselves within a day.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 5.8,
+        "notes": "Extreme low-pole item with high desirability — resilience is flattering. Matched by p01/p05 at the opposite pole; drop if desirability correlation is strong in Pilot 1."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a2_threat_a01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.anticipation",
+      "text": "I plan around things going wrong.",
+      "informantText": "They plan around things going wrong.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 3.9,
+        "notes": "Boundary with conscientious planning. The anticipation facet is about threat expectancy, not organization; watch for cross-loading on A3 follow-through."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "boundary:a3"
+      ]
+    },
+    {
+      "id": "a2_threat_a02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.anticipation",
+      "text": "My mind stays on what's in front of me rather than what might go wrong.",
+      "informantText": "Their mind stays on what's in front of them rather than what might go wrong.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.8,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a2_threat_a03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.anticipation",
+      "text": "Before something important, I rehearse how it could go badly.",
+      "informantText": "Before something important, they rehearse how it could go badly.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a2_threat_a04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.anticipation",
+      "text": "I deal with problems when they arrive rather than before.",
+      "informantText": "They deal with problems when they arrive rather than before.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.1,
+        "notes": "Re-tagged moderate → mild: dealing with problems as they arrive is an ordinary preference, not a marked absence of anticipation."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a2_threat_a05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.anticipation",
+      "text": "I notice myself bracing for bad news that hasn't come.",
+      "informantText": "They brace for bad news that hasn't come.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a2_threat_a06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.anticipation",
+      "text": "Waiting on a result I can't control doesn't particularly bother me.",
+      "informantText": "Waiting on a result they can't control doesn't particularly bother them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.5
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a2_threat_a07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.anticipation",
+      "text": "I've turned down chances I wanted because of what might go wrong.",
+      "informantText": "They've turned down chances they wanted because of what might go wrong.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.0,
+        "notes": "Deliberate near-pair with a1_drive_f11 ('let opportunities go because it looked like too much work'). Same behavior, different motive: threat vs effort cost. If the two correlate above .60 the motive distinction isn't reaching respondents and one must go."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence",
+        "boundary:a1"
+      ]
+    },
+    {
+      "id": "a2_threat_a08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a2_threat",
+      "facetId": "a2_threat.anticipation",
+      "text": "I can walk into a situation with an uncertain outcome feeling no dread at all.",
+      "informantText": "They can walk into a situation with an uncertain outcome feeling no dread at all.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 7.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "hogsted2023",
+      "title": "The association between brain serotonin 2A receptor binding and neuroticism in healthy individuals: a Cimbi database independent replication study",
+      "url": "https://www.biorxiv.org/content/10.1101/2023.08.24.554575",
+      "year": 2023,
+      "claim": "Cortical 5-HT2A binding is associated with the inward facets of neuroticism (r = .37) in an independent replication."
+    },
+    {
+      "id": "tang2009",
+      "title": "Personality change during depression treatment: a placebo-controlled trial",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2799251",
+      "year": 2009,
+      "claim": "Paroxetine reduced neuroticism 6.8x as much as placebo among patients matched for depression improvement."
+    }
+  ]
+}

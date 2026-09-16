@@ -1,0 +1,733 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-09-16T00:00:00Z",
+  "locale": "en-US",
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Spectra",
+      "question": "Who you are",
+      "order": 0,
+      "standalone": true
+    }
+  ],
+  "responseScales": [
+    {
+      "id": "agree5",
+      "type": "likert",
+      "allowNotApplicable": false,
+      "options": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "id": "a3_restraint",
+      "block": "A",
+      "name": "Restraint",
+      "poles": {
+        "low": "Impulsive",
+        "high": "Controlled"
+      },
+      "definition": "Capacity to hold to an intention against a competing immediate pull.",
+      "facets": [
+        {
+          "id": "a3_restraint.cue",
+          "name": "Cue resistance",
+          "definition": "Not acting on an available temptation."
+        },
+        {
+          "id": "a3_restraint.followthrough",
+          "name": "Follow-through",
+          "definition": "Continuing after motivation fades or something more appealing appears."
+        },
+        {
+          "id": "a3_restraint.brake",
+          "name": "Brake",
+          "definition": "Not saying or doing the thing in the moment."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "dopamine (reward-cue)",
+          "grade": "strong",
+          "mechanism": "Dopamine agonists produce impulse-control disorders — gambling, shopping, hypersexuality — in about 17% of Parkinson's patients, reversing on withdrawal.",
+          "verification": "Not verifiable at the individual level; the causal evidence is from drug exposure.",
+          "citations": [
+            "dominion2010"
+          ]
+        },
+        {
+          "system": "serotonin (constraint)",
+          "grade": "moderate",
+          "mechanism": "Serotonin function correlates inversely with aggression and impulsivity (r ≈ -.12 overall, strongest in pharmacological challenge studies), with tryptophan depletion raising aggression in already-prone individuals.",
+          "verification": "Group-level challenge studies only.",
+          "citations": [
+            "duke2013"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "medium",
+        "stateSensitivity": "medium",
+        "copy": {
+          "costId": "copy_a3_cost",
+          "upsideId": "copy_a3_upside"
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "a3_restraint_c01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.cue",
+      "text": "I've bought something within minutes of first seeing it.",
+      "informantText": "They've bought something within minutes of first seeing it.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.0,
+        "notes": "SES confound: impulsive spending is only visible with money to spend. Check DIF by income band if collected."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "behavioral-evidence",
+        "confound:ses"
+      ]
+    },
+    {
+      "id": "a3_restraint_c02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.cue",
+      "text": "I can have something tempting in the house and forget it's there.",
+      "informantText": "They can have something tempting in the house and forget it's there.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.4,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a3_restraint_c03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.cue",
+      "text": "I keep going well past the point I meant to stop — scrolling, watching, playing.",
+      "informantText": "They keep going well past the point they meant to stop — scrolling, watching, playing.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.3,
+        "notes": "Deliberate overlap with the Block B reward-cue gain axis. This item asks about a stable tendency; the Block B version asks about magnitude of pull. Verify they separate; if not, drop this one and keep the gain axis."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "boundary:blockB"
+      ]
+    },
+    {
+      "id": "a3_restraint_c04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.cue",
+      "text": "When I set a limit for myself, I stick to it.",
+      "informantText": "When they set a limit for themselves, they stick to it.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 4.2,
+        "notes": "High desirability — self-control is flattering. Retained as the cleanest direct statement of the construct; matched by c01/c03 at the opposite pole."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a3_restraint_c05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.cue",
+      "text": "I've spent money I'd set aside for something else.",
+      "informantText": "They've spent money they'd set aside for something else.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.6,
+        "notes": "Confounded with financial precarity — people on tight budgets raid savings from necessity, not impulse. Consider adding 'when I didn't need to' in revision."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "behavioral-evidence",
+        "confound:ses"
+      ]
+    },
+    {
+      "id": "a3_restraint_c06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.cue",
+      "text": "When something I've given up is right in front of me, it stays easy to ignore.",
+      "informantText": "When something they've given up is right in front of them, it stays easy to ignore.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.1,
+        "notes": "Reworded from \"Being around something I've decided against leaves me unbothered\", which was abstract on both halves: \"decided against\" is vague and \"leaves me unbothered\" describes an absence. The facet is cue resistance, so the wording now names a present temptation and a concrete response to it."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a3_restraint_c07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.cue",
+      "text": "I've gone back to something I'd sworn off more than once in the same week.",
+      "informantText": "They've gone back to something they'd sworn off more than once in the same week.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a3_restraint_c08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.cue",
+      "text": "I gave something up years ago and have stuck with it, even when the pull came back.",
+      "informantText": "They gave something up years ago and have stuck with it, even when the pull came back.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.2,
+        "notes": "Reworded from \"I've held to a decision for years despite regular temptation\", which was abstract on both halves — \"held to a decision\" names no decision, and \"despite regular temptation\" is stiff. The facet is cue resistance, so the recurring pull has to stay explicit (otherwise it reads as follow-through), and \"years\" carries the extreme severity."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a3_restraint_f01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.followthrough",
+      "text": "I finish the dull remainder of a job rather than leave it.",
+      "informantText": "They finish the dull remainder of a job rather than leave it.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.7,
+        "notes": "Boundary with a1_drive_f04 ('if something takes more work than expected, I drop it'). A1 is about effort cost; A3 is about a competing pull. If they load together, the facet distinction has failed."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "boundary:a1"
+      ]
+    },
+    {
+      "id": "a3_restraint_f02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.followthrough",
+      "text": "I move to whatever's more appealing before the current thing is done.",
+      "informantText": "They move to whatever's more appealing before the current thing is done.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a3_restraint_f03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.followthrough",
+      "text": "I do what I said I'd do even when I no longer feel like it.",
+      "informantText": "They do what they said they'd do even when they no longer feel like it.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 4.5,
+        "notes": "High desirability. Kept because it is the definitional core of the facet; will be first cut if Pilot 1 shows a strong desirability correlation."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a3_restraint_f04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.followthrough",
+      "text": "I have several things part-finished right now because something else pulled me away.",
+      "informantText": "They have several things part-finished right now because something else pulled them away.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "right-now",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.1,
+        "notes": "Overlaps the ADHD flag in Block C. Distraction-driven non-completion should route there rather than inflate low Restraint; check the correlation with the ASRS-style items."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "boundary:blockC-adhd"
+      ]
+    },
+    {
+      "id": "a3_restraint_f05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.followthrough",
+      "text": "Once I commit to a plan, I stay with it even when a better offer appears.",
+      "informantText": "Once they commit to a plan, they stay with it even when a better offer appears.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.4,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a3_restraint_f06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.followthrough",
+      "text": "My attention goes where it wants regardless of what I'd planned.",
+      "informantText": "Their attention goes where it wants regardless of what they'd planned.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.6,
+        "notes": "Also an ADHD-flag boundary case. See f04."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "boundary:blockC-adhd"
+      ]
+    },
+    {
+      "id": "a3_restraint_f07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.followthrough",
+      "text": "People have stopped relying on me to finish what I take on.",
+      "informantText": "People have stopped relying on them to finish what they take on.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "other-observed"
+      ]
+    },
+    {
+      "id": "a3_restraint_f08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.followthrough",
+      "text": "I've completed long commitments that most people around me abandoned.",
+      "informantText": "They've completed long commitments that most people around them abandoned.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 7.3,
+        "notes": "High desirability and requires opportunity (long commitments are not equally available). Flagged for both desirability and SES checks."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "confound:ses"
+      ]
+    },
+    {
+      "id": "a3_restraint_b01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.brake",
+      "text": "I've said something in the moment that cost me later.",
+      "informantText": "They've said something in the moment that cost them later.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a3_restraint_b02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.brake",
+      "text": "I can hold my tongue when it matters.",
+      "informantText": "They can hold their tongue when it matters.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 3.8,
+        "notes": "Directness norms vary by culture; holding back is valued unevenly. DIF-test by locale."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a3_restraint_b03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.brake",
+      "text": "I react first and think it through afterwards.",
+      "informantText": "They react first and think it through afterwards.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a3_restraint_b04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.brake",
+      "text": "In an argument I can stop myself from saying the thing that would win it.",
+      "informantText": "In an argument they can stop themselves from saying the thing that would win it.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 6.8,
+        "notes": "Boundary with A5 Antagonism: this measures the brake, not the motive. Someone low in Antagonism has nothing to hold back, which may produce a ceiling effect — watch the distribution."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "boundary:a5"
+      ]
+    },
+    {
+      "id": "a3_restraint_b05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.brake",
+      "text": "I send messages I later wish I'd slept on.",
+      "informantText": "They send messages they later wish they'd slept on.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "behavioral-evidence"
+      ]
+    },
+    {
+      "id": "a3_restraint_b06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.brake",
+      "text": "When I'm angry there's a gap between feeling it and acting on it.",
+      "informantText": "When they're angry there's a gap between feeling it and acting on it.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a3_restraint_b07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.brake",
+      "text": "Acting on impulse has cost me a job, a relationship or a lot of money.",
+      "informantText": "Acting on impulse has cost them a job, a relationship or a lot of money.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.5,
+        "notes": "Double-barrelled by design (three outcomes, one construct: serious consequence). Cognitive interviews must confirm respondents read it as 'any of these' rather than 'all of these'; split if not."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "behavioral-evidence",
+        "review:double-barrel"
+      ]
+    },
+    {
+      "id": "a3_restraint_b08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a3_restraint",
+      "facetId": "a3_restraint.brake",
+      "text": "Even under real provocation, I don't do anything I'll regret.",
+      "informantText": "Even under real provocation, they don't do anything they'll regret.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "high",
+        "readabilityGrade": 6.2,
+        "notes": "High desirability, extreme high-pole. The provocation framing matters: testosterone and serotonin effects on behavior appear specifically under provocation, so this is the item closest to the mechanism literature."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "dominion2010",
+      "title": "DOMINION study: impulse control disorders in Parkinson's disease",
+      "url": "https://www.medscape.com/viewarticle/721768",
+      "year": 2010,
+      "claim": "Impulse control disorders occur in about 17% of Parkinson's patients taking a dopamine agonist, 2-3x the rate of those not taking one."
+    },
+    {
+      "id": "duke2013",
+      "title": "Revisiting the serotonin-aggression relation in humans: a meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3718863/",
+      "year": 2013,
+      "claim": "Central serotonin function correlates inversely with aggression, anger and hostility (r = -.12; r = -.21 in pharmacological challenge studies)."
+    }
+  ]
+}

@@ -1,0 +1,700 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-09-16T00:00:00Z",
+  "locale": "en-US",
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Spectra",
+      "question": "Who you are",
+      "order": 0,
+      "standalone": true
+    }
+  ],
+  "responseScales": [
+    {
+      "id": "agree5",
+      "type": "likert",
+      "allowNotApplicable": false,
+      "options": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "id": "a4_sociality",
+      "block": "A",
+      "name": "Sociality",
+      "poles": {
+        "low": "Detached",
+        "high": "Connected"
+      },
+      "definition": "Baseline need for, and reward from, closeness with other people.",
+      "facets": [
+        {
+          "id": "a4_sociality.need",
+          "name": "Need",
+          "definition": "Discomfort when close contact is absent."
+        },
+        {
+          "id": "a4_sociality.reward",
+          "name": "Reward",
+          "definition": "Pleasure taken from closeness when it is present."
+        },
+        {
+          "id": "a4_sociality.disclosure",
+          "name": "Disclosure",
+          "definition": "Willingness to be known by others."
+        }
+      ],
+      "scoring": {
+        "method": "mean",
+        "minItemsAnswered": 5
+      },
+      "bodyLinks": [
+        {
+          "system": "μ-opioid",
+          "grade": "preliminary",
+          "mechanism": "Cerebral μ-opioid receptor availability tracks adult attachment style, with lower availability associated with avoidant attachment.",
+          "verification": "PET, and from a single research group. Treat as a lead, not a finding.",
+          "citations": [
+            "nummenmaa2015"
+          ]
+        }
+      ],
+      "report": {
+        "showPercentile": true,
+        "stigmaRisk": "medium",
+        "stateSensitivity": "high",
+        "copy": {
+          "costId": "copy_a4_cost",
+          "upsideId": "copy_a4_upside"
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "a4_soc_n01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.need",
+      "text": "I notice the gap when it's been a while since I saw anyone close to me.",
+      "informantText": "They notice the gap when it's been a while since they saw anyone close to them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.8,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_n02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.need",
+      "text": "Long stretches on my own suit me.",
+      "informantText": "Long stretches on their own suit them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 3.9,
+        "notes": "Solitude is valued differently across cultures and life stages; in collectivist contexts endorsing it may carry more weight. DIF-test by locale."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_n03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.need",
+      "text": "When something good happens, I want to tell someone.",
+      "informantText": "When something good happens, they want to tell someone.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 3.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_n04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.need",
+      "text": "A week can pass without contact with anyone close to me and I don't notice.",
+      "informantText": "A week can pass without contact with anyone close to them and they don't notice.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.2,
+        "notes": "Life-circumstance confound: remote work, caregiving, recent relocation all reduce contact without reflecting need. Context intake should capture this before the score is interpreted."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "confound:circumstance"
+      ]
+    },
+    {
+      "id": "a4_soc_n05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.need",
+      "text": "When I'm struggling, my first instinct is to find someone to be with.",
+      "informantText": "When they're struggling, their first instinct is to find someone to be with.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.5,
+        "notes": "Boundary with A2: someone high in Sociality and high in Threat reactivity may want company but avoid seeking it. This item measures the instinct, not the action — cognitive interviews should confirm respondents read it that way."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate",
+        "boundary:a2"
+      ]
+    },
+    {
+      "id": "a4_soc_n06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.need",
+      "text": "Most times, I'd choose a weekend alone over a weekend with people.",
+      "informantText": "Most times, they'd choose a weekend alone over a weekend with people.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.0
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a4_soc_n07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.need",
+      "text": "A long stretch apart from people I'm close to starts to feel physically unsettling.",
+      "informantText": "A long stretch apart from people they're close to starts to feel physically unsettling.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 7.0,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a4_soc_n08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.need",
+      "text": "I could go months without close company and feel no worse for it.",
+      "informantText": "They could go months without close company and feel no worse for it.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.8,
+        "notes": "Extreme low-pole item, and the predicted difficulty from A1/A2 recurs: withdrawal in depression produces the same endorsement. Must be checked against the state block; if it tracks PHQ more than A4, cut."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "boundary:state"
+      ]
+    },
+    {
+      "id": "a4_soc_r01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.reward",
+      "text": "A good conversation can lift my whole day.",
+      "informantText": "A good conversation can lift their whole day.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 3.7
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_r02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.reward",
+      "text": "Time with people leaves my mood about where it started.",
+      "informantText": "Time with people leaves their mood about where it started.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.4,
+        "notes": "Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_r03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.reward",
+      "text": "Being around people I like is one of the better parts of my week.",
+      "informantText": "Being around people they like is one of the better parts of their week.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.1
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_r04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.reward",
+      "text": "Warmth from other people doesn't move me much.",
+      "informantText": "Warmth from other people doesn't move them much.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.6
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a4_soc_r05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.reward",
+      "text": "I look forward to seeing certain people the way other people look forward to a holiday.",
+      "informantText": "They look forward to seeing certain people the way other people look forward to a holiday.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.9
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a4_soc_r06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.reward",
+      "text": "I find closeness more effort than reward.",
+      "informantText": "They find closeness more effort than reward.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.3
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a4_soc_r07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.reward",
+      "text": "Feeling close to someone is among the best things I experience.",
+      "informantText": "Feeling close to someone is among the best things they experience.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.7
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    },
+    {
+      "id": "a4_soc_r08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.reward",
+      "text": "What people get out of closeness has always been a mystery to me.",
+      "informantText": "What people get out of closeness has always been a mystery to them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "lifetime",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.0,
+        "notes": "Lifetime framing deliberately separates trait detachment from current withdrawal — 'never understood' is much harder to endorse during a depressive episode than 'don't feel it now'. This is the design fix for the state-contamination problem on this facet. Reworded to remove a negation: agreeing with \"I don't ...\" makes the disagree side a double negative, which is a known source of respondent error. The pole and keying are unchanged; only the phrasing is now a positive assertion of the same thing."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "state-resistant"
+      ]
+    },
+    {
+      "id": "a4_soc_d01",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.disclosure",
+      "text": "When something's bothering me, I tell someone rather than sit with it.",
+      "informantText": "When something's bothering them, they tell someone rather than sit with it.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 5.6,
+        "notes": "Disclosure norms are strongly gendered and cultural. DIF-test by gender and locale; this facet is the most likely in the bank to show it."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_d02",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.disclosure",
+      "text": "I keep parts of my life separate from everyone.",
+      "informantText": "They keep parts of their life separate from everyone.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 4.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_d03",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.disclosure",
+      "text": "I'd rather handle a personal problem alone than explain it to anyone.",
+      "informantText": "They'd rather handle a personal problem alone than explain it to anyone.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.1
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:mild"
+      ]
+    },
+    {
+      "id": "a4_soc_d04",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.disclosure",
+      "text": "The people close to me get the honest version of how I'm doing.",
+      "informantText": "The people close to them get the honest version of how they're doing.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 4.9,
+        "notes": "Reworded from \"People who know me know what's actually going on with me\", which repeated \"know\" and left \"what's actually going on\" vague. The facet is disclosure, so the wording now contrasts an honest account with a tidied one."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a4_soc_d05",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.disclosure",
+      "text": "I let people see me when I'm not doing well.",
+      "informantText": "They let people see them when they're not doing well.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "medium",
+        "desirabilityRisk": "medium",
+        "readabilityGrade": 4.7,
+        "notes": "Same gendered-disclosure risk as d01."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a4_soc_d06",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.disclosure",
+      "text": "Even close friends get an edited version of me.",
+      "informantText": "Even close friends get an edited version of them.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.2
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:moderate"
+      ]
+    },
+    {
+      "id": "a4_soc_d07",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.disclosure",
+      "text": "There's at least one person who knows nearly everything about me.",
+      "informantText": "There's at least one person who knows nearly everything about them.",
+      "responseScaleId": "agree5",
+      "keyed": "+",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 5.0,
+        "notes": "Circumstance-sensitive: bereavement or a recent breakup can flip this without any change in disposition. Context intake should catch it."
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme",
+        "confound:circumstance"
+      ]
+    },
+    {
+      "id": "a4_soc_d08",
+      "status": "draft",
+      "addedInVersion": "0.1.0",
+      "block": "A",
+      "scaleId": "a4_sociality",
+      "facetId": "a4_sociality.disclosure",
+      "text": "Nobody has the full picture of my life, and I intend to keep it that way.",
+      "informantText": "Nobody has the full picture of their life, and they intend to keep it that way.",
+      "responseScaleId": "agree5",
+      "keyed": "-",
+      "timeframe": "general",
+      "review": {
+        "culturalLoad": "low",
+        "desirabilityRisk": "low",
+        "readabilityGrade": 6.4
+      },
+      "provenance": {
+        "origin": "original"
+      },
+      "tags": [
+        "severity:extreme"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "nummenmaa2015",
+      "title": "Adult attachment style is associated with cerebral μ-opioid receptor availability in humans",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26046928/",
+      "year": 2015,
+      "claim": "μ-opioid receptor availability tracks adult attachment style; lower availability is associated with avoidant attachment."
+    }
+  ]
+}

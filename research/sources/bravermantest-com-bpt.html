@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HT0MY0Y4F7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HT0MY0Y4F7');
+    </script>
+    <!-- END Google tag (gtag.js) -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Braverman Personality Type Assessment Online Test for Brain Neurotransmitters for muscle building as per Charles Poliquin from Tim Ferriss Show">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="favicon.ico">-->
+
+    <title>Braverman Personality Type Assessment - Online Test</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- AngularJS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <!-- Google Adds-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0892273691429059" crossorigin="anonymous"></script>
+
+    <style>
+        .padding-top {
+            margin-top: 10px;
+        }
+        
+        .padding-left {
+            margin-left: 25px;
+        }
+    </style>
+<meta name="traceparent" content="00-a3bf8c936e4d90050000001789558331-a3bf8c936e4d9005-01"></head>
+
+<body ng-app=testApp>
+
+    <div class="container" ng-controller="mainController">
+
+        <div class="page-header">
+            <h1>Braverman Personality Type Assessment</h1>
+            <p class="lead"></p>
+        </div>
+
+        <h2>Part 1: Determining your Dominant Nature</h2>
+        <p>Instructions: Answer each question by selecting either True or False. Answer the questions in terms of how you feel
+            most of the time. For example, if you’ve had a bad night’s sleep and feel tired today, answer the questions that
+            pertain to your energy levels based on how you feel on a more average day.</p>
+
+        <!-- Part 1 Sections -->
+        <div ng-include src="'/section.html'" ng-repeat="s in sections"></div>
+
+
+        <h3>Total Results Summary</h3>
+        <div class="row">
+            <div class="col-md-12 col-xs-12" ng-repeat="s in sections">
+                <span class="lead">{{s.sectionNumber}} Total Number of True Responses - {{s.sectionName}} Nature: <strong> {{calculate(s.section)}}</strong> </span>
+            </div>
+            <div class="col-md-12 col-xs-12 padding-top">
+                <span class="lead">You are <strong>{{dominance()}}</strong> Dominant. 
+                    <a href="#" ng-click="shareOnFacebook()"> Share on Facebook</a>
+                </span>
+            </div>
+        </div>
+
+
+
+        <br>
+
+
+        <!-- part 2-->
+        <h2>Part 2: Defining your Deficiencies</h2>
+        <p>Instructions: Answer each question by selecting either True or False. The second assessment will determine if you
+            are deficient in any of the four biochemicals, including the one that governs your nature. Many of the questions
+            relate to symptoms you might now be experiencing. Answer the questions in terms of how you feel right now; it
+            doesn’t matter how long you’ve been experiencing these symptoms, or even if they occurred today for the first
+            time.
+        </p>
+
+        <!-- Part 2 Sections -->
+        <div ng-include src="'/section.html'" ng-repeat="s in sectionsDef"></div>
+
+        <h3>Deficiency Results Summary</h3>
+        <div class="row">
+            <div class="col-md-12 col-xs-12" ng-repeat="s in sectionsDef">
+                <span class="lead">{{s.sectionNumber}} Total Number of True Responses - {{s.sectionName}} Deficiency: <strong> {{calculate(s.section)}}</strong> </span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p>This test and the following recommendations are taken directly from Dr. Eric R. Braverman’s book, “The Edge Effect:
+            Achieve Total Health and Longevity with the Balanced Brain Advantage” New York: Sterling Publications, 2005.
+        </p>
+        <br>
+        
+            
+    </div>
+    <!-- /container -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script>
+        angular.module('testApp', [])
+            .controller('mainController', function($scope) {
+                $scope.dominanceScore = {};
+                $scope.questions = {
+					//DOPAMINE
+                    dopamine:{ 
+                        Memory: [
+                                    {question : 'I find it easy to process my thoughts'},
+                                    {question : 'I concentrate effectively'},
+                                    {question : 'I am a deep thinker'},
+                                    {question : 'I am a quick thinker'},
+                                    {question : 'I become distracted because I do so many tasks at once'},
+                                    {question : 'I enjoy intense debate'},
+                                    {question : 'I have a good imagination'},
+                                    {question : 'I tend to criticize and analyze my thoughts '},
+                                ],
+                        Physical : [
+                                    {question : 'I have a lot of energy most of the time'},
+                                    {question : 'My blood pressure is often elevated'},
+                                    {question : 'Sometimes in my life I have had episodes of extreme energy'},
+                                    {question : 'I have insomnia'},
+                                    {question : 'I find exercising invigorating'},
+                                    {question : 'I don’t ordinarily need coffee to jump-start me in the morning'},
+                                    {question : 'My veins are visible and tend to look as though they might pop out of my skin'},
+                                    {question : 'I tend to have a high body temperature'},
+                                    {question : 'I eat my lunch while I’m working'},
+                                    {question : 'I engage in sexual intercourse any chance I get'},
+                                    {question : 'I have a temper'},
+                                    {question : 'I eat only to reenergize my body'},
+                                    {question : 'I love action movies'},
+                                    {question : 'Exercising makes me feel powerful'},
+                                ],
+                        Personality : [
+                                    {question : 'I am a very domineering individual'},
+                                    {question : 'I sometimes don’t notice my feelings'},
+                                    {question : 'I often have trouble listening to others because my own ideas dominate'},
+                                    {question : 'I have been in many fights'},
+                                    {question : 'I tend to be future-oriented'},
+                                    {question : 'I am sometimes speculative'},
+                                    {question : 'Most people view me as thinking-oriented '},
+                                    {question : 'I daydream and often fantasize'},
+                                    {question : 'I like to read history and other non-fiction books'},
+                                    {question : 'I admire ingenuity'},
+                                    {question : 'I can be slow in identifying how people can cause trouble'},
+                                    {question : 'I don’t usually get tricked by people who say they need my help'},
+                                    {question : 'Most people view me as innovative'},
+                                    {question : 'People have thought I have had some strange ideas, but I can always explain the basis for them rationally'},
+                                    {question : 'I am often agitated or irritated'},
+                                    {question : 'Little things make me anxious or upset'},
+                                    {question : 'I have fantasies of unlimited power'},
+                                    {question : 'I love spending money'},
+                                    {question : 'I dominate others in relationships'},
+                                    {question : 'I am very hard on myself'},
+                                    {question : 'I react aggressively to criticism, often becoming defensive in front of others' },
+                                ],
+                        Character : [
+                                    {question : 'Some individuals view me as tough-minded'},
+                                    {question : 'Most people view me as achievement-oriented'},
+                                    {question : 'Some people say that I am irrational '},
+                                    {question : 'I will do anything to reach a goal'},
+                                    {question : 'I value a religious philosophy'},
+                                    {question : 'Incompetence makes me angry'},
+                                    {question : 'I have high standards for myself and for others'},
+                                ],
+                    },
+                    
+					//ACETYLCHOLINE
+                    acetylcholine:{ 
+                        Memory: [
+                                    {question : 'My memory is very strong'},
+                                    {question : 'I am an excellent listener'},
+                                    {question : 'I am good at remembering stories'},
+                                    {question : 'I usually do not forget a face'},
+                                    {question : 'I am very creative'},
+                                    {question : 'I have an excellent attention span and rarely miss a thing'},
+                                    {question : 'I have many good hunches'},
+                                    {question : 'I notice everything going on around me'},
+                                    {question : 'I have a good imagination'},
+                                ],
+                        Physical : [
+                                    {question : 'I tend to have a slow pulse'},
+                                    {question : 'My body has excellent tone'},
+                                    {question : 'I have a great figure/build'},
+                                    {question : 'I have really low cholesterol'},
+                                    {question : 'When I eat, I love to experience the aromas and the beauty of food '},
+                                    {question : 'I love yoga and stretching my muscles'},
+                                    {question : 'During sex, I am very sensual'},
+                                    {question : 'I have had an eating disorder at some point in my life'},
+                                    {question : 'I have tried many alternative remedies'},
+                                ],
+                        Personality : [
+                                    {question : 'I am a perpetual romantic'},
+                                    {question : 'I am in touch with my feelings'},
+                                    {question : 'I tend to make decisions based on hunches'},
+                                    {question : 'I like to speculate'},
+                                    {question : 'Some people say I have my head in the clouds'},
+                                    {question : 'I love reading fiction'},
+                                    {question : 'I have a rich fantasy life'},
+                                    {question : 'I am creative when solving people problems'},
+                                    {question : 'I am very expressive; I like to talk about what’s bothering me'},
+                                    {question : 'I am buoyant'},
+                                    {question : 'I believe that it is possible to have a mystical experience'},
+                                    {question : 'I believe in being a soul mate'},
+                                    {question : 'Sometimes the mystical can excite me '},
+                                    {question : 'I tend to overreact to my body'},
+                                    {question : 'I find it easy to change things; I am not set in my ways'},
+                                    {question : 'I am deeply in touch with my emotions'},
+                                    {question : 'I tend to love someone one minute and hate him or her the next'},
+                                    {question : 'I am flirtatious'},
+                                    {question : 'I don’t mind spending money if it benefits my relationships'},
+                                    {question : 'I tend to fantasize when I’m having sex'},
+                                    {question : 'My relationships tend to be filled with romance' },
+                                    {question : 'I love watching romantic movies' },
+                                    {question : 'I take risks in my love life' },
+                                ],
+                        Character : [
+                                    {question : 'I foresee a better future'},
+                                    {question : 'I am inspired to help other people'},
+                                    {question : 'I believe that all things are possible, particularly for those who are devoted '},
+                                    {question : 'I am good at creating harmony between people'},
+                                    {question : 'Charity and altruism come from the heart, and I have plenty of both'},
+                                    {question : 'Others think me of as having vision'},
+                                    {question : 'My thoughts on religion often change'},
+                                    {question : 'I am an idealist, but not a perfectionist'},
+                                    {question : 'I’m happy with someone who just treats me right'},
+                                ],
+                    },
+					
+					//GABA
+                    gaba:{ 
+                        Memory: [
+                                    {question : 'I have a stable attention span and can follow other people’s logic'},
+                                    {question : 'I enjoy reading people more than books'},
+                                    {question : 'I retain most of what I hear'},
+                                    {question : 'I can remember facts people tell me'},
+                                    {question : 'I learn from my experiences'},
+                                    {question : 'I am good at remembering names'},
+                                    {question : 'I can focus very well on tasks and people’s stories'},
+                                ],
+                        Physical : [
+                                    {question : 'I find it easy to relax'},
+                                    {question : 'I am a calm person'},
+                                    {question : 'I find it easy to fall asleep at night'},
+                                    {question : 'I tend to have high physical endurance'},
+                                    {question : 'I have low blood pressure'},
+                                    {question : 'I do not have a family history of stroke'},
+                                    {question : 'When it comes to sex, I am not very experimental'},
+                                    {question : 'I have little muscle tension'},
+                                    {question : 'Caffeine has little effect on me'},
+                                    {question : 'I take my time eating my meals'},
+                                    {question : 'I sleep well'},
+                                    {question : 'I don’t have many harmful food cravings such as sugar'},
+                                    {question : 'Exercising is a regimented habit for me'},
+                                ],
+                        Personality : [
+                                    {question : 'I am not very adventurous'},
+                                    {question : 'I do not have a temper'},
+                                    {question : 'I have a lot of patience'},
+                                    {question : 'I don’t enjoy philosophy'},
+                                    {question : 'I love watching sitcoms about families'},
+                                    {question : 'I dislike movies about other worlds or universes'},
+                                    {question : 'I am not a risk-taker'},
+                                    {question : 'I keep past experiences in mind before I make decisions'},
+                                    {question : 'I am a realistic person'},
+                                    {question : 'I believe in closure'},
+                                    {question : 'I like facts and details'},
+                                    {question : 'When I make a decision, it’s permanent'},
+                                    {question : 'I like to plan my day, week, month, etc'},
+                                    {question : 'I collect things'},
+                                    {question : 'I am a little sad'},
+                                    {question : 'I am afraid of confrontations and altercations'},
+                                    {question : 'I save up a lot of money in the event of a crisis'},
+                                    {question : 'I tend to create strong, lasting bonds with others'},
+                                    {question : 'I am a stable pillar in people’s lives'},
+                                ],
+                        Character : [
+                                    {question : 'I believe in the adage “Early to bed, early to rise.”'},
+                                    {question : 'I believe in meeting deadlines'},
+                                    {question : 'I try to please others the best I can'},
+                                    {question : 'I am a perfectionist'},
+                                    {question : 'I am good at maintaining long-lasting relationships'},
+                                    {question : 'I pay attention to where my money goes'},
+                                    {question : 'I believe that the world would be more peaceful if people would improve upon their morals'},
+                                    {question : 'I am very loyal and devoted to my loved ones'},
+                                    {question : 'I have high ethical standards that I live by'},
+                                    {question : 'I pay close attention to laws, principles, and policies'},
+                                    {question : 'I believe in participating in service for the community'},
+                                ],
+                    },
+					
+					//SEROTONIN
+                    serotonin:{ 
+                        Memory: [
+                                    {question : 'I can easily concentrate on manual-labor tasks'},
+                                    {question : 'I have a good visual memory'},
+                                    {question : 'I am very perceptive'},
+                                    {question : 'I am an impulsive thinker'},
+                                    {question : 'I live in the here and now'},
+                                    {question : 'I tend to say, “Tell me the bottom line.”'},
+                                    {question : 'I am a slow book learner, but I learn easily from experience'},
+                                    {question : 'I need to experience something or work at it hands-on in order to understand it'},
+                                ],
+                        Physical : [
+                                    {question : 'I sleep too much'},
+                                    {question : 'When it comes to sex, I am very experimental'},
+                                    {question : 'I have low blood pressure'},
+                                    {question : 'I am very action-oriented'},
+                                    {question : 'I am very handy around the house'},
+                                    {question : 'I am very active outdoors'},
+                                    {question : 'I engage in daring activities such as skydiving and motorcycle riding '},
+                                    {question : 'I can solve problems spontaneously'},
+                                    {question : 'I rarely have carbohydrate cravings'},
+                                    {question : 'I usually grab a quick meal on the run'},
+                                    {question : 'I’m usually not very consistent with my  exercise routine; I may exercise daily for three weeks and then skip it for a month'},
+                                ],
+                        Personality : [
+                                    {question : 'I live life in the immediate moment '},
+                                    {question : 'I like to perform/entertain in public'},
+                                    {question : 'I tend to gather facts in an unorganized manner'},
+                                    {question : 'I am very flexible'},
+                                    {question : 'I am a great negotiator'},
+                                    {question : 'I often just like to “eat, drink, and be  merry”'},
+                                    {question : 'I am dramatic'},
+                                    {question : 'I am very artistic'},
+                                    {question : 'I am a good craftsman'},
+                                    {question : 'I’m a risk taker when it comes to sports'},
+                                    {question : 'I believe in psychics'},
+                                    {question : 'I can easily take advantage of others'},
+                                    {question : 'I am cynical of others’ philosophies'},
+                                    {question : 'I like to have fun'},
+                                    {question : 'My favorite type of movies are horror flicks'},
+                                    {question : 'I am fascinated with weapons'},
+                                    {question : 'I rarely stick to a plan or agenda'},
+                                    {question : 'I have trouble remaining faithful'},
+                                    {question : 'I am easily able to separate and move on when relationships with loved ones end'},
+                                    {question : 'I don’t pay much attention to how I spend my money'},
+                                    {question : ' I have many frivolous relationships'},
+                                ],
+                        Character : [
+                                    {question : 'I always keep my options open in case something better comes up'},
+                                    {question : 'I don’t like working hard for long periods of time'},
+                                    {question : 'I believe things should have a function and purpose'},
+                                    {question : 'I am optimistic'},
+                                    {question : 'I live in the moment'},
+                                    {question : 'I pray only when I’m in need of spiritual support'},
+                                    {question : 'I don’t have particularly high morals and ethical values'},
+                                    {question : 'I do what I want, when I want to'},
+                                    {question : 'I don’t care about being perfect; I just live my life'},
+                                    {question : 'Savings are for suckers'},
+                                ],
+                    },
+					
+					//DOPAMINE DEFICIENCY
+                    dopamineDef:{ 
+                        Memory: [
+                                    {question : 'I have trouble paying consistent attention and concentrating'},
+                                    {question : 'I need caffeine to wake up'},
+                                    {question : 'I cannot think quickly enough'},
+                                    {question : 'I do not have a good attention span'},
+                                    {question : 'I have trouble getting through a task even when it is interesting to me'},
+                                    {question : 'I am slow in learning new ideas'},
+                                ],
+                        Physical : [
+                                    {question : 'I crave sugar'},
+                                    {question : 'I have decreased libido'},
+                                    {question : 'I sleep too much'},
+                                    {question : 'I have a history of alcohol or addiction'},
+                                    {question : 'I have recently felt worn out for no apparent reason'},
+                                    {question : 'I sometimes experience total exhaustion without even exerting myself'},
+                                    {question : 'I have always battled weight problems'},
+                                    {question : 'I have little motivation for sexual experiences'},
+                                    {question : 'I have little trouble getting out of bed in the mornign'},
+                                    {question : 'I have had a craving for cocaine, amphetamines, or Ecstasy'},
+                                ],
+                        Personality : [
+                                    {question : 'I feel fine just following others'},
+                                    {question : 'People seem to take advantage of me'},
+                                    {question : 'I am feeling very down or depressed'},
+                                    {question : 'People have told me I am too mellow'},
+                                    {question : 'I have little urgency'},
+                                    {question : 'I let people criticize me '},
+                                    {question : 'I always look to others to lead me'},
+                                ],
+                        Character : [
+                                    {question : 'I have lost my reasoning skills'},
+                                    {question : 'I can’t make good decisions'},
+                                ],
+                    },
+                    
+					//ACETYLCHOLINE DEFICIENCY
+                    acetylcholineDef:{ 
+                        Memory: [
+                                    {question : 'I lack imagination'},
+                                    {question : 'I have difficulty remembering names when I first meet people'},
+                                    {question : 'I have noticed that my memory ability is decreasing'},
+                                    {question : 'My significant other tells me I don’t have romantic thoughts'},
+                                    {question : 'I can’t remember my friend’s birthday'},
+                                    {question : 'I have lost some of my creativity'},
+                                ],
+                        Physical : [
+                                    {question : 'I have insomnia'},
+                                    {question : 'I have lost muscle tone'},
+                                    {question : 'I don’t exercise anymore'},
+                                    {question : 'I crave fatty food'},
+                                    {question : 'I have experimented with hallucinogens or other illicit drugs'},
+                                    {question : 'I feel like my body is falling apart'},
+                                    {question : ' I can’t breathe easily'},
+                                ],
+                        Personality : [
+                                    {question : 'I don’t feel joy very often'},
+                                    {question : 'I feel despair'},
+                                    {question : 'I protect myself from being hurt by others by never telling much about myself'},
+                                    {question : 'I find it more comfortable to do things alone rather than in a large group'},
+                                    {question : 'Other people get angrier about bothersome things than I do'},
+                                    {question : 'I give in easily and tend to be submissive'},
+                                    {question : 'I rarely feel passionate about anything'},
+                                    {question : 'I like routine'},
+                                ],
+                        Character : [
+                                    {question : 'I don’t care about anyone’s stories but my own'},
+                                    {question : 'I don’t pay attention to people’s feelings'},
+                                    {question : 'I don’t feel buoyant'},
+                                ],
+                    },
+					
+					//GABA DEFICIENCY
+                    gabaDef:{ 
+                        Memory: [
+                                    {question : 'I find it difficult to concentrate because I’m nervous and jumpy'},
+                                    {question : 'I can’t remember phone numbers'},
+                                    {question : 'I have trouble finding the right word'},
+                                    {question : 'I have trouble remembering things when I am put on the spot'},
+                                    {question : 'I know I am intelligent, but it is hard to show others'},
+                                    {question : 'My ability to focus comes and goes'},
+                                    {question : 'When I read, I find I have to go back over the same paragraph a few times to absorb the information'},
+                                    {question : 'I am a quick thinker but can’t always say what I mean'},
+                                ],
+                        Physical : [
+                                    {question : 'I feel shaky'},
+                                    {question : 'I sometimes tremble'},
+                                    {question : 'I have frequent backaches and/or headaches'},
+                                    {question : 'I tend to have shortness of breath'},
+                                    {question : 'I tend to have heart palpitations'},
+                                    {question : 'I tend to have cold hands'},
+                                    {question : 'I sometimes sweat too much'},
+                                    {question : 'I am sometimes dizzy'},
+                                    {question : 'I often have muscle tension'},
+                                    {question : 'I tend to get butterflies in my stomach'},
+                                    {question : 'I crave bitter foods'},
+                                    {question : 'I am often nervous'},
+                                    {question : 'I like yoga because it helps me to relax'},
+                                    {question : 'I often feel fatigued even when I have had a good night’s sleep'},
+                                    {question : 'I overea'},
+                                ],
+                        Personality : [
+                                    {question : 'I have mood swings'},
+                                    {question : 'I enjoy doing many things at one time, but I find it difficult to decide what to do first'},
+                                    {question : 'I tend to do things just because I think they’d be fun'},
+                                    {question : 'When things are dull, I always try to introduce some excitement'},
+                                    {question : 'I tend to be fickle, changing my mood and thoughts frequently'},
+                                    {question : 'I tend to get overly excited about things'},
+                                    {question : 'My impulses tend to get me into a lot of trouble'},
+                                    {question : 'I tend to be theatrical and draw attention to myself'},
+                                    {question : 'I speak my mind no matter what the reaction of others may be'},
+                                    {question : 'I sometimes have fits of rage and then feel terribly guilty'},
+                                    {question : 'I often tell lies to get out of trouble'},
+                                    {question : 'I have always had less interest than the average person in sex'},
+                                ],
+                        Character : [
+                                    {question : 'I don’t play by the rules anymore'},
+                                    {question : 'I have lost my friends'},
+                                    {question : 'I can’t sustain romantic relationships'},
+                                    {question : 'I consider the law arbitrary and without reason'},
+                                    {question : 'I now consider rules that I used to follow ridiculous'},
+                                ],
+                    },
+					
+					//SEROTONIN DEFICIENCY
+                    serotoninDef:{ 
+                        Memory: [
+                                    {question : 'I am not very perceptive'},
+                                    {question : 'I can’t remember things that I have seen in the past'},
+                                    {question : 'I have a slow reaction time'},
+                                    {question : 'I have a poor sense of direction'},
+                                ],
+                        Physical : [
+                                    {question : 'I have night sweats'},
+                                    {question : 'I have insomnia'},
+                                    {question : 'I tend to sleep in many different positions in order to feel comfortable'},
+                                    {question : 'I always awake early in the morning'},
+                                    {question : 'I can’t relax'},
+                                    {question : 'I wake up at least two times per night'},
+                                    {question : 'It is difficult for me to fall back asleep when I am awakened'},
+                                    {question : 'I crave salt'},
+                                    {question : 'I have less energy to exercise'},
+                                    {question : 'I am sad'},
+                                ],
+                        Personality : [
+                                    {question : 'I have chronic anxiety'},
+                                    {question : 'I am easily irritated'},
+                                    {question : 'I have thoughts of self-destruction'},
+                                    {question : 'I have had suicidal thoughts in my life'},
+                                    {question : 'I tend to dwell on ideas too much'},
+                                    {question : 'I am sometimes so structured that I become inflexible'},
+                                    {question : 'My imagination takes over'},
+                                    {question : 'Fear grips me'},
+                                ],
+                        Character : [
+                                    {question : 'I can’t stop thinking about the meaning of life'},
+                                    {question : 'I no longer want to take risks'},
+                                    {question : 'The lack of meaning in my life is painful to me'},
+                                ],
+                    },
+                
+                };
+				
+				$scope.sections = [
+					{	sectionName:'DOPAMINE',
+						sectionNumber:'1A',
+						section:$scope.questions.dopamine},
+					{	sectionName:'ACETYLCHOLINE',
+						sectionNumber:'2A',
+						section:$scope.questions.acetylcholine},
+					{	sectionName:'GABA',
+						sectionNumber:'3A',
+						section:$scope.questions.gaba},
+					{	sectionName:'SEROTONIN',
+						sectionNumber:'4A',
+						section:$scope.questions.serotonin},
+				];
+				
+				$scope.sectionsDef = [
+					{	sectionName:'DOPAMINE',
+						sectionNumber:'1B',
+						section:$scope.questions.dopamineDef},
+					{	sectionName:'ACETYLCHOLINE',
+						sectionNumber:'2B',
+						section:$scope.questions.acetylcholineDef},
+					{	sectionName:'GABA',
+						sectionNumber:'3B',
+						section:$scope.questions.gabaDef},
+					{	sectionName:'SEROTONIN',
+						sectionNumber:'4B',
+						section:$scope.questions.serotoninDef},
+				];
+
+                $scope.calculate = function(test){
+                    var total = 0;
+                    for(var n in test) {
+                        test[n].forEach(function(item){total = total + ((item.answer === true) ? 1 : 0);});
+                    }
+                    return total;
+                };
+                $scope.getBTClass = function(q){
+                    return (q && q.answer === true) ? 'btn-success' : 'btn-default';
+                };
+                $scope.getBFClass = function(q){
+                    return (q && q.answer === false) ? 'btn-warning' : 'btn-default';
+                };
+                $scope.dominance = function(){
+                    var a1 = $scope.calculate($scope.questions.dopamine);
+                    var a2 = $scope.calculate($scope.questions.acetylcholine);
+                    var a3 = $scope.calculate($scope.questions.gaba);
+                    var a4 = $scope.calculate($scope.questions.serotonin);
+                    
+                    $scope.dominanceScore.a1 = a1;
+                    $scope.dominanceScore.a2 = a2;
+                    $scope.dominanceScore.a3 = a3;
+                    $scope.dominanceScore.a4 = a4;
+
+                    if(a1>a2 && a1>a3 && a1>a4){ 
+                        $scope.dominanceScore.dominant = 'DOPAMINE';
+                        $scope.dominanceScore.top = a1;
+                    } 
+                    if(a2>a1 && a2>a3 && a2>a4){ 
+                        $scope.dominanceScore.dominant = 'ACETYLCHOLINE';
+                        $scope.dominanceScore.top = a2;
+                    } 
+                    if(a3>a2 && a3>a1 && a3>a4){ 
+                        $scope.dominanceScore.dominant = 'GABA';
+                        $scope.dominanceScore.top = a3;
+                    } 
+                    if(a4>a2 && a4>a3 && a4>a1){ 
+                        $scope.dominanceScore.dominant = 'SEROTONIN';
+                        $scope.dominanceScore.top = a4;
+                    } 
+
+                    /*console.log("Test completed");
+                    gtag('event', 'test_completed');
+                    console.log("Result done");*/
+
+                    return $scope.dominanceScore.dominant;
+                };
+
+                $scope.shareOnFacebook = function(){
+                    window.location.href = "http://www.facebook.com/sharer.php?description="
+                    + encodeURI('I am ' + $scope.dominanceScore.dominant + ' Dominant with a score of ' + $scope.dominanceScore.top + ' on Braverman\x27s Test. Find out how you score: ') 
+                    + "&u=http%3A%2F%2Fwww.bravermantest.com%2F";
+                };
+        });
+    </script>
+
+    <script type="text/ng-template" id="/qns.html">
+        <div class="row">
+                    <div class="col-md-8 col-xs-8">{{q.question}}</div>
+                    <div class="col-md-4 col-xs-4">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default btn-xs" ng-class="getBTClass(q)" ng-click="q.answer = true">True</button>
+                            <button type="button" class="btn btn-default btn-xs" ng-class="getBFClass(q)" ng-click="q.answer = false">False</button>
+                        </div>
+                    </div>
+                </div>
+    </script>
+
+    <script type="text/ng-template" id="/section.html">
+		<h3>{{s.sectionNumber}} - {{s.sectionName}}</h3>
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <h4 class="padding-left">Memory and Attention</h4>
+                <div ng-repeat="q in s.section.Memory">
+                    <div ng-include src="'/qns.html'"></div>
+                </div>
+
+                <h4 class="padding-left">Physical</h4>
+                <div ng-repeat="q in s.section.Physical">
+                    <div ng-include src="'/qns.html'"></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <h4 class="padding-left">Character</h4>
+                <div ng-repeat="q in s.section.Character">
+                    <div ng-include src="'/qns.html'"></div>
+                </div>
+                <h4 class="padding-left">Personality</h4>
+                <div ng-repeat="q in s.section.Personality">
+                    <div ng-include src="'/qns.html'"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-6">
+                <p class="lead">Total value of {{s.sectionNumber}} True Responses: <strong> {{calculate(s.section)}}</strong></p>
+            </div>
+
+        </div>
+	</script>
+
+
+    <script type="text/ng-template" id="/dopamineNature.html">
+	        <p>
+            <strong>DOPAMINE NATURE</strong> If you have a dopamine nature, you are part of 17% of the population. When you
+            are balanced, you are likely to be strong-willed who knows exactly what you want and how to get it. You are fast
+            on your feet and self-confident. You are highly rational, more comfortable with facts and figures than with feelings
+            and emotions. You are able to assess yourself critically, but you may not respond well to the criticisms of others.
+            You focus intently on the task at hand and take pride in achievement. Strategic thinking, masterminding, inventing,
+            problem solving, envisioning, and pragmatism are exciting and you function well under stress. A majority of doctors,
+            scientists, researchers, inventors, engineers, generals and architects are dopamine dominant, but this does not
+            preclude you from other professions. You may like to play chess, listen to books on tape, or do difficult crossword
+            puzzles. You are tireless, perhaps overly alert, and may need less sleep than others. When exercising, you may
+            enjoy weight-lifting more than aerobic activities. You may not be overly sensitive and miss it when others consider
+            their feelings more important than your reasons. You may be distant from your children, and the stability of
+            your marriage may depend on the loyalty and goodwill of your spouse.
+        </p>
+        <p>
+            <strong>Excessive dopamine</strong> Too much dopamine can lead to excessive risk-taking behaviors and impulsive
+            actions. Violence and over-control of others may be recurrent problems. Sexual activity level might be too high
+            for sustained relationships to endure, as extramarital sexual activity may result. As teenagers, reckless driving,
+            shoplifting, or date rape may result if you did not learn to balance your dopamine extremes in time.
+        </p>
+	</script>
+    <script type="text/ng-template" id="/acetylcholineNature.html">
+		<p>
+			<strong>ACETYLCHOLINE NATURE</strong> You are adept at working with your senses and view the world in sensory
+			terms. You are highly creative and open to new ideas. You are a quick thinker who is always taking other people
+			into consideration. You are devoted to making things the best they can be, no matter how much effort it requires.
+			You are flexible, creative, and spontaneous, and are willing to try anything new as long as it promises to be
+			new and exciting. If your acetylcholine nature is in balance, you are intuitive and innovative. You take pleasure
+			in anything involving words, ideas, and communication. (Acetylcholine is produced to a great extent in the parietal
+			lobes of the brain, which is responsible for language, intelligence, and comprehension) You may be ideal in the
+			roles as counselor, mediator, think tank member, yoga and meditation instructor, religious leader, and in public
+			service. Strong acetylcholine levels are associated with high brain speed, which impacts the creative function,
+			so artists, writers, advertising professionals, and actors are frequently acetylcholine dominant. You are extremely
+			social, even charismatic. You love meeting and greeting and making new friends. You come across to others as
+			authentic and grounded. People find you charming, and you find relationships come easy to you. You invest a great
+			deal of energy and time into your relationships and feel that you are personally reaping the rewards. You are
+			an optimist, and your see the possibilities in people. You are attentive to the needs of children and romantic
+			with you significant other. You are good at remembering other people’s feelings and reactions, and this enables
+			you to not hurt others. You are altruistic and benevolent. You love adventure. You are open to new things and
+			not afraid of failure. You like to travel, but you can also enjoy reading about the lives of others. Your quest
+			for learning makes you interested in a variety of topics and adept at sharing your knowledge with others.
+		</p>
+		<p>
+			<strong>Too Much Acetylcholine </strong> You may give too much of yourself, to the point of not considering your
+			own needs or becoming masochistic. You may feel the world is taking advantage of you, or become paranoid. You
+			may become socially isolated as a result. Panic disorder, manic episodes, or anxiety can result.
+		</p>
+	</script>
+    <script type="text/ng-template" id="/gabaNature.html">
+		<p>
+            <strong>GABA NATURE</strong> A person with a GABA nature is stable. Almost 50% of the world share this nature,
+            whose hallmarks are consistency, sociability, and concern for others. If you have a GABA nature, you will likely
+            show up every day for work and be there when others need you. When your GABA is in balance, you remain calm when
+            chaos swirls around you. Characteristics of objectivity, levelheadedness, punctuality, practicality, and confidence
+            all come naturally to you. Staying organized is very important to you, and rigid schedules are comforting rather
+            than confining – they eliminate uncertainty and ensure smooth sailing. GABA dominant people tend to gravitate
+            to careers as administrators, accountants, security officers, nurses, medical technicians, air-traffic controllers,
+            news reporters, EMT’s, meeting planners, bus drivers, and homemakers. No matter what the job, the GABA-natured
+            person is the one who tethers the group, who stays focused on the matter at hand, yet usually defers to the majority.
+            You are the consummate team player, deriving pleasure from fulfilling your obligations and taking care of those
+            you love. You are sensible, settled, and not prone to wide swings of emotion or outbursts of anger. You both
+            relish group activities and cherish one-to-one connections. Making others comfortable makes you happy. Marriage
+            is seen as a long-term haven. You probably believe in traditions and institutions, and enjoy your part in making
+            them work, especially at your place of worship. You look forward to holiday gatherings, and planning for them
+            seems more like play than work. You probably like history books and biographies. Collecting memorabilia and creating
+            scrapbooks may provide hours of entertainment. There are times when you feel you’ve had a strong nurturing effect
+            on others, such as after hosting a holiday dinner.
+        </p>
+        <p>
+            <strong>EXCESS GABA </strong> Producing too much GABA may ratchet up your nurturing tendencies to the point where
+            you ignore your own needs or end up getting hurt. You may spend too much energy looking for love, and then relying
+            too heavily on you mates. You may look too much to authority figures for advice and continuously craving and
+            following the advice of others.
+        </p>
+	</script>
+    <script type="text/ng-template" id="/serotoninNature.html">
+		<p>
+			<strong>SEROTONIN NATURE</strong> Serotonin resynchronizes your brain while you sleep so you wake every morning
+			with a fresh start. If you have a serotonin nature, you are among 17% of the population who really know how to
+			enjoy themselves. Serotonin is associated with delta waves (which are produced in abundance when we sleep) and
+			affects our ability to rest, regenerate, and find security. If you have a serotonin nature, you know how to live
+			in the moment. You are a realist, keenly responsive to sensory input, yet you can be impulsive, too. You love
+			to participate in activities for the “love of the game” and not as a means to an end. Achievement to you means
+			getting something done now. You thrive on change – you’ll alternate tasks and find new ways of doing repetitive
+			ones. You will try new foods, pick up a new hobby, and plan a different vacation every year. When balanced, a
+			person with a serotonin nature is receptive to stimuli, in touch with both mind and body, often physically coordinated,
+			and very resourceful. You are not put off by struggle and undeterred by setbacks. If your work doesn’t feel like
+			play, it is not worth doing. Your serotonin nature is ideal for professions requiring motor skills, hand-eye
+			coordination, flexibility, and crisis management. Tools are extensions of the serotonin brain. Construction workers,
+			oil riggers, truck and ambulance drivers, military personnel, hairstylists, bartenders, pilots, and computer
+			programmers – who get to play with the most advanced and expensive tools – are all likely to have a serotonin
+			nature. Professional athletes, movie stars, photographers, and fashion models might also have serotonin natures.
+			Serotonin dominance would also be essential for trouble-shooting business executives hired to save floundering
+			companies; for surgeons, orthopedists, and chiropractors; for detectives and investigators; and for specialists
+			in crisis intervention. If there is excitement anywhere, you will find it, whether it be parties, celebrations,
+			video games, casino gambling, mountain climbing, hunting, skydiving, hang-gliding, skiing, or scuba diving. You
+			are passionate in your relationships, but refuse to be tied down. It is important that those close to you recognize
+			your need for freedom. You can be the life of the party; you can be cheerful, optimistic, and easygoing. You
+			want everyone to join in and be part of your fun. You may have a special fondness for children, although you
+			may be overwhelmed by the commitment needed to care for them. You delight in playing with them, and the roles
+			of a favorite aunt, uncle or grandparent appeal the most to you. You are intensely loyal to coworkers, friends,
+			and family. People appreciate your practical side and the way you make the best of any situation. You have many
+			and varied friendships, but they may be more broad than deep. Your impulsivity and desire for new experiences
+			may move you away before deeper roots are formed. You disdain order and routine, and with your love for independence,
+			this can put a strain on your closest relationships. When you are maximizing your serotonin mature, you experience
+			serenity throughout the day. You experience highs doing what others consider dangerous, such as bungee jumping,
+			motorboat racing, whitewater rafting, motorcycling, or just staying out all night carousing. When you play hard,
+			your body is in serotonin overdrive, and you are having the time of your life.
+		</p>
+		<p>
+			<strong>TOO MUCH SEROTONIN </strong> Producing too much serotonin can make you extremely nervous. You can become
+			hesitant, distracted, vulnerable to any manner of criticism, and morbidly afraid of being disliked. In the extreme,
+			someone with an excessive serotonin personality is painfully shy and sees himself as inadequate and inferior.
+			Such people are plagued by sadness, anger, and a desperate desire for interpersonal interaction, which, ironically,
+			they are too fearful to attempt.
+		</p>
+	</script>
+
+    <script type="text/ng-template" id="/dopamineDef.html">
+		<h4>Dopamine Deficiency</h4>
+        <p>
+            <strong>Deficient dopamine</strong> Early warning signs are loss of energy, fatigue, sluggishness, memory loss,
+            or the blues.<br>
+            <i>Physical issues:</i> Anemia, balance problems, blood sugar instability, bone density loss, carbohydrate cravings,
+            decreased appetite, decreased strength, diabetes, diarrhea, anorgasmia, digestion problems, hypersomnia, head
+            and facial tremors, high blood pressure, hyperglycemia, joint pain, kidney problems, light-headedness, low libido,
+            narcolepsy, obesity, Parkinson’s, slow metabolism, slow rigid movements, substance abuse, sugar cravings, tension,
+            tremors, thyroid problems, swallowing problems. Personality Issues: Aggression, anger, carelessness, depression,
+            fear of being observed, guilt, hopelessness, worthlessness, pleasure-seeking behavior, stress intolerance, social
+            isolation, mood swings, procrastination, self-destructive thoughts. Memory Issues: Distractibility, lack of follow-through,
+            forgetfulness, lack of working memory, poor abstract thinking, slow processing speed. Attention Issues: ADD,
+            decreased alertness, failure to finish tasks, hyperactivity, impulsive behavior, poor concentration.
+        </p>
+        <table class="table">
+            <caption>Dopamine Boosters for Brain Energy</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Minor Deficit (0-5)</th>
+                    <th>Moderate Deficit (6-15) </th>
+                    <th>Major Deficit (15+)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Phenylalanine</th>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                    <td>1000-2000 mg</td>
+                </tr>
+                <tr>
+                    <th>Tyrosine</th>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                    <td>1000-2000 mg</td>
+                </tr>
+                <tr>
+                    <th>Methionine</th>
+                    <td>250 mg</td>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                </tr>
+
+                <tr>
+                    <th>Rhodiola</th>
+                    <td>50 mg</td>
+                    <td>100 mg</td>
+                    <td>200 mg</td>
+                </tr>
+                <tr>
+                    <th>Pyroxidine</th>
+                    <td>5 mg</td>
+                    <td>10 mg</td>
+                    <td>50 mg</td>
+                </tr>
+                <tr>
+                    <th>B complex</th>
+                    <td>25 mg</td>
+                    <td>50 mg</td>
+                    <td>100 mg</td>
+                </tr>
+                <tr>
+                    <th>Phosphatidylserine</th>
+                    <td>50 mg</td>
+                    <td>100 mg</td>
+                    <td>200 mg</td>
+                </tr>
+                <tr>
+                    <th>Ginko Biloba</th>
+                    <td>50 mg</td>
+                    <td>75 mg</td>
+                    <td>100 mg</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            Dietary modifications can boost dopamine as well. Increase your intake of phenylalanine and tyrosine (use Equal as a sugar
+            substitute), eat chicken, cottage cheese, eggs, pork, ricotta cheese, soybean products, turkey, walnuts, wheat
+            germ, granola, oats, duck, and milk and yogurt.
+            <br> To prevent dopamine burnout, practice deep breathing (from abdomen), alternating nostrils, watch nonviolent
+            movies and TV shows, weight lifting 3 times per week. Prevent exposure to lead and cadmium. Stop smoking. A cup
+            or two of caffeine in the morning is a very common way to increase dopamine, however this can cause insomnia
+            or tremors if dosage is too high or it is taken too late in the day.
+        </p>
+	</script>
+    <script type="text/ng-template" id="/acetylcholineDef.html">
+		<h4>Acetylcholine Deficiency</h4>
+        <p>
+            <strong>Deficient Acetylcholine </strong>  Acetylcholine controls your brain speed and the rate at which electrical signals
+are processed, connecting your physical experiences to memories and thoughts. When your brain speed
+10
+slows with deficient acetylcholine, the brain does not have time to connect all the new stimuli to previously
+stored information, so it is discarded when the new information pours in. Your recall may become spotty,
+and you may not react to sensory stimuli as fast as before. This causes forgetfulness.
+<br>
+            <i>Physical issues:</i> Agitation, Alzheimers, anxiety, arthritis, autism, high cholesterol, decreased sexual ability,
+diabetes, problems urinating, dry cough, dry mouth, dyslexia, frequent urination, eye disorders, fat
+cravings, frequent bowel movements, glaucoma, lack of arousal, inflammatory problems, multiple
+sclerosis, osteoporosis, reading/writing disorders, slowness of movement, speech problems<br>
+            <i>Personality issues:</i> Bipolar disorder, math errors, changes in personality and language, hysterical behavior,
+mood swings, rule breaking.<br>
+<i>Memory issues:</i>  Learning disorders, loss of immediate visual and verbal memory, memory disturbance,
+memory lapses
+<br>
+<i>Attention issues:</i>  Attention problems, difficulty concentrating, diminished comprehension, impaired abstract
+thinking, impaired creativity.<br>
+        </p>
+        <table class="table">
+            <caption>Acetylcholine Boosters</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Minor Deficit (0-5)</th>
+                    <th>Moderate Deficit (6-15) </th>
+                    <th>Major Deficit (15+)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Choline (GPC choline)</th>
+                    <td>100 mg</td>
+                    <td>200 mg</td>
+                    <td>500 mg</td>
+                </tr>
+                <tr>
+                    <th>Phosphatidylcholine</th>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                    <td>2000 mg</td>
+                </tr>
+                <tr>
+                    <th>Phosphatidylserine</th>
+                    <td>50 mg</td>
+                    <td>100 mg</td>
+                    <td>200 mg</td>
+                </tr>
+
+                <tr>
+                    <th>Acetyl-l-carnitine</th>
+                    <td>250 mg</td>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                </tr>
+                <tr>
+                    <th>DHA (Docosahexaenoic acid)</th>
+                    <td>200 mg</td>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                </tr>
+                <tr>
+                    <th>Thiamine</th>
+                    <td>25 mg</td>
+                    <td>50 mg</td>
+                    <td>100 mg</td>
+                </tr>
+                    <th>Pantothenic Acid</th>
+                    <td>25 mg</td>
+                    <td>50 mg</td>
+                    <td>100 mg</td>
+                </tr>
+                <tr>
+                    <th>Vitamin B12</th>
+                    <td>100 mg</td>
+                    <td>200 mg</td>
+                    <td>500 mg</td>
+                </tr>
+                <tr>
+                    <th>Taurine</th>
+                    <td>250 mg</td>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                </tr>
+                <tr>
+                    <th>Huperzine-A</th>
+                    <td>50 mg</td>
+                    <td>100 mg</td>
+                    <td>200 mg</td>
+                </tr>
+                <tr>
+                    <th>Ginko Biloba</th>
+                    <td>50 mg</td>
+                    <td>75 mg</td>
+                    <td>100 mg</td>
+                </tr>
+                <tr>
+                    <th>Korean Ginseng</th>
+                    <td>100 mg</td>
+                    <td>200 mg</td>
+                    <td>500 mg</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+        </p>
+	</script>
+    <script type="text/ng-template" id="/gabaDef.html">
+		<h4>GABA Deficiency</h4>
+        <p>
+            <strong>Deficient GABA </strong>   Gaba is produced in the temporal lobes and is associated throughout the brain with
+calming, rhythmic theta waves – the “idling frequency” of neurons. GABA is the major inhibitory
+neurotransmitter of the brain, which keeps all of the other biochemicals in check. GABA controls the
+brains rhythm so that you function mentally and physically at a steady pace. When your rhythm is thrown
+off by a GABA deficiency, you may begin to feel anxious, nervous, or irritable. Without enough GABA,
+your brain produces energy in bursts, which impacts your emotional well-being.
+
+<br>
+            <i>Physical issues:</i>  Tremors, allergies, appetite changes, backache, blurred vision, carbohydrate cravings,
+chest pain, clammy hands, constipation, decreased libido, diarrhea, difficulty swallowing, dizziness, dry
+mouth, excessive sleepiness, headache, hypertension, hyperventilation, insomnia, irritable bowel
+syndrome, muscle loss, muscle tension, nausea, night sweats, parethesias, PMS, protein cravings,
+seizures, shortness of breath, stroke, heart palpitations, ringing in ears, trembling, twitching, urinary
+frequency.
+<br>
+            <i>Personality issues:</i>  Problems adjusting to stress, anxiety, depression, feelings of dread, excessive guilt,
+worthlessness, hopelessness, emotional immaturity, manic depression, obsessive compulsive disorder,
+phobias, rage, restlessness, thoughts of suicide, psychosis.
+<br>
+<i>Memory issues:</i>  Learning disorders, loss of immediate visual and verbal memory, memory disturbance,
+memory lapses
+<br>
+<i>Attention issues:</i>   Poor verbal memory, global memory problems.
+Attention Issues: Difficulty concentrating, disorganized attention pattern associated with anxiety, high
+anxiety, impulsive attention errors (jumping the gun, erratic driving), inability to think clearly.
+<br>
+        </p>
+        <table class="table">
+            <caption>GABA Boosters</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Minor Deficit (0-5)</th>
+                    <th>Moderate Deficit (6-15) </th>
+                    <th>Major Deficit (15+)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Inositol</th>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                    <td>2000 mg</td>
+                </tr>
+                <tr>
+                    <th>GABA (not well-absorbed)</th>
+                    <td>100 mg</td>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                </tr>
+                <tr>
+                    <th>Glutamic Acid</th>
+                    <td>250 mg</td>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                </tr>
+
+                <tr>
+                    <th>Melatonin (at night)</th>
+                    <td>1 mg</td>
+                    <td>2 mg</td>
+                    <td>3-6 mg</td>
+                </tr>
+                <tr>
+                    <th>Thiamine</th>
+                    <td>200 mg</td>
+                    <td>400 mg</td>
+                    <td>600 mg</td>
+                </tr>
+                <tr>
+                    <th>Niacinamide</th>
+                    <td>25 mg</td>
+                    <td>100 mg</td>
+                    <td>500 mg</td>
+                </tr>
+                    <th>Pyridoxine</th>
+                    <td>5 mg</td>
+                    <td>10 mg</td>
+                    <td>50 mg</td>
+                </tr>
+                <tr>
+                    <th>Valerian root</th>
+                    <td>100 mg</td>
+                    <td>200 mg</td>
+                    <td>500 mg</td>
+                </tr>
+                <tr>
+                    <th>Passionflower</th>
+                    <td>200 mg</td>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <p>
+        </p>
+	</script>
+    <script type="text/ng-template" id="/serotoninDef.html">
+		<h4>Serotonin Deficiency</h4>
+	<p>
+            <strong>Serotonin Deficiency </strong> Serotonin is produced in great quantities in the occipital lobes and helps
+create the neurological electricity for sight and rest, and also controls your cravings. The
+occipital lobes maintain your brain’s overall balance, or synchrony, by regulating the output of all
+the primary brain waves. The four brain waves appear in varying combinations throughout the
+day, but at night serotonin allows the brain to recharge and rebalance. If these brain waves are
+out of sync, the left and right sides of your brain will be out of balance, and you might feel like
+you are going off the edge; you are overtired, out of control, and unable to get a restful sleep.
+When serotonin is unbalanced, your brain’s ability to recharge itself is compromised. Serotonin
+burnout can occur from experiencing too much excitement or not getting enough sleep. When
+this happens, you simply cannot think clearly.
+
+<br>
+            <i>Physical issues:</i>   Aches and soreness, allergies, arthritis, backache, blurred vision, carbohydrate
+cravings, clammy hands, constipation or diarrhea, difficulty swallowing, dizziness, drug or alcohol
+addiction, drug reactions, dry mouth, hallucinations, headaches, high pain/pleasure threshold,
+hypersensitivity, excessive sleeping, hypertension, insomnia, muscle tension, nausea, night
+sweats, palpitations, parethesias, PMS, premature ejaculation, premature orgasm for women,
+salt cravings, tachycardia, ringing in ears, tremors, urinary frequency, vomiting, weight gain.
+<br>
+            <i>Personality issues:</i> Codependency, depersonalization, depression, impulsiveness, lack of artistic
+appreciation, lack of common sense, lack of pleasure, social isolation, masochistic tendencies,
+obsessive compulsive disorder, paranoia, perfectionism, phobias, rage, self-absorption, shyness.
+
+<br>
+<i>Memory issues:</i>  Confusion, memory loss, too many ideas to manage.
+<br>
+<i>Attention issues:</i>  Difficulty concentrating, hypervigilance, restlessness, slow reaction time.
+<br>
+        </p>
+        <table class="table">
+            <caption>Serotonin Boosters</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Minor Deficit (0-5)</th>
+                    <th>Moderate Deficit (6-15) </th>
+                    <th>Major Deficit (15+)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Calcium</th>
+                    <td>500 mg</td>
+                    <td>750 mg</td>
+                    <td>1000 mg</td>
+                </tr>
+                <tr>
+                    <th>Fish oil (pharmaceutical grade)</th>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                    <td>2000 mg</td>
+                </tr>
+                <tr>
+                    <th>5-HTP (with decarboxylase inhibitor)</th>
+                    <td>100 mg</td>
+                    <td>200 mg</td>
+                    <td>500 mg</td>
+                </tr>
+
+                <tr>
+                    <th>Magnesium</th>
+                    <td>200 mg</td>
+                    <td>400 mg</td>
+                    <td>600 mg</td>
+                </tr>
+                <tr>
+                    <th>Melatonin (at night)</th>
+                    <td>1/3 mg</td>
+                    <td>1/2-2 mg</td>
+                    <td>1-6 mg</td>
+                </tr>
+                <tr>
+                    <th>Passionflower</th>
+                    <td>200 mg</td>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                </tr>
+                <tr>
+                    <th>Pyridoxine</th>
+                    <td>5 mg</td>
+                    <td>10 mg</td>
+                    <td>50 mg</td>
+                </tr>
+                <tr>
+                    <th>SAM-e</th>
+                    <td>50 mg</td>
+                    <td>100 mg</td>
+                    <td>200 mg</td>
+                </tr>
+                <tr>
+                    <th>St. John’s Wort</th>
+                    <td>200 mg</td>
+                    <td>400 mg</td>
+                    <td>600 mg</td>
+                </tr>
+                <tr>
+                    <th>Tryptophan (prescription)</th>
+                    <td>500 mg</td>
+                    <td>1000 mg</td>
+                    <td>1500-2000 mg</td>
+                </tr>
+                <tr>
+                    <th>Zinc</th>
+                    <td>15 mg</td>
+                    <td>30 mg</td>
+                    <td>45 mg</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <p>
+        </p>
+	</script>
+
+<script defer src="/.cloud/rum/otel-rum-exporter.js?v=1.0.1"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3bf8c936e4d9005',t:'MTc4OTU1ODMzMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

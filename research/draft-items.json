@@ -1,0 +1,138 @@
+{
+  "status": "draft v0.1 — original items, not validated, not piloted",
+  "note": "Format test for PLAN-notes-02-reactivity.md. All items written from scratch; none derived from Braverman's copyrighted questionnaire.",
+  "responseScales": {
+    "agree5": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+    "shift5": ["No different", "Slightly", "Moderately", "A lot", "Completely derails me"],
+    "frequency5": ["Never", "Rarely", "Sometimes", "Often", "Almost always"],
+    "notApplicable": "Reactivity items offer 'Doesn't apply / I avoid this' which is recorded, not scored."
+  },
+  "traitScales": [
+    {
+      "id": "drive",
+      "name": "Drive",
+      "definition": "Exploration plus willingness to expend effort for reward. Merges the 'Seeker' and 'Engine' dimensions.",
+      "linkedSystem": "dopamine",
+      "evidenceStrength": "strong",
+      "basis": "DeYoung 2013 (Plasticity); Treadway 2012 (effort for reward); BAS Drive/Fun Seeking",
+      "timeframe": "In general, over the past few years",
+      "scale": "agree5",
+      "items": [
+        { "id": "drive_01", "key": "+", "text": "I start things nobody asked me to start." },
+        { "id": "drive_02", "key": "+", "text": "When something interests me, I'll put in work that others would find tedious." },
+        { "id": "drive_03", "key": "-", "text": "I'd rather stick with what already works than try an unfamiliar option." },
+        { "id": "drive_04", "key": "+", "text": "I go looking for new information even when nothing requires it." },
+        { "id": "drive_05", "key": "-", "text": "I lose interest once the novelty of a project wears off." },
+        { "id": "drive_06", "key": "+", "text": "I'll take on a harder task if the payoff is bigger." },
+        { "id": "drive_07", "key": "-", "text": "I often decide something isn't worth the effort." },
+        { "id": "drive_08", "key": "+", "text": "I have more things I want to do than time to do them." },
+        { "id": "drive_09", "key": "-", "text": "I'm content to let other people set the direction." },
+        { "id": "drive_10", "key": "+", "text": "I keep working on a problem after other people have set it aside." }
+      ]
+    }
+  ],
+  "reactivityAxes": [
+    {
+      "id": "sleep",
+      "name": "Sleep reactivity",
+      "question": "How much does short or broken sleep change you?",
+      "evidenceAnchor": "Sleep loss degrades motivation and emotion regulation; insomnia tracks depression risk (ISI literature)",
+      "scale": "shift5",
+      "timeframe": "Think about the day after a night of clearly less sleep than usual",
+      "items": [
+        { "id": "react_sleep_01", "key": "+", "text": "After a short night, my mood the next day is..." },
+        { "id": "react_sleep_02", "key": "+", "text": "After a short night, my patience with other people is..." },
+        { "id": "react_sleep_03", "key": "+", "text": "After a short night, my ability to start tasks is..." },
+        { "id": "react_sleep_04", "key": "-", "text": "I can have two or three bad nights in a row and still feel like myself." }
+      ]
+    },
+    {
+      "id": "stimulant",
+      "name": "Stimulant reactivity",
+      "question": "How much do caffeine and nicotine move you?",
+      "evidenceAnchor": "Adenosine/dopamine; large individual differences in caffeine sensitivity",
+      "scale": "shift5",
+      "items": [
+        { "id": "react_stim_01", "key": "+", "text": "After caffeine, my focus is..." },
+        { "id": "react_stim_02", "key": "+", "text": "After caffeine later in the day, my sleep that night is..." },
+        { "id": "react_stim_03", "key": "+", "text": "On a day with no caffeine at all, I feel..." },
+        { "id": "react_stim_04", "key": "-", "text": "I can drink coffee at night and sleep fine." }
+      ]
+    },
+    {
+      "id": "alcohol",
+      "name": "Alcohol reactivity",
+      "question": "How much does alcohol, and the day after, move you?",
+      "evidenceAnchor": "GABA-A action; next-day rebound anxiety; GLP-1 craving trials show reward-pathway involvement",
+      "scale": "shift5",
+      "items": [
+        { "id": "react_alc_01", "key": "+", "text": "The day after drinking, my anxiety is..." },
+        { "id": "react_alc_02", "key": "+", "text": "The day after drinking, my mood is..." },
+        { "id": "react_alc_03", "key": "+", "text": "While drinking, how much I say or do things I wouldn't otherwise is..." },
+        { "id": "react_alc_04", "key": "-", "text": "A couple of drinks makes no real difference to how I feel the next day." }
+      ]
+    },
+    {
+      "id": "hormonal",
+      "name": "Cycle and hormonal reactivity",
+      "question": "How much do hormonal shifts move you?",
+      "evidenceAnchor": "PMDD add-back studies (Schmidt 1998; AJP 2017): symptoms triggered by change in ovarian steroids, not by level; hormonal contraception and depression risk (Skovlund)",
+      "scale": "shift5",
+      "gating": "Shown only if the context intake indicates it applies; must be skippable without penalty",
+      "items": [
+        { "id": "react_horm_01", "key": "+", "text": "In the week before my period, my mood is..." },
+        { "id": "react_horm_02", "key": "+", "text": "In the week before my period, my irritability is..." },
+        { "id": "react_horm_03", "key": "+", "text": "When I've started or stopped hormonal birth control, my mood was..." },
+        { "id": "react_horm_04", "key": "-", "text": "My mood is about the same at every point in my cycle." }
+      ]
+    },
+    {
+      "id": "stress",
+      "name": "Stress reactivity",
+      "question": "How much does acute stress or conflict move you, and how long does it last?",
+      "evidenceAnchor": "Cortisol effects on memory encoding and metacognition; noradrenaline and risk-taking",
+      "scale": "shift5",
+      "items": [
+        { "id": "react_stress_01", "key": "+", "text": "After a tense conversation, how long it takes me to settle is..." },
+        { "id": "react_stress_02", "key": "+", "text": "Under time pressure, the quality of my decisions is..." },
+        { "id": "react_stress_03", "key": "+", "text": "During a stressful week, my sleep is..." },
+        { "id": "react_stress_04", "key": "-", "text": "Stressful events roll off me within an hour or two." }
+      ]
+    },
+    {
+      "id": "reward_cue",
+      "name": "Reward-cue reactivity",
+      "question": "How much do cues — food, shopping, games, notifications — pull at you?",
+      "evidenceAnchor": "Ghrelin/leptin and food-cue reactivity; dopamine-agonist impulse control disorders; GLP-1 craving reduction",
+      "scale": "frequency5",
+      "items": [
+        { "id": "react_cue_01", "key": "+", "text": "I buy or order something within minutes of first seeing it." },
+        { "id": "react_cue_02", "key": "+", "text": "When I'm hungry, food I hadn't been thinking about becomes hard to ignore." },
+        { "id": "react_cue_03", "key": "+", "text": "I keep playing, scrolling or watching well past the point I meant to stop." },
+        { "id": "react_cue_04", "key": "-", "text": "I can have something tempting in the house and not think about it." }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "Social reactivity",
+      "question": "How much do connection and rejection move you?",
+      "evidenceAnchor": "μ-opioid receptor availability and attachment style (Nummenmaa/Tuominen)",
+      "scale": "shift5",
+      "items": [
+        { "id": "react_soc_01", "key": "+", "text": "After being left out or turned down, my mood for the rest of the day is..." },
+        { "id": "react_soc_02", "key": "+", "text": "After a few days with little contact with people I'm close to, I feel..." },
+        { "id": "react_soc_03", "key": "+", "text": "After a warm conversation with someone I care about, my mood is..." },
+        { "id": "react_soc_04", "key": "-", "text": "I can go a week without seeing anyone close to me and feel no different." }
+      ]
+    }
+  ],
+  "openIssues": [
+    "shift5 asks for magnitude but items 'my mood is...' imply direction — either split into magnitude+direction, or reword each item so the anchor is unambiguous ('how different is your mood').",
+    "Every reactivity axis currently has 3 positive + 1 reverse item; aim for 2/2 to balance acquiescence.",
+    "react_stim_03 ('on a day with no caffeine') measures withdrawal, not sensitivity. Possibly a separate sub-construct.",
+    "Cycle axis needs careful wording for people on continuous contraception, post-menopause, trans and nonbinary users; gating must not feel like an assumption about the user.",
+    "Reward-cue axis overlaps with the Restraint trait scale — check discriminant validity in the pilot; if they correlate above ~.7 they're one thing.",
+    "Should reactivity items ask 'how much does X move you' (perceived sensitivity) or 'how often does X happen' (frequency)? Current draft mixes both scales across axes, which may not be comparable.",
+    "Need a floor: people who never drink, never use caffeine, etc. should not get a low score — record as not applicable and exclude from the profile."
+  ]
+}
